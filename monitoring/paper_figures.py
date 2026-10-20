@@ -145,31 +145,31 @@ def fig1(index: pd.DataFrame) -> None:
     ax.plot(np.linspace(0.6, 2.4, len(wv)),
             2.3 + 0.6 * wv / np.abs(wv).max(),
             lw=0.6, color=E_CNN, zorder=4)
-    ax.text(1.5, 1.32, "48 kHz audio", ha="center", va="top", fontsize=18)
+    ax.text(1.5, 1.28, "48 kHz audio", ha="center", va="top", fontsize=14)
 
     # STFT patch thumbnail (513 x 24)
     box(3.4, 1.5, 2.2, 1.6, "", "#ffffff", E_CNN)
     S = logspec(x[:6 * FS])[:, :24]
     ax.imshow(S, origin="lower", aspect="auto", cmap="magma",
               extent=(3.55, 5.45, 1.65, 2.95), zorder=4)
-    ax.text(4.5, 1.32, "STFT patch\n513 × 24", ha="center", va="top",
-            fontsize=18)
+    ax.text(4.5, 1.28, "STFT patch\n513 × 24", ha="center", va="top",
+            fontsize=14)
 
     # conv blocks as feature-map stacks
-    fmap(7.0, 2.3, 1.15, 2.3)
-    ax.text(7.1, 1.32, "conv1 + pool\n16 × 128 × 12", ha="center", va="top",
-            fontsize=18)
-    fmap(9.0, 2.3, 1.0, 1.7)
-    ax.text(9.1, 1.32, "conv2 + pool\n32 × 32 × 6", ha="center", va="top",
-            fontsize=18)
-    fmap(11.0, 2.3, 0.85, 1.15)
-    ax.text(11.1, 1.32, "conv3 + pool\n64 × 8 × 3", ha="center", va="top",
-            fontsize=18)
+    fmap(7.0, 2.65, 1.15, 2.3)
+    ax.text(7.1, 1.28, "conv1 + pool\n16 × 128 × 12", ha="center", va="top",
+            fontsize=14)
+    fmap(9.0, 2.35, 1.0, 1.7)
+    ax.text(9.1, 1.28, "conv2 + pool\n32 × 32 × 6", ha="center", va="top",
+            fontsize=14)
+    fmap(11.0, 2.075, 0.85, 1.15)
+    ax.text(11.1, 1.28, "conv3 + pool\n64 × 8 × 3", ha="center", va="top",
+            fontsize=14)
 
     # dense bar + output
-    ax.add_patch(Rectangle((12.6, 1.15), 0.6, 2.3, fc=C_CNN, ec=E_CNN,
+    ax.add_patch(Rectangle((12.6, 1.5), 0.6, 2.3, fc=C_CNN, ec=E_CNN,
                            lw=1.2, zorder=3))
-    ax.text(12.9, 1.32, "dense\n64", ha="center", va="top", fontsize=18)
+    ax.text(12.9, 1.28, "dense\n64", ha="center", va="top", fontsize=14)
     box(13.9, 1.8, 1.3, 1.0, "p_leak\n≥ 0.5", C_CNN, E_CNN)
 
     for x1, x2 in ((2.6, 3.4), (5.6, 6.35), (7.85, 8.4), (9.75, 10.45),
@@ -190,10 +190,10 @@ def fig1(index: pd.DataFrame) -> None:
     # observation taps (dashed, read-only)
     arrow(1.5, 3.1, 1.5, 4.4, style="--", color=E_L1)      # waveform -> L1
     arrow(4.5, 3.1, 5.2, 4.4, style="--", color=E_L2)      # band energies -> L2
-    arrow(7.15, 3.55, 9.6, 4.4, style="--", color=E_L3)    # conv1 -> L3
-    arrow(9.15, 3.25, 10.4, 4.4, style="--", color=E_L3)   # conv2 -> L3
-    arrow(11.15, 2.98, 11.2, 4.4, style="--", color=E_L3)  # conv3 -> L3
-    arrow(12.9, 3.55, 12.0, 4.4, style="--", color=E_L3)   # dense -> L3
+    arrow(7.15, 4.05, 9.6, 4.4, style="--", color=E_L3)    # conv1 -> L3
+    arrow(9.15, 3.45, 10.4, 4.4, style="--", color=E_L3)   # conv2 -> L3
+    arrow(11.15, 2.9, 11.2, 4.4, style="--", color=E_L3)   # conv3 -> L3
+    arrow(12.9, 3.9, 12.0, 4.4, style="--", color=E_L3)    # dense -> L3
     ax.text(17.6, 0.35, "dashed: read-only observation taps",
             ha="right", fontsize=18, color="#666666", style="italic")
     ax.text(0.4, 0.35, "conv blocks: k = 3, GELU, max-pool · "
@@ -201,12 +201,12 @@ def fig1(index: pd.DataFrame) -> None:
             ha="left", fontsize=18, color="#666666", style="italic")
 
     # ---- coordination layer ------------------------------------------------
-    box(1.5, 6.9, 14.0, 1.5, "", "#f5f5f5", "#333333")
-    ax.text(8.5, 7.95, "Coordination layer — taxonomy fusion", ha="center",
+    box(1.0, 6.9, 16.0, 1.5, "", "#f5f5f5", "#333333")
+    ax.text(9.0, 7.95, "Coordination layer — taxonomy fusion", ha="center",
             fontsize=20, weight="bold")
-    ax.text(8.5, 7.35, "T1-confirmed · T1-unconfirmed · all-clear · "
-                       "T2 (hidden fault) · T3 (unverified) · "
-                       "T3 (unexplained) · T4 (shift deferred)\n"
+    ax.text(9.0, 7.33, "T1-confirmed · T1-unconfirmed · all-clear · "
+                       "T2 (hidden fault) · T3 (unverified)\n"
+                       "T3 (unexplained) · T4 (shift deferred) · "
                        "precedence: L1 override > T2 > T4 > CNN × L2",
             ha="center", va="center", fontsize=18)
     arrow(2.3, 5.9, 3.6, 6.9)                              # L1 -> coordination
