@@ -1,0 +1,91 @@
+# PHASE A retrain: per-mic LeakCNN with additive-noise augmentation.
+# Architecture, splits and preprocessing identical to configs/baseline_micX.yaml.
+# FIREWALL: nominal data only (vent/vent_low x lab/work/work_low); hydr/tube
+# stay held out for the single post-freeze Phase B evaluation.
+seed: 42
+run_name: noise_aug_mic1
+
+logging:
+  level: INFO
+
+data:
+  root: data
+  index_csv: data/index.csv
+  mic: 1                      # 1-4; one model per microphone
+  # Binary task: no_leak / leak (vent 6 bar + vent_low 5 bar merged).
+  leak_types: [vent, vent_low]    # tube held out entirely as a novel fault
+  backgrounds: [lab, work, work_low]  # hydraulic held out as an unseen environment
+  no_leak_max_knob: 3.0           # no_leak = io files with knob <= 3.0
+  leak_min_knob: 5.5              # leak = nio files with knob >= 5.5 (3.5-5.0 excluded: undetectable)
+  split:
+    strategy: session           # whole sessions only; the trainer generates
+                                # 3 folds (val on session k, train on the rest)
+
+validation:
+  min_duration_s: 29.0
+  max_duration_s: 31.0
+
+preprocessing:
+  sample_rate: 48000
+  n_fft: 1024                 # 513 one-sided frequency bins
+  win_length: 1024
+  hop_length: 512             # 50% overlap
+  window: hann
+  patch_frames: 24            # ~267 ms per patch
+  patch_stride: 24            # non-overlapping patches for training
+  eps: 1.0e-10
+  cache_dir: results/cache
+  norm_stats_dir: results/norm_stats
+
+model:
+  in_freq_bins: 513
+  patch_frames: 24
+  channels: [16, 32, 64]
+  kernel_size: 3
+  pool: [[4, 2], [4, 2], [4, 2]]
+  dense_units: 64
+  dropout: 0.25
+  gaussian_noise_std: 0.1
+  num_classes: 2
+
+training:
+  batch_size: 128
+  epochs: 25
+  lr: 0.001
+  weight_decay: 0.0001
+  class_weights: false
+  early_stopping_patience: 5
+  num_workers: 0              # dataset is fully in-memory; workers would only duplicate RAM
+  device: cuda
+  out_dir: results/runs
+
+augmentation:
+  enabled: true               # training patches only; power-domain additive noise
+  p: 0.5                      # probability of adding noise to a patch
+  snr_min_db: 0.0             # SNR ~ U(snr_min, snr_max) per patch
+  snr_max_db: 20.0
+  types: [white, pink]        # noise colour sampled uniformly per patch
+
+l3:
+  # Deep k-NN monitor on the dense embedding (L2-normalized), per fold.
+  k: 50
+  layer: dense
+  l2_normalize: true
+  far: 0.01                   # threshold = (1 - far) pct of val NO-LEAK scores
+  out_dir: results/knn_l3
+  min_participation_ratio: 5  # binary-collapse warning for the embedding matrix
+
+physics:
+  # L2 noise-fitted monitor: median residual band-share templates per
+  # (mic x gain), pooled over nominal backgrounds (work/work_low emphasised
+  # over the unrealistically clean lab). Residual scoring as validated in v2.
+  out_dir: results/physics_nominal
+  template_leak_type: vent
+  template_backgrounds: [lab]   # guardrail fired on noisy-bg fits (no leak signal in those residuals); lab residual = leak shape, cos~1.0 vs old verified
+  template_knobs: [6, 6.5, 7, 7.5, 8, 8.5, 9]
+  template_sessions: [1, 2]   # deployed fold's training sessions
+  gate_pct: 99                # abstain margin = p99 of nominal no-leak
+                              # template-weighted excess (calibrated)
+  tau_absent_pct: 1           # lower tail of val no-leak scores
+  tau_present_pct: 99         # upper tail of val leak scores
+  fold: 3                     # deployed fold for CNN decisions

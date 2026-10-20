@@ -1,0 +1,223 @@
+{
+  "run_name": "baseline_mic1",
+  "fold": 3,
+  "train_sessions": [
+    1,
+    2
+  ],
+  "default_method": "dom",
+  "method_comparison": [
+    {
+      "concept": "leak",
+      "layer": "conv1",
+      "method": "dom",
+      "test_auc": 0.8389206528663635,
+      "test_cohens_d": 1.3995946645736694
+    },
+    {
+      "concept": "leak",
+      "layer": "conv1",
+      "method": "pca",
+      "test_auc": 0.8379391431808472,
+      "test_cohens_d": 1.3990291357040405
+    },
+    {
+      "concept": "leak",
+      "layer": "conv2",
+      "method": "dom",
+      "test_auc": 0.8776771426200867,
+      "test_cohens_d": 1.2630144357681274
+    },
+    {
+      "concept": "leak",
+      "layer": "conv2",
+      "method": "pca",
+      "test_auc": 0.7308371067047119,
+      "test_cohens_d": 0.9441479444503784
+    },
+    {
+      "concept": "leak",
+      "layer": "conv3",
+      "method": "dom",
+      "test_auc": 0.9151914119720459,
+      "test_cohens_d": 1.6367192268371582
+    },
+    {
+      "concept": "leak",
+      "layer": "conv3",
+      "method": "pca",
+      "test_auc": 0.8643022775650024,
+      "test_cohens_d": 1.3501434326171875
+    },
+    {
+      "concept": "leak",
+      "layer": "dense",
+      "method": "dom",
+      "test_auc": 0.9953218102455139,
+      "test_cohens_d": 4.137948513031006
+    },
+    {
+      "concept": "leak",
+      "layer": "dense",
+      "method": "pca",
+      "test_auc": 0.9953072667121887,
+      "test_cohens_d": 4.110667705535889
+    },
+    {
+      "concept": "background",
+      "layer": "conv1",
+      "method": "dom",
+      "test_auc": 0.6142734885215759,
+      "test_cohens_d": 0.37442973256111145
+    },
+    {
+      "concept": "background",
+      "layer": "conv1",
+      "method": "pca",
+      "test_auc": 0.6091049313545227,
+      "test_cohens_d": 0.36031097173690796
+    },
+    {
+      "concept": "background",
+      "layer": "conv2",
+      "method": "dom",
+      "test_auc": 0.5925059914588928,
+      "test_cohens_d": 0.5027835369110107
+    },
+    {
+      "concept": "background",
+      "layer": "conv2",
+      "method": "pca",
+      "test_auc": 0.5724315643310547,
+      "test_cohens_d": 0.45563098788261414
+    },
+    {
+      "concept": "background",
+      "layer": "conv3",
+      "method": "dom",
+      "test_auc": 0.8572592735290527,
+      "test_cohens_d": 1.1805168390274048
+    },
+    {
+      "concept": "background",
+      "layer": "conv3",
+      "method": "pca",
+      "test_auc": 0.6186707615852356,
+      "test_cohens_d": 0.5231587290763855
+    },
+    {
+      "concept": "background",
+      "layer": "dense",
+      "method": "dom",
+      "test_auc": 0.9462264180183411,
+      "test_cohens_d": 1.755964756011963
+    },
+    {
+      "concept": "background",
+      "layer": "dense",
+      "method": "pca",
+      "test_auc": 0.37626898288726807,
+      "test_cohens_d": -0.1531020849943161
+    }
+  ],
+  "method_mean": {
+    "test_auc": {
+      "dom": 0.8296720236539841,
+      "pca": 0.7006077542901039
+    },
+    "test_cohens_d": {
+      "dom": 1.5313714630901814,
+      "pca": 1.1237483527511358
+    }
+  },
+  "eval_summary": {
+    "train_calib": {
+      "n_files": 286,
+      "n_patches": 33580,
+      "concept_typicality_median": 0.7795994465235948,
+      "concept_typicality_p95": 2.171863898911483,
+      "manifold_z_median": -0.2049265864716709,
+      "manifold_z_p95": 1.6108003122946752,
+      "per_signal_median_z": {
+        "leak/conv1": 0.10380928949592237,
+        "leak/conv2": 0.29621623010420073,
+        "leak/conv3": 0.21685185740132137,
+        "leak/dense": 0.5203082210933552,
+        "background/conv1": 0.11694266454169416,
+        "background/conv2": 0.4036721519493456,
+        "background/conv3": 0.5190055139020257,
+        "background/dense": -0.04010095774930966,
+        "manifold/conv1": -0.11416622760619269,
+        "manifold/conv2": -0.1196733467136465,
+        "manifold/conv3": -0.04815045381199433,
+        "manifold/dense": 0.10255987777523737
+      }
+    },
+    "val": {
+      "n_files": 120,
+      "n_patches": 14080,
+      "concept_typicality_median": 0.8321243863333038,
+      "concept_typicality_p95": 2.2313632725586747,
+      "manifold_z_median": -0.2288178289325592,
+      "manifold_z_p95": 2.1988681170196682,
+      "per_signal_median_z": {
+        "leak/conv1": 0.03158310728503837,
+        "leak/conv2": 0.17743560843984454,
+        "leak/conv3": -0.0036370488783915756,
+        "leak/dense": 0.49846248812655103,
+        "background/conv1": 0.045099055049637474,
+        "background/conv2": 0.28797937079499925,
+        "background/conv3": 0.4866714070002405,
+        "background/dense": -0.14627743031825924,
+        "manifold/conv1": -0.20577690450120834,
+        "manifold/conv2": -0.2819864968493828,
+        "manifold/conv3": 0.07981054951675992,
+        "manifold/dense": 0.20596008029540208
+      }
+    },
+    "tube_semantic": {
+      "n_files": 30,
+      "n_patches": 3520,
+      "concept_typicality_median": 0.6836959819398933,
+      "concept_typicality_p95": 2.249990986739723,
+      "manifold_z_median": 1.3190946398033954,
+      "manifold_z_p95": 2.306902078565776,
+      "per_signal_median_z": {
+        "leak/conv1": -0.3108223904738894,
+        "leak/conv2": -0.257617221574274,
+        "leak/conv3": -0.3968869857221069,
+        "leak/dense": -0.9767739292011302,
+        "background/conv1": -0.33425471059387324,
+        "background/conv2": -0.1245125205458486,
+        "background/conv3": -0.6986249456188678,
+        "background/dense": -0.6253777115509428,
+        "manifold/conv1": 1.0973188129920222,
+        "manifold/conv2": 0.737392920345447,
+        "manifold/conv3": 1.4842566496482905,
+        "manifold/dense": 1.7677674260779777
+      }
+    },
+    "hydr_covariate": {
+      "n_files": 30,
+      "n_patches": 3519,
+      "concept_typicality_median": 0.7159412770606495,
+      "concept_typicality_p95": 0.8887677566162783,
+      "manifold_z_median": 2.0942929359595475,
+      "manifold_z_p95": 2.9147903613074067,
+      "per_signal_median_z": {
+        "leak/conv1": 0.5040758114913081,
+        "leak/conv2": 0.5273095546879321,
+        "leak/conv3": 0.3844561723078816,
+        "leak/dense": -0.08113883659365682,
+        "background/conv1": 0.512903779776942,
+        "background/conv2": 0.41256116776384855,
+        "background/conv3": 0.4699051587722127,
+        "background/dense": 0.43466871843817806,
+        "manifold/conv1": 0.378141818116592,
+        "manifold/conv2": 3.487335580812254,
+        "manifold/conv3": 2.9946947417013874,
+        "manifold/dense": 1.299043233239458
+      }
+    }
+  }
+}

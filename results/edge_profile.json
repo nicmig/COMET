@@ -1,0 +1,126 @@
+{
+  "methodology": {
+    "timer": "time.perf_counter_ns (monotonic)",
+    "batch": 1,
+    "threads": 1,
+    "warmup_windows": 20,
+    "timed_windows": 1000,
+    "timed_windows_l3b": 200,
+    "windows_from": "nominal no-leak val files, mic1 gain m",
+    "window_audio_s": 0.256,
+    "note": "measurement only; nothing retrained/recalibrated. L3b profiled separately as optional add-on."
+  },
+  "component_latency_ms": {
+    "stft": {
+      "p50": 0.44972449999999997,
+      "p95": 0.48850395,
+      "p99": 0.49911753999999997,
+      "mean": 0.45361044200000006
+    },
+    "l1_rules": {
+      "p50": 0.089434,
+      "p95": 0.101042,
+      "p99": 0.11469919999999999,
+      "mean": 0.085092715
+    },
+    "cnn_forward": {
+      "p50": 1.6781234999999999,
+      "p95": 1.71324,
+      "p99": 1.77735182,
+      "mean": 1.6821135020000002
+    },
+    "l2_score": {
+      "p50": 0.31120800000000004,
+      "p95": 0.357929,
+      "p99": 0.3665748,
+      "mean": 0.31650082700000004
+    },
+    "l3_knn": {
+      "p50": 1.8487,
+      "p95": 1.907106,
+      "p99": 1.9595550099999999,
+      "mean": 1.8567345800000001
+    },
+    "l3_profile": {
+      "p50": 5.3886045,
+      "p95": 5.4939332499999995,
+      "p99": 5.67815811,
+      "mean": 5.3356366799999995
+    },
+    "fusion": {
+      "p50": 0.001082,
+      "p95": 0.00141205,
+      "p99": 0.00149201,
+      "mean": 0.001120999
+    },
+    "bare_cnn": {
+      "p50": 1.7791295,
+      "p95": 1.80836925,
+      "p99": 1.88530852,
+      "mean": 1.78255341
+    }
+  },
+  "cascade_end_to_end_ms_per_window": {
+    "p50": 9.7454515,
+    "p95": 9.9717411,
+    "p99": 10.30280361,
+    "mean": 9.730809745
+  },
+  "overhead_vs_bare_cnn": 5.4589162324174065,
+  "real_time": {
+    "rtf_per_channel": 0.03801097556640625,
+    "duty_cycle_pct_per_channel": 3.801097556640625,
+    "duty_cycle_pct_4_channels": 15.2043902265625,
+    "note": "single core; 4 channels sequential on one core. 4 cores => 4 channels in parallel at same per-channel duty cycle."
+  },
+  "memory": {
+    "per_mic": {
+      "weights_pt_mb": 0.499989,
+      "knn_reference_mb": 12.20096,
+      "profile_layer_refs_mb": 33.55264,
+      "stft_buffers_mb_est": 0.250144,
+      "l2_templates_pools_mb_est": 0.1,
+      "total_mb": 46.603733
+    },
+    "total_4_mics_mb": 186.414932
+  },
+  "knn_subsample_latency_ms": {
+    "25%": {
+      "p50": 0.32439799999999996,
+      "p95": 0.33387354999999996,
+      "p99": 0.33815883,
+      "mean": 0.32198694000000005,
+      "n_reference": 11915
+    },
+    "50%": {
+      "p50": 0.5790029999999999,
+      "p95": 0.61470015,
+      "p99": 0.6291028,
+      "mean": 0.585445645,
+      "n_reference": 23830
+    },
+    "100%": {
+      "p50": 1.235252,
+      "p95": 1.250267,
+      "p99": 1.26180114,
+      "mean": 1.236844855,
+      "n_reference": 47660
+    }
+  },
+  "l3b_optional_addon": {
+    "per_window_ms": {
+      "p50": 12.6036535,
+      "p95": 15.276701449999994,
+      "p99": 19.907593999999992,
+      "mean": 13.13128618
+    },
+    "forwards_per_window": 9,
+    "duty_cycle_estimate": "periodic every k-th window: add-on cost/k; triggered (on L3 flag): cost x flag rate",
+    "status": "OPTIONAL \u2014 pre-registered variant, hypothesis rejected in Phase B; NOT part of default cascade latency"
+  },
+  "headroom_levers_estimates": {
+    "cnn_int8_quantization": "~4x weights memory reduction, ~2-4x CPU speedup (estimate, NOT implemented). Coupling: requires nominal-equivalence re-check AND L3 re-calibration \u2014 quantized weights change the embedding space the frozen reference lives in.",
+    "duty_cycling": "evaluate every k-th window: latency/k, no model change; detection lag grows by (k-1) windows"
+  },
+  "hardware_string": "AMD Ryzen 9 5900X 12-Core Processor, 24 logical cores, 1 thread used (torch.set_num_threads(1)), batch=1, 66 GB RAM, Python 3.12.3, PyTorch 2.13.0+cu130, SciPy 1.18.1"
+}

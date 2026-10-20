@@ -1,0 +1,3429 @@
+{
+  "note": "frozen artifacts only; taxonomy mapping corrected (all-clear = CNN- AND (L2 quiet OR abstain)); TWA = P(presented reliable AND CNN wrong); S6 additionally reports trusted-garbage (any trusted output on faulted audio)",
+  "conditions": {
+    "nominal_val_noleak": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 40,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.975
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.85
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "nominal_far": {
+            "S0": 0.0,
+            "S1a_msp": 0.025,
+            "S1b_l2": 0.0,
+            "S1c_l3": 0.0,
+            "S2_cascade": 0.15
+          }
+        },
+        "mic2": {
+          "n_files": 40,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.975
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "nominal_far": {
+            "S0": 0.0,
+            "S1a_msp": 0.025,
+            "S1b_l2": 0.0,
+            "S1c_l3": 0.0,
+            "S2_cascade": 0.0
+          }
+        },
+        "mic3": {
+          "n_files": 40,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.975
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.975
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.975
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "nominal_far": {
+            "S0": 0.0,
+            "S1a_msp": 0.025,
+            "S1b_l2": 0.025,
+            "S1c_l3": 0.0,
+            "S2_cascade": 0.025
+          }
+        },
+        "mic4": {
+          "n_files": 40,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.975
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "nominal_far": {
+            "S0": 0.0,
+            "S1a_msp": 0.025,
+            "S1b_l2": 0.0,
+            "S1c_l3": 0.0,
+            "S2_cascade": 0.0
+          }
+        }
+      },
+      "pooled": {
+        "n_files": 160,
+        "cnn_plus_rate": 0.0,
+        "cnn_error_rate": 0.0,
+        "S0": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.975
+        },
+        "S1b_l2": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.99375
+        },
+        "S1c_l3": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 1.0
+        },
+        "S2_cascade": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.95625
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 0
+        },
+        "nominal_far": {
+          "S0": 0.0,
+          "S1a_msp": 0.025,
+          "S1b_l2": 0.00625,
+          "S1c_l3": 0.0,
+          "S2_cascade": 0.04375
+        }
+      }
+    },
+    "nominal_val_leak": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 80,
+          "cnn_plus_rate": 0.9625,
+          "cnn_error_rate": 0.0375,
+          "S0": {
+            "twa_rate": 0.0375,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0375,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 0.9875
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0375,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 0.425
+          },
+          "S1c_l3": {
+            "twa_rate": 0.025,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.025,
+            "trusted_rate": 0.9375
+          },
+          "S2_cascade": {
+            "twa_rate": 0.025,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.025,
+            "trusted_rate": 0.575
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 3,
+            "confident_maxsoft>=0.9": 2,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.6666666666666666
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.6666666666666666
+            },
+            "S2_state_distribution": {
+              "T4": 1,
+              "all-clear": 2
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 1.0,
+              "S2_cascade": 1.0
+            }
+          },
+          "s0_errors_confident_share": 0.6666666666666666
+        },
+        "mic2": {
+          "n_files": 80,
+          "cnn_plus_rate": 0.9125,
+          "cnn_error_rate": 0.0875,
+          "S0": {
+            "twa_rate": 0.0875,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.075,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 0.9875
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0875,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 0.6625
+          },
+          "S1c_l3": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 0.95
+          },
+          "S2_cascade": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 0.3875
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 7,
+            "confident_maxsoft>=0.9": 0,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.8571428571428571
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.5714285714285714
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.5714285714285714
+            },
+            "S2_state_distribution": {
+              "T4": 3,
+              "all-clear": 4
+            },
+            "confident_still_trusted": {
+              "S0": null,
+              "S1a_msp": null,
+              "S1b_l2": null,
+              "S1c_l3": null,
+              "S2_cascade": null
+            }
+          },
+          "s0_errors_confident_share": 0.0
+        },
+        "mic3": {
+          "n_files": 80,
+          "cnn_plus_rate": 0.9375,
+          "cnn_error_rate": 0.0625,
+          "S0": {
+            "twa_rate": 0.0625,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.025,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.025,
+            "trusted_rate": 0.9375
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0625,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 0.375
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0375,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 0.9375
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0375,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 0.6625
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 5,
+            "confident_maxsoft>=0.9": 2,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.4
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.6
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.6
+            },
+            "S2_state_distribution": {
+              "T4": 2,
+              "all-clear": 3
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 1.0,
+              "S2_cascade": 1.0
+            }
+          },
+          "s0_errors_confident_share": 0.4
+        },
+        "mic4": {
+          "n_files": 80,
+          "cnn_plus_rate": 0.9125,
+          "cnn_error_rate": 0.0875,
+          "S0": {
+            "twa_rate": 0.0875,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0625,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 0.975
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0875,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 0.65
+          },
+          "S1c_l3": {
+            "twa_rate": 0.075,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 0.95
+          },
+          "S2_cascade": {
+            "twa_rate": 0.075,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 0.425
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 7,
+            "confident_maxsoft>=0.9": 1,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.7142857142857143
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.8571428571428571
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.8571428571428571
+            },
+            "S2_state_distribution": {
+              "T4": 1,
+              "all-clear": 6
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 1.0,
+              "S2_cascade": 1.0
+            }
+          },
+          "s0_errors_confident_share": 0.14285714285714285
+        }
+      },
+      "pooled": {
+        "n_files": 320,
+        "cnn_plus_rate": 0.93125,
+        "cnn_error_rate": 0.06875,
+        "S0": {
+          "twa_rate": 0.06875,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.06875,
+          "trusted_rate": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.05,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.05,
+          "trusted_rate": 0.971875
+        },
+        "S1b_l2": {
+          "twa_rate": 0.06875,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.06875,
+          "trusted_rate": 0.528125
+        },
+        "S1c_l3": {
+          "twa_rate": 0.046875,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.046875,
+          "trusted_rate": 0.94375
+        },
+        "S2_cascade": {
+          "twa_rate": 0.046875,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.046875,
+          "trusted_rate": 0.5125
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 22,
+          "confident_maxsoft>=0.9": 5,
+          "S0": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1a_msp": {
+            "silent_under_monitoring": 0.7272727272727273
+          },
+          "S1b_l2": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1c_l3": {
+            "silent_under_monitoring": 0.6818181818181818
+          },
+          "S2_cascade": {
+            "silent_under_monitoring": 0.6818181818181818
+          },
+          "S2_state_distribution": {
+            "T4": 7,
+            "all-clear": 15
+          },
+          "confident_still_trusted": {
+            "S0": 1.0,
+            "S1a_msp": 1.0,
+            "S1b_l2": 1.0,
+            "S1c_l3": 1.0,
+            "S2_cascade": 1.0
+          }
+        },
+        "s0_errors_confident_share": 0.22727272727272727
+      }
+    },
+    "hydrlow_noleak": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.6805555555555556
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          }
+        },
+        "mic2": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.9861111111111112
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          }
+        },
+        "mic3": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.8472222222222222
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.7916666666666666
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.7916666666666666
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          }
+        },
+        "mic4": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.9166666666666666
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.9166666666666666
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          }
+        }
+      },
+      "pooled": {
+        "n_files": 288,
+        "cnn_plus_rate": 0.0,
+        "cnn_error_rate": 0.0,
+        "S0": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.7534722222222222
+        },
+        "S1b_l2": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 1.0
+        },
+        "S1c_l3": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.6770833333333334
+        },
+        "S2_cascade": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.6770833333333334
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 0
+        }
+      }
+    },
+    "hydrlow_leak": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.9305555555555556,
+          "cnn_error_rate": 0.06944444444444445,
+          "S0": {
+            "twa_rate": 0.06944444444444445,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.06944444444444445,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.034722222222222224,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.034722222222222224,
+            "trusted_rate": 0.7708333333333334
+          },
+          "S1b_l2": {
+            "twa_rate": 0.06944444444444445,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.06944444444444445,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.020833333333333332,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.020833333333333332,
+            "trusted_rate": 0.3402777777777778
+          },
+          "S2_cascade": {
+            "twa_rate": 0.020833333333333332,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.020833333333333332,
+            "trusted_rate": 0.020833333333333332
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 10,
+            "confident_maxsoft>=0.9": 5,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.5
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.3
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.3
+            },
+            "S2_state_distribution": {
+              "L1_override": 5,
+              "T4": 2,
+              "all-clear": 3
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.6,
+              "S2_cascade": 0.6
+            }
+          },
+          "s0_errors_confident_share": 0.5
+        },
+        "mic2": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.7569444444444444,
+          "cnn_error_rate": 0.24305555555555555,
+          "S0": {
+            "twa_rate": 0.24305555555555555,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.24305555555555555,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.1388888888888889,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.1388888888888889,
+            "trusted_rate": 0.8958333333333334
+          },
+          "S1b_l2": {
+            "twa_rate": 0.24305555555555555,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.24305555555555555,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0625,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 0.6458333333333334
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0625,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 0.0625
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 35,
+            "confident_maxsoft>=0.9": 0,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.5714285714285714
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.2571428571428571
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.2571428571428571
+            },
+            "S2_state_distribution": {
+              "T4": 26,
+              "all-clear": 9
+            },
+            "confident_still_trusted": {
+              "S0": null,
+              "S1a_msp": null,
+              "S1b_l2": null,
+              "S1c_l3": null,
+              "S2_cascade": null
+            }
+          },
+          "s0_errors_confident_share": 0.0
+        },
+        "mic3": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8958333333333334,
+          "cnn_error_rate": 0.10416666666666667,
+          "S0": {
+            "twa_rate": 0.10416666666666667,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.10416666666666667,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.041666666666666664,
+            "trusted_rate": 0.9097222222222222
+          },
+          "S1b_l2": {
+            "twa_rate": 0.10416666666666667,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.10416666666666667,
+            "trusted_rate": 0.9097222222222222
+          },
+          "S1c_l3": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.041666666666666664,
+            "trusted_rate": 0.6875
+          },
+          "S2_cascade": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.041666666666666664,
+            "trusted_rate": 0.13194444444444445
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 15,
+            "confident_maxsoft>=0.9": 6,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.4
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.4
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.4
+            },
+            "S2_state_distribution": {
+              "T4": 9,
+              "all-clear": 6
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 1.0,
+              "S2_cascade": 1.0
+            }
+          },
+          "s0_errors_confident_share": 0.4
+        },
+        "mic4": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.7847222222222222,
+          "cnn_error_rate": 0.2152777777777778,
+          "S0": {
+            "twa_rate": 0.2152777777777778,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.2152777777777778,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.041666666666666664,
+            "trusted_rate": 0.7916666666666666
+          },
+          "S1b_l2": {
+            "twa_rate": 0.2152777777777778,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.2152777777777778,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0763888888888889,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0763888888888889,
+            "trusted_rate": 0.7916666666666666
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0763888888888889,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0763888888888889,
+            "trusted_rate": 0.0763888888888889
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 31,
+            "confident_maxsoft>=0.9": 0,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.1935483870967742
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.3548387096774194
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.3548387096774194
+            },
+            "S2_state_distribution": {
+              "T4": 20,
+              "all-clear": 11
+            },
+            "confident_still_trusted": {
+              "S0": null,
+              "S1a_msp": null,
+              "S1b_l2": null,
+              "S1c_l3": null,
+              "S2_cascade": null
+            }
+          },
+          "s0_errors_confident_share": 0.0
+        }
+      },
+      "pooled": {
+        "n_files": 576,
+        "cnn_plus_rate": 0.8420138888888888,
+        "cnn_error_rate": 0.1579861111111111,
+        "S0": {
+          "twa_rate": 0.1579861111111111,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.1579861111111111,
+          "trusted_rate": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.0642361111111111,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.0642361111111111,
+          "trusted_rate": 0.8420138888888888
+        },
+        "S1b_l2": {
+          "twa_rate": 0.1579861111111111,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.1579861111111111,
+          "trusted_rate": 0.9774305555555556
+        },
+        "S1c_l3": {
+          "twa_rate": 0.050347222222222224,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.050347222222222224,
+          "trusted_rate": 0.6163194444444444
+        },
+        "S2_cascade": {
+          "twa_rate": 0.050347222222222224,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.050347222222222224,
+          "trusted_rate": 0.07291666666666667
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 91,
+          "confident_maxsoft>=0.9": 11,
+          "S0": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1a_msp": {
+            "silent_under_monitoring": 0.4065934065934066
+          },
+          "S1b_l2": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1c_l3": {
+            "silent_under_monitoring": 0.31868131868131866
+          },
+          "S2_cascade": {
+            "silent_under_monitoring": 0.31868131868131866
+          },
+          "S2_state_distribution": {
+            "L1_override": 5,
+            "T4": 57,
+            "all-clear": 29
+          },
+          "confident_still_trusted": {
+            "S0": 1.0,
+            "S1a_msp": 1.0,
+            "S1b_l2": 1.0,
+            "S1c_l3": 0.8181818181818182,
+            "S2_cascade": 0.8181818181818182
+          }
+        },
+        "s0_errors_confident_share": 0.12087912087912088
+      }
+    },
+    "hydrhigh_noleak": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.5,
+          "cnn_error_rate": 0.5,
+          "S0": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": 0.5,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "S1b_l2": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": 0.5,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "s0_errors_confident_share": 0.0
+        },
+        "mic2": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.5,
+          "cnn_error_rate": 0.5,
+          "S0": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": 0.5,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": 0.5,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.9444444444444444
+          },
+          "S1b_l2": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": 0.5,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.4444444444444444
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.4444444444444444
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "s0_errors_confident_share": 0.6666666666666666
+        },
+        "mic3": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.0,
+          "S0": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.9583333333333334
+          },
+          "S1b_l2": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          }
+        },
+        "mic4": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.5,
+          "cnn_error_rate": 0.5,
+          "S0": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": 0.5,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": 0.5,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.5
+          },
+          "S1b_l2": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": 0.5,
+            "twa_silent_miss": null,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.4027777777777778,
+            "twa_false_alarm": 0.4027777777777778,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.4027777777777778
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": null,
+            "trusted_rate": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "s0_errors_confident_share": 1.0
+        }
+      },
+      "pooled": {
+        "n_files": 288,
+        "cnn_plus_rate": 0.375,
+        "cnn_error_rate": 0.375,
+        "S0": {
+          "twa_rate": 0.375,
+          "twa_false_alarm": 0.375,
+          "twa_silent_miss": null,
+          "trusted_rate": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.25,
+          "twa_false_alarm": 0.25,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.7256944444444444
+        },
+        "S1b_l2": {
+          "twa_rate": 0.375,
+          "twa_false_alarm": 0.375,
+          "twa_silent_miss": null,
+          "trusted_rate": 1.0
+        },
+        "S1c_l3": {
+          "twa_rate": 0.10069444444444445,
+          "twa_false_alarm": 0.10069444444444445,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.4618055555555556
+        },
+        "S2_cascade": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": null,
+          "trusted_rate": 0.3611111111111111
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 0
+        },
+        "s0_errors_confident_share": 0.5555555555555556
+      }
+    },
+    "hydrhigh_leak": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.9583333333333334,
+          "cnn_error_rate": 0.041666666666666664,
+          "S0": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.041666666666666664,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.034722222222222224,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.034722222222222224,
+            "trusted_rate": 0.7638888888888888
+          },
+          "S1b_l2": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.041666666666666664,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.013888888888888888,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.013888888888888888,
+            "trusted_rate": 0.1111111111111111
+          },
+          "S2_cascade": {
+            "twa_rate": 0.013888888888888888,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.013888888888888888,
+            "trusted_rate": 0.013888888888888888
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 6,
+            "confident_maxsoft>=0.9": 5,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.8333333333333334
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.3333333333333333
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.3333333333333333
+            },
+            "S2_state_distribution": {
+              "T4": 4,
+              "all-clear": 2
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.4,
+              "S2_cascade": 0.4
+            }
+          },
+          "s0_errors_confident_share": 0.8333333333333334
+        },
+        "mic2": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8333333333333334,
+          "cnn_error_rate": 0.16666666666666666,
+          "S0": {
+            "twa_rate": 0.16666666666666666,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.16666666666666666,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0625,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 0.8888888888888888
+          },
+          "S1b_l2": {
+            "twa_rate": 0.16666666666666666,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.16666666666666666,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.041666666666666664,
+            "trusted_rate": 0.4236111111111111
+          },
+          "S2_cascade": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.041666666666666664,
+            "trusted_rate": 0.041666666666666664
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 24,
+            "confident_maxsoft>=0.9": 0,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.375
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.25
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.25
+            },
+            "S2_state_distribution": {
+              "T4": 18,
+              "all-clear": 6
+            },
+            "confident_still_trusted": {
+              "S0": null,
+              "S1a_msp": null,
+              "S1b_l2": null,
+              "S1c_l3": null,
+              "S2_cascade": null
+            }
+          },
+          "s0_errors_confident_share": 0.0
+        },
+        "mic3": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8958333333333334,
+          "cnn_error_rate": 0.10416666666666667,
+          "S0": {
+            "twa_rate": 0.10416666666666667,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.10416666666666667,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.04861111111111111,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.04861111111111111,
+            "trusted_rate": 0.9236111111111112
+          },
+          "S1b_l2": {
+            "twa_rate": 0.10416666666666667,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.10416666666666667,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.034722222222222224,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.034722222222222224,
+            "trusted_rate": 0.6805555555555556
+          },
+          "S2_cascade": {
+            "twa_rate": 0.034722222222222224,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.034722222222222224,
+            "trusted_rate": 0.034722222222222224
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 15,
+            "confident_maxsoft>=0.9": 7,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.4666666666666667
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.3333333333333333
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.3333333333333333
+            },
+            "S2_state_distribution": {
+              "L1_override": 6,
+              "T4": 4,
+              "all-clear": 5
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.7142857142857143,
+              "S2_cascade": 0.7142857142857143
+            }
+          },
+          "s0_errors_confident_share": 0.4666666666666667
+        },
+        "mic4": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8888888888888888,
+          "cnn_error_rate": 0.1111111111111111,
+          "S0": {
+            "twa_rate": 0.1111111111111111,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.1111111111111111,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.8125
+          },
+          "S1b_l2": {
+            "twa_rate": 0.1111111111111111,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.1111111111111111,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.7430555555555556
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 16,
+            "confident_maxsoft>=0.9": 0,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "T4": 16
+            },
+            "confident_still_trusted": {
+              "S0": null,
+              "S1a_msp": null,
+              "S1b_l2": null,
+              "S1c_l3": null,
+              "S2_cascade": null
+            }
+          },
+          "s0_errors_confident_share": 0.0
+        }
+      },
+      "pooled": {
+        "n_files": 576,
+        "cnn_plus_rate": 0.8940972222222222,
+        "cnn_error_rate": 0.10590277777777778,
+        "S0": {
+          "twa_rate": 0.10590277777777778,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.10590277777777778,
+          "trusted_rate": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.036458333333333336,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.036458333333333336,
+          "trusted_rate": 0.8472222222222222
+        },
+        "S1b_l2": {
+          "twa_rate": 0.10590277777777778,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.10590277777777778,
+          "trusted_rate": 1.0
+        },
+        "S1c_l3": {
+          "twa_rate": 0.022569444444444444,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.022569444444444444,
+          "trusted_rate": 0.4895833333333333
+        },
+        "S2_cascade": {
+          "twa_rate": 0.022569444444444444,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.022569444444444444,
+          "trusted_rate": 0.022569444444444444
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 61,
+          "confident_maxsoft>=0.9": 12,
+          "S0": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1a_msp": {
+            "silent_under_monitoring": 0.3442622950819672
+          },
+          "S1b_l2": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1c_l3": {
+            "silent_under_monitoring": 0.21311475409836064
+          },
+          "S2_cascade": {
+            "silent_under_monitoring": 0.21311475409836064
+          },
+          "S2_state_distribution": {
+            "L1_override": 6,
+            "T4": 42,
+            "all-clear": 13
+          },
+          "confident_still_trusted": {
+            "S0": 1.0,
+            "S1a_msp": 1.0,
+            "S1b_l2": 1.0,
+            "S1c_l3": 0.5833333333333334,
+            "S2_cascade": 0.5833333333333334
+          }
+        },
+        "s0_errors_confident_share": 0.19672131147540983
+      }
+    },
+    "tube_leak": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8819444444444444,
+          "cnn_error_rate": 0.11805555555555555,
+          "S0": {
+            "twa_rate": 0.11805555555555555,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.11805555555555555,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.04861111111111111,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.04861111111111111,
+            "trusted_rate": 0.8611111111111112
+          },
+          "S1b_l2": {
+            "twa_rate": 0.11805555555555555,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.11805555555555555,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.013888888888888888,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.013888888888888888,
+            "trusted_rate": 0.013888888888888888
+          },
+          "S2_cascade": {
+            "twa_rate": 0.013888888888888888,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.013888888888888888,
+            "trusted_rate": 0.013888888888888888
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 17,
+            "confident_maxsoft>=0.9": 5,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.4117647058823529
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.11764705882352941
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.11764705882352941
+            },
+            "S2_state_distribution": {
+              "L1_override": 1,
+              "T4": 14,
+              "all-clear": 2
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.4,
+              "S2_cascade": 0.4
+            }
+          },
+          "s0_errors_confident_share": 0.29411764705882354
+        },
+        "mic2": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.5694444444444444,
+          "cnn_error_rate": 0.4305555555555556,
+          "S0": {
+            "twa_rate": 0.4305555555555556,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.4305555555555556,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.4027777777777778,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.4027777777777778,
+            "trusted_rate": 0.9583333333333334
+          },
+          "S1b_l2": {
+            "twa_rate": 0.4305555555555556,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.4305555555555556,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.11805555555555555,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.11805555555555555,
+            "trusted_rate": 0.1736111111111111
+          },
+          "S2_cascade": {
+            "twa_rate": 0.11805555555555555,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.11805555555555555,
+            "trusted_rate": 0.11805555555555555
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 62,
+            "confident_maxsoft>=0.9": 27,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.9354838709677419
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.27419354838709675
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.27419354838709675
+            },
+            "S2_state_distribution": {
+              "T4": 45,
+              "all-clear": 17
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.2962962962962963,
+              "S2_cascade": 0.2962962962962963
+            }
+          },
+          "s0_errors_confident_share": 0.43548387096774194
+        },
+        "mic3": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8402777777777778,
+          "cnn_error_rate": 0.1597222222222222,
+          "S0": {
+            "twa_rate": 0.1597222222222222,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.1597222222222222,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0763888888888889,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.0763888888888889,
+            "trusted_rate": 0.8541666666666666
+          },
+          "S1b_l2": {
+            "twa_rate": 0.11805555555555555,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.11805555555555555,
+            "trusted_rate": 0.6458333333333334
+          },
+          "S1c_l3": {
+            "twa_rate": 0.034722222222222224,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.034722222222222224,
+            "trusted_rate": 0.3472222222222222
+          },
+          "S2_cascade": {
+            "twa_rate": 0.027777777777777776,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.027777777777777776,
+            "trusted_rate": 0.11805555555555555
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 23,
+            "confident_maxsoft>=0.9": 11,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.4782608695652174
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 0.7391304347826086
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.21739130434782608
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.17391304347826086
+            },
+            "S2_state_distribution": {
+              "T2": 4,
+              "T3-unexplained": 1,
+              "T4": 14,
+              "all-clear": 4
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 0.8181818181818182,
+              "S1c_l3": 0.45454545454545453,
+              "S2_cascade": 0.36363636363636365
+            }
+          },
+          "s0_errors_confident_share": 0.4782608695652174
+        },
+        "mic4": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.5,
+          "cnn_error_rate": 0.5,
+          "S0": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.5,
+            "trusted_rate": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.2361111111111111,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.2361111111111111,
+            "trusted_rate": 0.7013888888888888
+          },
+          "S1b_l2": {
+            "twa_rate": 0.5,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.5,
+            "trusted_rate": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.1736111111111111,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.1736111111111111,
+            "trusted_rate": 0.4861111111111111
+          },
+          "S2_cascade": {
+            "twa_rate": 0.1736111111111111,
+            "twa_false_alarm": null,
+            "twa_silent_miss": 0.1736111111111111,
+            "trusted_rate": 0.1736111111111111
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 72,
+            "confident_maxsoft>=0.9": 24,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.4722222222222222
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.3472222222222222
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.3472222222222222
+            },
+            "S2_state_distribution": {
+              "T4": 47,
+              "all-clear": 25
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.3333333333333333,
+              "S2_cascade": 0.3333333333333333
+            }
+          },
+          "s0_errors_confident_share": 0.3333333333333333
+        }
+      },
+      "pooled": {
+        "n_files": 576,
+        "cnn_plus_rate": 0.6979166666666666,
+        "cnn_error_rate": 0.3020833333333333,
+        "S0": {
+          "twa_rate": 0.3020833333333333,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.3020833333333333,
+          "trusted_rate": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.1909722222222222,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.1909722222222222,
+          "trusted_rate": 0.84375
+        },
+        "S1b_l2": {
+          "twa_rate": 0.2916666666666667,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.2916666666666667,
+          "trusted_rate": 0.9114583333333334
+        },
+        "S1c_l3": {
+          "twa_rate": 0.08506944444444445,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.08506944444444445,
+          "trusted_rate": 0.2552083333333333
+        },
+        "S2_cascade": {
+          "twa_rate": 0.08333333333333333,
+          "twa_false_alarm": null,
+          "twa_silent_miss": 0.08333333333333333,
+          "trusted_rate": 0.10590277777777778
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 174,
+          "confident_maxsoft>=0.9": 67,
+          "S0": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1a_msp": {
+            "silent_under_monitoring": 0.632183908045977
+          },
+          "S1b_l2": {
+            "silent_under_monitoring": 0.9655172413793104
+          },
+          "S1c_l3": {
+            "silent_under_monitoring": 0.28160919540229884
+          },
+          "S2_cascade": {
+            "silent_under_monitoring": 0.27586206896551724
+          },
+          "S2_state_distribution": {
+            "L1_override": 1,
+            "T2": 4,
+            "T3-unexplained": 1,
+            "T4": 120,
+            "all-clear": 48
+          },
+          "confident_still_trusted": {
+            "S0": 1.0,
+            "S1a_msp": 1.0,
+            "S1b_l2": 0.9701492537313433,
+            "S1c_l3": 0.34328358208955223,
+            "S2_cascade": 0.3283582089552239
+          }
+        },
+        "s0_errors_confident_share": 0.3850574712643678
+      }
+    },
+    "s6_dropout": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.5833333333333334,
+          "cnn_error_rate": 0.08333333333333333,
+          "S0": {
+            "twa_rate": 0.08333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.125,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.08333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.125,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.06666666666666667,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.1,
+            "trusted_rate": 0.6916666666666667,
+            "twa_trusted_garbage": 0.6916666666666667
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 10,
+            "confident_maxsoft>=0.9": 10,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 0.8
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 10
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 0.8,
+              "S1c_l3": 0.0,
+              "S2_cascade": 0.0
+            }
+          },
+          "s0_errors_confident_share": 1.0,
+          "s6": {
+            "cnn_plus_rate": 0.5833333333333334,
+            "msp_flag_rate": 0.0
+          }
+        },
+        "mic2": {
+          "n_files": 120,
+          "cnn_plus_rate": 1.0,
+          "cnn_error_rate": 0.3333333333333333,
+          "S0": {
+            "twa_rate": 0.3333333333333333,
+            "twa_false_alarm": 1.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.3333333333333333,
+            "twa_false_alarm": 1.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.3333333333333333,
+            "twa_false_alarm": 1.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.775,
+            "twa_trusted_garbage": 0.775
+          },
+          "S1c_l3": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": 0.125,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.075,
+            "twa_trusted_garbage": 0.075
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "s0_errors_confident_share": 0.75,
+          "s6": {
+            "cnn_plus_rate": 1.0,
+            "msp_flag_rate": 0.0
+          }
+        },
+        "mic3": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.55,
+          "cnn_error_rate": 0.11666666666666667,
+          "S0": {
+            "twa_rate": 0.11666666666666667,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.175,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.10833333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.1625,
+            "trusted_rate": 0.9916666666666667,
+            "twa_trusted_garbage": 0.9916666666666667
+          },
+          "S1b_l2": {
+            "twa_rate": 0.09166666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.1375,
+            "trusted_rate": 0.6,
+            "twa_trusted_garbage": 0.6
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 14,
+            "confident_maxsoft>=0.9": 14,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.9285714285714286
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 0.7857142857142857
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 14
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 0.9285714285714286,
+              "S1b_l2": 0.7857142857142857,
+              "S1c_l3": 0.0,
+              "S2_cascade": 0.0
+            }
+          },
+          "s0_errors_confident_share": 1.0,
+          "s6": {
+            "cnn_plus_rate": 0.55,
+            "msp_flag_rate": 0.008333333333333333
+          }
+        },
+        "mic4": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6083333333333333,
+          "cnn_error_rate": 0.058333333333333334,
+          "S0": {
+            "twa_rate": 0.058333333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.058333333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 0.775,
+            "twa_trusted_garbage": 0.775
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 7,
+            "confident_maxsoft>=0.9": 0,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 7
+            },
+            "confident_still_trusted": {
+              "S0": null,
+              "S1a_msp": null,
+              "S1b_l2": null,
+              "S1c_l3": null,
+              "S2_cascade": null
+            }
+          },
+          "s0_errors_confident_share": 0.0,
+          "s6": {
+            "cnn_plus_rate": 0.6083333333333333,
+            "msp_flag_rate": 1.0
+          }
+        }
+      },
+      "pooled": {
+        "n_files": 480,
+        "cnn_plus_rate": 0.6854166666666667,
+        "cnn_error_rate": 0.14791666666666667,
+        "S0": {
+          "twa_rate": 0.14791666666666667,
+          "twa_false_alarm": 0.25,
+          "twa_silent_miss": 0.096875,
+          "trusted_rate": 1.0,
+          "twa_trusted_garbage": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.13125,
+          "twa_false_alarm": 0.25,
+          "twa_silent_miss": 0.071875,
+          "trusted_rate": 0.7479166666666667,
+          "twa_trusted_garbage": 0.7479166666666667
+        },
+        "S1b_l2": {
+          "twa_rate": 0.1375,
+          "twa_false_alarm": 0.25,
+          "twa_silent_miss": 0.08125,
+          "trusted_rate": 0.7104166666666667,
+          "twa_trusted_garbage": 0.7104166666666667
+        },
+        "S1c_l3": {
+          "twa_rate": 0.010416666666666666,
+          "twa_false_alarm": 0.03125,
+          "twa_silent_miss": 0.0,
+          "trusted_rate": 0.01875,
+          "twa_trusted_garbage": 0.01875
+        },
+        "S2_cascade": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.0,
+          "trusted_rate": 0.0,
+          "twa_trusted_garbage": 0.0
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 31,
+          "confident_maxsoft>=0.9": 24,
+          "S0": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1a_msp": {
+            "silent_under_monitoring": 0.7419354838709677
+          },
+          "S1b_l2": {
+            "silent_under_monitoring": 0.8387096774193549
+          },
+          "S1c_l3": {
+            "silent_under_monitoring": 0.0
+          },
+          "S2_cascade": {
+            "silent_under_monitoring": 0.0
+          },
+          "S2_state_distribution": {
+            "L1_override": 31
+          },
+          "confident_still_trusted": {
+            "S0": 1.0,
+            "S1a_msp": 0.9583333333333334,
+            "S1b_l2": 0.7916666666666666,
+            "S1c_l3": 0.0,
+            "S2_cascade": 0.0
+          }
+        },
+        "s0_errors_confident_share": 0.7605633802816901,
+        "s6": {
+          "cnn_plus_rate": 0.6854166666666667,
+          "msp_flag_rate": 0.2520833333333333
+        }
+      }
+    },
+    "s6_clipping": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6333333333333333,
+          "cnn_error_rate": 0.03333333333333333,
+          "S0": {
+            "twa_rate": 0.03333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.025,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 0.9333333333333333,
+            "twa_trusted_garbage": 0.9333333333333333
+          },
+          "S1b_l2": {
+            "twa_rate": 0.03333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 0.5916666666666667,
+            "twa_trusted_garbage": 0.5916666666666667
+          },
+          "S1c_l3": {
+            "twa_rate": 0.016666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.025,
+            "trusted_rate": 0.9083333333333333,
+            "twa_trusted_garbage": 0.9083333333333333
+          },
+          "S2_cascade": {
+            "twa_rate": 0.016666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.025,
+            "trusted_rate": 0.6333333333333333,
+            "twa_trusted_garbage": 0.6333333333333333
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 4,
+            "confident_maxsoft>=0.9": 2,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.75
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.5
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.5
+            },
+            "S2_state_distribution": {
+              "L1_override": 1,
+              "T4": 1,
+              "all-clear": 2
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 1.0,
+              "S2_cascade": 1.0
+            }
+          },
+          "s0_errors_confident_share": 0.5,
+          "s6": {
+            "cnn_plus_rate": 0.6333333333333333,
+            "msp_flag_rate": 0.06666666666666667
+          }
+        },
+        "mic2": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6083333333333333,
+          "cnn_error_rate": 0.058333333333333334,
+          "S0": {
+            "twa_rate": 0.058333333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 0.9833333333333333,
+            "twa_trusted_garbage": 0.9833333333333333
+          },
+          "S1b_l2": {
+            "twa_rate": 0.058333333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 0.775,
+            "twa_trusted_garbage": 0.775
+          },
+          "S1c_l3": {
+            "twa_rate": 0.03333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 0.9333333333333333,
+            "twa_trusted_garbage": 0.9333333333333333
+          },
+          "S2_cascade": {
+            "twa_rate": 0.03333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 0.5583333333333333,
+            "twa_trusted_garbage": 0.5583333333333333
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 7,
+            "confident_maxsoft>=0.9": 0,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.8571428571428571
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.5714285714285714
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.5714285714285714
+            },
+            "S2_state_distribution": {
+              "T4": 3,
+              "all-clear": 4
+            },
+            "confident_still_trusted": {
+              "S0": null,
+              "S1a_msp": null,
+              "S1b_l2": null,
+              "S1c_l3": null,
+              "S2_cascade": null
+            }
+          },
+          "s0_errors_confident_share": 0.0,
+          "s6": {
+            "cnn_plus_rate": 0.6083333333333333,
+            "msp_flag_rate": 0.016666666666666666
+          }
+        },
+        "mic3": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.625,
+          "cnn_error_rate": 0.041666666666666664,
+          "S0": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.016666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.025,
+            "trusted_rate": 0.95,
+            "twa_trusted_garbage": 0.95
+          },
+          "S1b_l2": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 0.55,
+            "twa_trusted_garbage": 0.55
+          },
+          "S1c_l3": {
+            "twa_rate": 0.025,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 0.9416666666666667,
+            "twa_trusted_garbage": 0.9416666666666667
+          },
+          "S2_cascade": {
+            "twa_rate": 0.025,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 0.7666666666666667,
+            "twa_trusted_garbage": 0.7666666666666667
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 5,
+            "confident_maxsoft>=0.9": 2,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.4
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.6
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.6
+            },
+            "S2_state_distribution": {
+              "T4": 2,
+              "all-clear": 3
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 1.0,
+              "S2_cascade": 1.0
+            }
+          },
+          "s0_errors_confident_share": 0.4,
+          "s6": {
+            "cnn_plus_rate": 0.625,
+            "msp_flag_rate": 0.05
+          }
+        },
+        "mic4": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6083333333333333,
+          "cnn_error_rate": 0.058333333333333334,
+          "S0": {
+            "twa_rate": 0.058333333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 0.975,
+            "twa_trusted_garbage": 0.975
+          },
+          "S1b_l2": {
+            "twa_rate": 0.058333333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 0.7666666666666667,
+            "twa_trusted_garbage": 0.7666666666666667
+          },
+          "S1c_l3": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 0.9666666666666667,
+            "twa_trusted_garbage": 0.9666666666666667
+          },
+          "S2_cascade": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 0.5833333333333334,
+            "twa_trusted_garbage": 0.5833333333333334
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 7,
+            "confident_maxsoft>=0.9": 1,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.7142857142857143
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.8571428571428571
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.8571428571428571
+            },
+            "S2_state_distribution": {
+              "T4": 1,
+              "all-clear": 6
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 1.0,
+              "S2_cascade": 1.0
+            }
+          },
+          "s0_errors_confident_share": 0.14285714285714285,
+          "s6": {
+            "cnn_plus_rate": 0.6083333333333333,
+            "msp_flag_rate": 0.025
+          }
+        }
+      },
+      "pooled": {
+        "n_files": 480,
+        "cnn_plus_rate": 0.61875,
+        "cnn_error_rate": 0.04791666666666667,
+        "S0": {
+          "twa_rate": 0.04791666666666667,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.071875,
+          "trusted_rate": 1.0,
+          "twa_trusted_garbage": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.03333333333333333,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.05,
+          "trusted_rate": 0.9604166666666667,
+          "twa_trusted_garbage": 0.9604166666666667
+        },
+        "S1b_l2": {
+          "twa_rate": 0.04791666666666667,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.071875,
+          "trusted_rate": 0.6708333333333333,
+          "twa_trusted_garbage": 0.6708333333333333
+        },
+        "S1c_l3": {
+          "twa_rate": 0.03125,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.046875,
+          "trusted_rate": 0.9375,
+          "twa_trusted_garbage": 0.9375
+        },
+        "S2_cascade": {
+          "twa_rate": 0.03125,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.046875,
+          "trusted_rate": 0.6354166666666666,
+          "twa_trusted_garbage": 0.6354166666666666
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 23,
+          "confident_maxsoft>=0.9": 5,
+          "S0": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1a_msp": {
+            "silent_under_monitoring": 0.6956521739130435
+          },
+          "S1b_l2": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1c_l3": {
+            "silent_under_monitoring": 0.6521739130434783
+          },
+          "S2_cascade": {
+            "silent_under_monitoring": 0.6521739130434783
+          },
+          "S2_state_distribution": {
+            "L1_override": 1,
+            "T4": 7,
+            "all-clear": 15
+          },
+          "confident_still_trusted": {
+            "S0": 1.0,
+            "S1a_msp": 1.0,
+            "S1b_l2": 1.0,
+            "S1c_l3": 1.0,
+            "S2_cascade": 1.0
+          }
+        },
+        "s0_errors_confident_share": 0.21739130434782608,
+        "s6": {
+          "cnn_plus_rate": 0.61875,
+          "msp_flag_rate": 0.03958333333333333
+        }
+      }
+    },
+    "s6_flatline": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.6666666666666666,
+          "S0": {
+            "twa_rate": 0.6666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 1.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.6666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 1.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.6666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 1.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 80,
+            "confident_maxsoft>=0.9": 80,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 80
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.0,
+              "S2_cascade": 0.0
+            }
+          },
+          "s0_errors_confident_share": 1.0,
+          "s6": {
+            "cnn_plus_rate": 0.0,
+            "msp_flag_rate": 0.0
+          }
+        },
+        "mic2": {
+          "n_files": 120,
+          "cnn_plus_rate": 1.0,
+          "cnn_error_rate": 0.3333333333333333,
+          "S0": {
+            "twa_rate": 0.3333333333333333,
+            "twa_false_alarm": 1.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.3333333333333333,
+            "twa_false_alarm": 1.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.3333333333333333,
+            "twa_false_alarm": 1.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 0
+          },
+          "s0_errors_confident_share": 1.0,
+          "s6": {
+            "cnn_plus_rate": 1.0,
+            "msp_flag_rate": 0.0
+          }
+        },
+        "mic3": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.6666666666666666,
+          "S0": {
+            "twa_rate": 0.6666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 1.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.6666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 1.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.6666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 1.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 80,
+            "confident_maxsoft>=0.9": 80,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 80
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.0,
+              "S2_cascade": 0.0
+            }
+          },
+          "s0_errors_confident_share": 1.0,
+          "s6": {
+            "cnn_plus_rate": 0.0,
+            "msp_flag_rate": 0.0
+          }
+        },
+        "mic4": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.0,
+          "cnn_error_rate": 0.6666666666666666,
+          "S0": {
+            "twa_rate": 0.6666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 1.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.6666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 1.0,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 80,
+            "confident_maxsoft>=0.9": 0,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 80
+            },
+            "confident_still_trusted": {
+              "S0": null,
+              "S1a_msp": null,
+              "S1b_l2": null,
+              "S1c_l3": null,
+              "S2_cascade": null
+            }
+          },
+          "s0_errors_confident_share": 0.0,
+          "s6": {
+            "cnn_plus_rate": 0.0,
+            "msp_flag_rate": 1.0
+          }
+        }
+      },
+      "pooled": {
+        "n_files": 480,
+        "cnn_plus_rate": 0.25,
+        "cnn_error_rate": 0.5833333333333334,
+        "S0": {
+          "twa_rate": 0.5833333333333334,
+          "twa_false_alarm": 0.25,
+          "twa_silent_miss": 0.75,
+          "trusted_rate": 1.0,
+          "twa_trusted_garbage": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.4166666666666667,
+          "twa_false_alarm": 0.25,
+          "twa_silent_miss": 0.5,
+          "trusted_rate": 0.75,
+          "twa_trusted_garbage": 0.75
+        },
+        "S1b_l2": {
+          "twa_rate": 0.5833333333333334,
+          "twa_false_alarm": 0.25,
+          "twa_silent_miss": 0.75,
+          "trusted_rate": 1.0,
+          "twa_trusted_garbage": 1.0
+        },
+        "S1c_l3": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.0,
+          "trusted_rate": 0.0,
+          "twa_trusted_garbage": 0.0
+        },
+        "S2_cascade": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.0,
+          "trusted_rate": 0.0,
+          "twa_trusted_garbage": 0.0
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 240,
+          "confident_maxsoft>=0.9": 160,
+          "S0": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1a_msp": {
+            "silent_under_monitoring": 0.6666666666666666
+          },
+          "S1b_l2": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1c_l3": {
+            "silent_under_monitoring": 0.0
+          },
+          "S2_cascade": {
+            "silent_under_monitoring": 0.0
+          },
+          "S2_state_distribution": {
+            "L1_override": 240
+          },
+          "confident_still_trusted": {
+            "S0": 1.0,
+            "S1a_msp": 1.0,
+            "S1b_l2": 1.0,
+            "S1c_l3": 0.0,
+            "S2_cascade": 0.0
+          }
+        },
+        "s0_errors_confident_share": 0.7142857142857143,
+        "s6": {
+          "cnn_plus_rate": 0.25,
+          "msp_flag_rate": 0.25
+        }
+      }
+    },
+    "s6_offset": {
+      "per_mic": {
+        "mic1": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6333333333333333,
+          "cnn_error_rate": 0.03333333333333333,
+          "S0": {
+            "twa_rate": 0.03333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.03333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.03333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.05,
+            "trusted_rate": 0.6416666666666667,
+            "twa_trusted_garbage": 0.6416666666666667
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.1,
+            "twa_trusted_garbage": 0.1
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 4,
+            "confident_maxsoft>=0.9": 4,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 4
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.0,
+              "S2_cascade": 0.0
+            }
+          },
+          "s0_errors_confident_share": 1.0,
+          "s6": {
+            "cnn_plus_rate": 0.6333333333333333,
+            "msp_flag_rate": 0.0
+          }
+        },
+        "mic2": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6166666666666667,
+          "cnn_error_rate": 0.05,
+          "S0": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1b_l2": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 0.8416666666666667,
+            "twa_trusted_garbage": 0.8416666666666667
+          },
+          "S1c_l3": {
+            "twa_rate": 0.008333333333333333,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0125,
+            "trusted_rate": 0.1,
+            "twa_trusted_garbage": 0.1
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 6,
+            "confident_maxsoft>=0.9": 4,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.16666666666666666
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 6
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.0,
+              "S2_cascade": 0.0
+            }
+          },
+          "s0_errors_confident_share": 0.6666666666666666,
+          "s6": {
+            "cnn_plus_rate": 0.6166666666666667,
+            "msp_flag_rate": 0.0
+          }
+        },
+        "mic3": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.625,
+          "cnn_error_rate": 0.041666666666666664,
+          "S0": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.016666666666666666,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.025,
+            "trusted_rate": 0.95,
+            "twa_trusted_garbage": 0.95
+          },
+          "S1b_l2": {
+            "twa_rate": 0.041666666666666664,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0625,
+            "trusted_rate": 0.6,
+            "twa_trusted_garbage": 0.6
+          },
+          "S1c_l3": {
+            "twa_rate": 0.025,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0375,
+            "trusted_rate": 0.925,
+            "twa_trusted_garbage": 0.925
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 5,
+            "confident_maxsoft>=0.9": 2,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.4
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.6
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 5
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 1.0,
+              "S2_cascade": 0.0
+            }
+          },
+          "s0_errors_confident_share": 0.4,
+          "s6": {
+            "cnn_plus_rate": 0.625,
+            "msp_flag_rate": 0.05
+          }
+        },
+        "mic4": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6083333333333333,
+          "cnn_error_rate": 0.058333333333333334,
+          "S0": {
+            "twa_rate": 0.058333333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 1.0,
+            "twa_trusted_garbage": 1.0
+          },
+          "S1a_msp": {
+            "twa_rate": 0.05,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.075,
+            "trusted_rate": 0.9916666666666667,
+            "twa_trusted_garbage": 0.9916666666666667
+          },
+          "S1b_l2": {
+            "twa_rate": 0.058333333333333334,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0875,
+            "trusted_rate": 0.875,
+            "twa_trusted_garbage": 0.875
+          },
+          "S1c_l3": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.058333333333333334,
+            "twa_trusted_garbage": 0.058333333333333334
+          },
+          "S2_cascade": {
+            "twa_rate": 0.0,
+            "twa_false_alarm": 0.0,
+            "twa_silent_miss": 0.0,
+            "trusted_rate": 0.0,
+            "twa_trusted_garbage": 0.0
+          },
+          "misses": {
+            "n_cnn_negative_true_leak": 7,
+            "confident_maxsoft>=0.9": 3,
+            "S0": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1a_msp": {
+              "silent_under_monitoring": 0.8571428571428571
+            },
+            "S1b_l2": {
+              "silent_under_monitoring": 1.0
+            },
+            "S1c_l3": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_cascade": {
+              "silent_under_monitoring": 0.0
+            },
+            "S2_state_distribution": {
+              "L1_override": 7
+            },
+            "confident_still_trusted": {
+              "S0": 1.0,
+              "S1a_msp": 1.0,
+              "S1b_l2": 1.0,
+              "S1c_l3": 0.0,
+              "S2_cascade": 0.0
+            }
+          },
+          "s0_errors_confident_share": 0.42857142857142855,
+          "s6": {
+            "cnn_plus_rate": 0.6083333333333333,
+            "msp_flag_rate": 0.008333333333333333
+          }
+        }
+      },
+      "pooled": {
+        "n_files": 480,
+        "cnn_plus_rate": 0.6208333333333333,
+        "cnn_error_rate": 0.04583333333333333,
+        "S0": {
+          "twa_rate": 0.04583333333333333,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.06875,
+          "trusted_rate": 1.0,
+          "twa_trusted_garbage": 1.0
+        },
+        "S1a_msp": {
+          "twa_rate": 0.0375,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.05625,
+          "trusted_rate": 0.9854166666666667,
+          "twa_trusted_garbage": 0.9854166666666667
+        },
+        "S1b_l2": {
+          "twa_rate": 0.04583333333333333,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.06875,
+          "trusted_rate": 0.7395833333333334,
+          "twa_trusted_garbage": 0.7395833333333334
+        },
+        "S1c_l3": {
+          "twa_rate": 0.008333333333333333,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.0125,
+          "trusted_rate": 0.29583333333333334,
+          "twa_trusted_garbage": 0.29583333333333334
+        },
+        "S2_cascade": {
+          "twa_rate": 0.0,
+          "twa_false_alarm": 0.0,
+          "twa_silent_miss": 0.0,
+          "trusted_rate": 0.0,
+          "twa_trusted_garbage": 0.0
+        },
+        "misses": {
+          "n_cnn_negative_true_leak": 22,
+          "confident_maxsoft>=0.9": 13,
+          "S0": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1a_msp": {
+            "silent_under_monitoring": 0.8181818181818182
+          },
+          "S1b_l2": {
+            "silent_under_monitoring": 1.0
+          },
+          "S1c_l3": {
+            "silent_under_monitoring": 0.18181818181818182
+          },
+          "S2_cascade": {
+            "silent_under_monitoring": 0.0
+          },
+          "S2_state_distribution": {
+            "L1_override": 22
+          },
+          "confident_still_trusted": {
+            "S0": 1.0,
+            "S1a_msp": 1.0,
+            "S1b_l2": 1.0,
+            "S1c_l3": 0.15384615384615385,
+            "S2_cascade": 0.0
+          }
+        },
+        "s0_errors_confident_share": 0.5909090909090909,
+        "s6": {
+          "cnn_plus_rate": 0.6208333333333333,
+          "msp_flag_rate": 0.014583333333333334
+        }
+      }
+    }
+  },
+  "conclusion": [
+    "S0 (bare CNN) leaves a supervisor misinformed on up to 37.5% of files (hydrhigh no-leak) and 30.2% on tube leaks \u2014 and 12-76% of those errors are confident (max-softmax >= 0.9), the case no self-referential monitor can catch.",
+    "Single-monitor arms each have a blind spot: MSP helps only moderately (tube TWA 30.2->19.1%), L2-only barely moves TWA because its abstention leaves errors trusted (97-100% of CNN- true leaks stay silent), L3-only is the strongest single monitor (tube TWA -> 8.5%, flatline 58.3->0%).",
+    "The full cascade S2 is best on every shifted condition (hydrhigh no-leak 37.5->0%, hydr leak ->2.3-5.0%, tube 30.2->8.3%, dropout/flatline/offset ->0%) but is NOT clean on tube: 48 of 174 CNN- tube files remain all-clear silent misses (120 caught as T4, 4 as T2).",
+    "On S6 faulted audio the CNN still reports leak on 25-69% of files (silent garbage) and MSP flags only 1.5-25% of it; only arms containing L1 or L3 suppress this (S2: 0% trusted on all faults except clipping, where L1's known blind spot leaves 63.5% trusted).",
+    "Nominal cost: S2 FAR 4.4% on nominal no-leak (driven by the reported mic1 L1 clipping bug: 15% mic1, 0-2.5% others) vs 0% bare CNN and 0% L3-only \u2014 supervision is cheap but not free."
+  ]
+}

@@ -1,0 +1,411 @@
+{
+  "firewall": "nominal data only",
+  "M": 8,
+  "seed_base": 20260910,
+  "components": [
+    "disp_conv1",
+    "disp_conv2",
+    "disp_conv3",
+    "disp_dense",
+    "std_pleak",
+    "flip_rate"
+  ],
+  "per_mic": {
+    "mic1": {
+      "n_windows": 47660,
+      "n_cal_noleak_windows": 15900,
+      "n_noleak_files": 136,
+      "threshold_p99": 5.087899532318116,
+      "window_far_noleak": 0.01,
+      "file_far_noleak": 0.0,
+      "component_stats_train": {
+        "no_leak": {
+          "disp_conv1": {
+            "mean": 0.7363290786743164,
+            "std": 0.23837780952453613
+          },
+          "disp_conv2": {
+            "mean": 0.7558518052101135,
+            "std": 0.2479393482208252
+          },
+          "disp_conv3": {
+            "mean": 0.5468541383743286,
+            "std": 0.43969792127609253
+          },
+          "disp_dense": {
+            "mean": 0.20634551346302032,
+            "std": 0.08489709347486496
+          },
+          "std_pleak": {
+            "mean": 0.03436066582798958,
+            "std": 0.024410206824541092
+          },
+          "flip_rate": {
+            "mean": 0.003196845529600978,
+            "std": 0.03923608735203743
+          }
+        },
+        "leak": {
+          "disp_conv1": {
+            "mean": 0.31557583808898926,
+            "std": 0.2201339155435562
+          },
+          "disp_conv2": {
+            "mean": 0.686135470867157,
+            "std": 0.20616036653518677
+          },
+          "disp_conv3": {
+            "mean": 1.0925114154815674,
+            "std": 0.23756380379199982
+          },
+          "disp_dense": {
+            "mean": 0.4372654855251312,
+            "std": 0.33342090249061584
+          },
+          "std_pleak": {
+            "mean": 0.14260226488113403,
+            "std": 0.13536235690116882
+          },
+          "flip_rate": {
+            "mean": 0.29271402955055237,
+            "std": 0.34757617115974426
+          }
+        }
+      },
+      "n_floored_sigma": {
+        "0": 0,
+        "1": 0
+      },
+      "conformal_val_noleak": {
+        "n": 4678,
+        "histogram": [
+          742,
+          488,
+          400,
+          481,
+          455,
+          399,
+          369,
+          378,
+          408,
+          558
+        ],
+        "bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "mean_p": 0.4711389185275231
+      },
+      "score_median_noleak": 1.865364134311676,
+      "score_median_leak": 2.135185122489929,
+      "params": "results/l3b/noise_aug_mic1/l3b_params_fold3.npz",
+      "params_sha256": "d3d9096fbf9426f3f5b2e286a608dc6439af4d24f7a2e3bfadb29d1c2d0ea6c9"
+    },
+    "mic2": {
+      "n_windows": 47660,
+      "n_cal_noleak_windows": 15900,
+      "n_noleak_files": 136,
+      "threshold_p99": 4.17580810546875,
+      "window_far_noleak": 0.01,
+      "file_far_noleak": 0.0,
+      "component_stats_train": {
+        "no_leak": {
+          "disp_conv1": {
+            "mean": 0.6458982825279236,
+            "std": 0.3315379023551941
+          },
+          "disp_conv2": {
+            "mean": 0.6395400762557983,
+            "std": 0.28408926725387573
+          },
+          "disp_conv3": {
+            "mean": 0.5899425148963928,
+            "std": 0.37245944142341614
+          },
+          "disp_dense": {
+            "mean": 0.6611257791519165,
+            "std": 0.34689512848854065
+          },
+          "std_pleak": {
+            "mean": 0.07464873045682907,
+            "std": 0.029635507613420486
+          },
+          "flip_rate": {
+            "mean": 0.18362368643283844,
+            "std": 0.29124903678894043
+          }
+        },
+        "leak": {
+          "disp_conv1": {
+            "mean": 0.3093659579753876,
+            "std": 0.27244287729263306
+          },
+          "disp_conv2": {
+            "mean": 0.4359171688556671,
+            "std": 0.1988419145345688
+          },
+          "disp_conv3": {
+            "mean": 0.8100529313087463,
+            "std": 0.3368561267852783
+          },
+          "disp_dense": {
+            "mean": 0.6694599390029907,
+            "std": 0.4284820854663849
+          },
+          "std_pleak": {
+            "mean": 0.12819170951843262,
+            "std": 0.10828683525323868
+          },
+          "flip_rate": {
+            "mean": 0.2669122815132141,
+            "std": 0.359171599149704
+          }
+        }
+      },
+      "n_floored_sigma": {
+        "0": 0,
+        "1": 0
+      },
+      "conformal_val_noleak": {
+        "n": 4678,
+        "histogram": [
+          461,
+          558,
+          458,
+          352,
+          315,
+          352,
+          480,
+          538,
+          535,
+          629
+        ],
+        "bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "mean_p": 0.5233497789770135
+      },
+      "score_median_noleak": 2.2402960062026978,
+      "score_median_leak": 2.2380661964416504,
+      "params": "results/l3b/noise_aug_mic2/l3b_params_fold3.npz",
+      "params_sha256": "42c355edd3c7627b74242e9080793e183405e049a167cecb0c7f8f22f3fb0444"
+    },
+    "mic3": {
+      "n_windows": 47660,
+      "n_cal_noleak_windows": 15900,
+      "n_noleak_files": 136,
+      "threshold_p99": 4.864582085609437,
+      "window_far_noleak": 0.01,
+      "file_far_noleak": 0.0,
+      "component_stats_train": {
+        "no_leak": {
+          "disp_conv1": {
+            "mean": 0.7602450251579285,
+            "std": 0.21207506954669952
+          },
+          "disp_conv2": {
+            "mean": 0.4695581793785095,
+            "std": 0.13805681467056274
+          },
+          "disp_conv3": {
+            "mean": 0.5270242691040039,
+            "std": 0.38687264919281006
+          },
+          "disp_dense": {
+            "mean": 0.28384265303611755,
+            "std": 0.14571577310562134
+          },
+          "std_pleak": {
+            "mean": 0.015276430174708366,
+            "std": 0.01922372169792652
+          },
+          "flip_rate": {
+            "mean": 0.0006794689106754959,
+            "std": 0.021130170673131943
+          }
+        },
+        "leak": {
+          "disp_conv1": {
+            "mean": 0.29432404041290283,
+            "std": 0.20946016907691956
+          },
+          "disp_conv2": {
+            "mean": 0.3923576772212982,
+            "std": 0.11341382563114166
+          },
+          "disp_conv3": {
+            "mean": 0.8315353393554688,
+            "std": 0.27912798523902893
+          },
+          "disp_dense": {
+            "mean": 0.6237264275550842,
+            "std": 0.3374205529689789
+          },
+          "std_pleak": {
+            "mean": 0.21054953336715698,
+            "std": 0.14699946343898773
+          },
+          "flip_rate": {
+            "mean": 0.34569281339645386,
+            "std": 0.33704742789268494
+          }
+        }
+      },
+      "n_floored_sigma": {
+        "0": 0,
+        "1": 0
+      },
+      "conformal_val_noleak": {
+        "n": 4678,
+        "histogram": [
+          731,
+          371,
+          380,
+          491,
+          483,
+          477,
+          475,
+          476,
+          494,
+          300
+        ],
+        "bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "mean_p": 0.4707995999006232
+      },
+      "score_median_noleak": 1.8854301571846008,
+      "score_median_leak": 2.050673246383667,
+      "params": "results/l3b/noise_aug_mic3/l3b_params_fold3.npz",
+      "params_sha256": "647e7debd08b73d3e18a893d9ee3a5ec3db2eea674249c7a1698fa19fff32a71"
+    },
+    "mic4": {
+      "n_windows": 47660,
+      "n_cal_noleak_windows": 15900,
+      "n_noleak_files": 136,
+      "threshold_p99": 6.044939150810242,
+      "window_far_noleak": 0.01,
+      "file_far_noleak": 0.0,
+      "component_stats_train": {
+        "no_leak": {
+          "disp_conv1": {
+            "mean": 0.7275853753089905,
+            "std": 0.2801852226257324
+          },
+          "disp_conv2": {
+            "mean": 0.7353479266166687,
+            "std": 0.27519798278808594
+          },
+          "disp_conv3": {
+            "mean": 0.6119956970214844,
+            "std": 0.4373164176940918
+          },
+          "disp_dense": {
+            "mean": 0.7683664560317993,
+            "std": 0.3752838671207428
+          },
+          "std_pleak": {
+            "mean": 0.05258307605981827,
+            "std": 0.02693195268511772
+          },
+          "flip_rate": {
+            "mean": 0.02500668354332447,
+            "std": 0.1089031994342804
+          }
+        },
+        "leak": {
+          "disp_conv1": {
+            "mean": 0.40181034803390503,
+            "std": 0.28252923488616943
+          },
+          "disp_conv2": {
+            "mean": 0.7300729155540466,
+            "std": 0.2129848599433899
+          },
+          "disp_conv3": {
+            "mean": 0.9242497682571411,
+            "std": 0.34816113114356995
+          },
+          "disp_dense": {
+            "mean": 0.7648820877075195,
+            "std": 0.4637225866317749
+          },
+          "std_pleak": {
+            "mean": 0.12671983242034912,
+            "std": 0.118685282766819
+          },
+          "flip_rate": {
+            "mean": 0.3682071268558502,
+            "std": 0.36900243163108826
+          }
+        }
+      },
+      "n_floored_sigma": {
+        "0": 0,
+        "1": 0
+      },
+      "conformal_val_noleak": {
+        "n": 4678,
+        "histogram": [
+          741,
+          397,
+          370,
+          534,
+          416,
+          395,
+          386,
+          466,
+          483,
+          490
+        ],
+        "bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "mean_p": 0.48290011329265026
+      },
+      "score_median_noleak": 2.0832743644714355,
+      "score_median_leak": 2.249357581138611,
+      "params": "results/l3b/noise_aug_mic4/l3b_params_fold3.npz",
+      "params_sha256": "eb03aa6d3d94d7fb4c8844e34ed9b2fdc54c1d2267bedea953878dfe8bc3033e"
+    }
+  }
+}

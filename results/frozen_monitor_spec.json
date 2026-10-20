@@ -1,0 +1,941 @@
+{
+  "frozen_at": "2026-09-09T15:06:12.123066+00:00",
+  "phase": "A (nominal-only development); Phase B evaluates this spec once on hydr/tube held-out conditions",
+  "firewall": "no hydraulic/tube/fault-injection data was loaded, scored, calibrated, or tuned against in Phase A",
+  "cnn": {
+    "run_pattern": "noise_aug_mic{mic}",
+    "config": {
+      "data": {
+        "root": "data",
+        "index_csv": "data/index.csv",
+        "mic": 1,
+        "leak_types": [
+          "vent",
+          "vent_low"
+        ],
+        "backgrounds": [
+          "lab",
+          "work",
+          "work_low"
+        ],
+        "no_leak_max_knob": 3.0,
+        "leak_min_knob": 5.5,
+        "split": {
+          "strategy": "session"
+        }
+      },
+      "preprocessing": {
+        "sample_rate": 48000,
+        "n_fft": 1024,
+        "win_length": 1024,
+        "hop_length": 512,
+        "window": "hann",
+        "patch_frames": 24,
+        "patch_stride": 24,
+        "eps": 1e-10,
+        "cache_dir": "results/cache",
+        "norm_stats_dir": "results/norm_stats"
+      },
+      "model": {
+        "in_freq_bins": 513,
+        "patch_frames": 24,
+        "channels": [
+          16,
+          32,
+          64
+        ],
+        "kernel_size": 3,
+        "pool": [
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "dense_units": 64,
+        "dropout": 0.25,
+        "gaussian_noise_std": 0.1,
+        "num_classes": 2
+      },
+      "training": {
+        "batch_size": 128,
+        "epochs": 25,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "class_weights": false,
+        "early_stopping_patience": 5,
+        "num_workers": 0,
+        "device": "cuda",
+        "out_dir": "results/runs"
+      }
+    },
+    "augmentation": {
+      "enabled": true,
+      "p": 0.5,
+      "snr_min_db": 0.0,
+      "snr_max_db": 20.0,
+      "types": [
+        "white",
+        "pink"
+      ]
+    },
+    "folds": {
+      "mic1_fold1": {
+        "val_session": 1,
+        "weights": "results/runs/noise_aug_mic1/fold1/best.pt",
+        "weights_sha256": "5248f4692761631d694f37b68883300f38fb29354dba47c3027cbd8438398576",
+        "norm_stats": "results/norm_stats/noise_aug_mic1/fold1.npz",
+        "val_acc": 0.9873081463990555,
+        "val_f1_macro": 0.9858046775468059
+      },
+      "mic1_fold2": {
+        "val_session": 2,
+        "weights": "results/runs/noise_aug_mic1/fold2/best.pt",
+        "weights_sha256": "f57fc8334d16778d9fc1d305ea36af1d702d7144c50f0f72357dd184a4120d92",
+        "norm_stats": "results/norm_stats/noise_aug_mic1/fold2.npz",
+        "val_acc": 0.9689302884615385,
+        "val_f1_macro": 0.9659419425578364
+      },
+      "mic1_fold3": {
+        "val_session": 3,
+        "weights": "results/runs/noise_aug_mic1/fold3/best.pt",
+        "weights_sha256": "44ce0615fe5ee04fc4d7d634f4ba0ff5320a6ef7dfa295f6dc7bc1f10b4f5c5b",
+        "norm_stats": "results/norm_stats/noise_aug_mic1/fold3.npz",
+        "val_acc": 0.9674005681818182,
+        "val_f1_macro": 0.9640696572700015,
+        "run_name": "noise_aug_mic1"
+      },
+      "mic2_fold1": {
+        "val_session": 1,
+        "weights": "results/runs/noise_aug_mic2/fold1/best.pt",
+        "weights_sha256": "341eda29b901d804218372b2c5a0819641c53947af9b0c7902158232316bfd4e",
+        "norm_stats": "results/norm_stats/noise_aug_mic2/fold1.npz",
+        "val_acc": 0.9781582054309327,
+        "val_f1_macro": 0.9757181260210587
+      },
+      "mic2_fold2": {
+        "val_session": 2,
+        "weights": "results/runs/noise_aug_mic2/fold2/best.pt",
+        "weights_sha256": "2193fb52c36513238fcdb9f727006f730e4d9202d87db008e5bad8e9c949c3f2",
+        "norm_stats": "results/norm_stats/noise_aug_mic2/fold2.npz",
+        "val_acc": 0.9338942307692307,
+        "val_f1_macro": 0.9265987599328873
+      },
+      "mic2_fold3": {
+        "val_session": 3,
+        "weights": "results/runs/noise_aug_mic2/fold3/best.pt",
+        "weights_sha256": "7069b1aa003617e0697e039c2584490f4de83cac9832957202f1115363a885d0",
+        "norm_stats": "results/norm_stats/noise_aug_mic2/fold3.npz",
+        "val_acc": 0.946875,
+        "val_f1_macro": 0.9421957488048576,
+        "run_name": "noise_aug_mic2"
+      },
+      "mic3_fold1": {
+        "val_session": 1,
+        "weights": "results/runs/noise_aug_mic3/fold1/best.pt",
+        "weights_sha256": "df59e4a39b9b23a03799a3fa00aa800d746e51463f09b10d803a8d6b3668f2fa",
+        "norm_stats": "results/norm_stats/noise_aug_mic3/fold1.npz",
+        "val_acc": 0.9844746162927981,
+        "val_f1_macro": 0.9826710793916118
+      },
+      "mic3_fold2": {
+        "val_session": 2,
+        "weights": "results/runs/noise_aug_mic3/fold2/best.pt",
+        "weights_sha256": "c59606300954789449e394e104125697b3cd8778366d6f54697b515a97f080dd",
+        "norm_stats": "results/norm_stats/noise_aug_mic3/fold2.npz",
+        "val_acc": 0.9694110576923077,
+        "val_f1_macro": 0.9664898439530245
+      },
+      "mic3_fold3": {
+        "val_session": 3,
+        "weights": "results/runs/noise_aug_mic3/fold3/best.pt",
+        "weights_sha256": "ffd4b155c48b0f0a8dd4545ecf1628781f0c74e64216327d62d7769bc4452a95",
+        "norm_stats": "results/norm_stats/noise_aug_mic3/fold3.npz",
+        "val_acc": 0.9553267045454545,
+        "val_f1_macro": 0.9511943589021841,
+        "run_name": "noise_aug_mic3"
+      },
+      "mic4_fold1": {
+        "val_session": 1,
+        "weights": "results/runs/noise_aug_mic4/fold1/best.pt",
+        "weights_sha256": "287a891e94ac2f1885c3ace805d6b2c3f0246b2d8c7e82d7402029560238e7ee",
+        "norm_stats": "results/norm_stats/noise_aug_mic4/fold1.npz",
+        "val_acc": 0.9742621015348288,
+        "val_f1_macro": 0.9714034006545782
+      },
+      "mic4_fold2": {
+        "val_session": 2,
+        "weights": "results/runs/noise_aug_mic4/fold2/best.pt",
+        "weights_sha256": "0957b3bc17a761dc3e186c41cfeb865bbfd36fbb1f92f69d938d252c2777b12b",
+        "norm_stats": "results/norm_stats/noise_aug_mic4/fold2.npz",
+        "val_acc": 0.9505408653846154,
+        "val_f1_macro": 0.9463102401865511
+      },
+      "mic4_fold3": {
+        "val_session": 3,
+        "weights": "results/runs/noise_aug_mic4/fold3/best.pt",
+        "weights_sha256": "1e3242f2d132462886f00575d3d947ece5ffe662013fa783679b4098e99d5e0a",
+        "norm_stats": "results/norm_stats/noise_aug_mic4/fold3.npz",
+        "val_acc": 0.9418323863636363,
+        "val_f1_macro": 0.9369313546171525,
+        "run_name": "noise_aug_mic4"
+      }
+    },
+    "supcon": {
+      "objective": "L = CE + lambda * SupCon(projection_head), labels = binary leak/no-leak",
+      "lambda": 1.0,
+      "temperature": 0.1,
+      "projection_head": "Linear(64->128) GELU Linear(128->128), L2-normalized, training-only; discarded at freeze"
+    }
+  },
+  "l3_knn": {
+    "k": 50,
+    "layer": "dense",
+    "l2_normalize": true,
+    "far_target": 0.01,
+    "folds": {
+      "mic1_fold1": {
+        "reference": "results/knn_l3/noise_aug_mic1/fold1_reference.npz",
+        "reference_sha256": "8624eaad4494f508c6f4775a9ab60eb7082f7cf243c41a350971c8bb2c1af319",
+        "thr_noleak": 0.0624900721013546,
+        "thr_allval": 0.11814990639686584,
+        "participation_ratio": 1.4047823374612598,
+        "val_noleak_far": 0.020833333333333332,
+        "nominal_leak_flag_rate": 0.3541666666666667
+      },
+      "mic1_fold2": {
+        "reference": "results/knn_l3/noise_aug_mic1/fold2_reference.npz",
+        "reference_sha256": "176714c69482a66fd2144c8ccc61df1b10a77a7eb838b6fbea60be1e0d796836",
+        "thr_noleak": 0.06178928166627884,
+        "thr_allval": 0.274852454662323,
+        "participation_ratio": 1.7853899828662503,
+        "val_noleak_far": 0.020833333333333332,
+        "nominal_leak_flag_rate": 0.10638297872340426
+      },
+      "mic1_fold3": {
+        "reference": "results/knn_l3/noise_aug_mic1/fold3_reference_allnominal.npz",
+        "reference_sha256": "62914cfcd1d395d960cc2d9c72e3ae76cad2f527260625e21744779ede176aaa",
+        "thr_noleak": 0.0945091400295496,
+        "thr_allval": 0.21843165159225464,
+        "participation_ratio": 1.4017440350351185,
+        "val_noleak_far": 0.025,
+        "nominal_leak_flag_rate": 0.1125,
+        "reference_size": 47660,
+        "thr_loo_point_ablation": 0.09164670296013355,
+        "thr_val_only_superseded": 0.097606360912323,
+        "calibration_method": "leave-one-FILE-out k-NN scores of nominal no-leak files, p99; point-LOO variant reported for comparison (same-file patch leakage)",
+        "calibration_points": 136,
+        "achieved_loo_far": 0.014705882352941176
+      },
+      "mic2_fold1": {
+        "reference": "results/knn_l3/noise_aug_mic2/fold1_reference.npz",
+        "reference_sha256": "d7d667ce74789855790c98222dbc9093b1da1130bf7322c40d2d7e7f7b8970e7",
+        "thr_noleak": 0.13792550563812256,
+        "thr_allval": 0.34158337116241455,
+        "participation_ratio": 2.2917680116806753,
+        "val_noleak_far": 0.020833333333333332,
+        "nominal_leak_flag_rate": 0.2708333333333333
+      },
+      "mic2_fold2": {
+        "reference": "results/knn_l3/noise_aug_mic2/fold2_reference.npz",
+        "reference_sha256": "aaf1626eb1da803543f50457da476a6ae713c6254f5f40a9158d484a22bddee7",
+        "thr_noleak": 0.6646759510040283,
+        "thr_allval": 0.6200296878814697,
+        "participation_ratio": 1.919302436604083,
+        "val_noleak_far": 0.020833333333333332,
+        "nominal_leak_flag_rate": 0.0
+      },
+      "mic2_fold3": {
+        "reference": "results/knn_l3/noise_aug_mic2/fold3_reference_allnominal.npz",
+        "reference_sha256": "815c38ce9c9efc64a193b5bce7bea05ce2a77869751186adf583eecf7faf7e4c",
+        "thr_noleak": 0.11909633912146092,
+        "thr_allval": 0.21217142045497894,
+        "participation_ratio": 2.5263712318885445,
+        "val_noleak_far": 0.025,
+        "nominal_leak_flag_rate": 0.025,
+        "reference_size": 47660,
+        "thr_loo_point_ablation": 0.11636436246335508,
+        "thr_val_only_superseded": 0.19916902482509613,
+        "calibration_method": "leave-one-FILE-out k-NN scores of nominal no-leak files, p99; point-LOO variant reported for comparison (same-file patch leakage)",
+        "calibration_points": 136,
+        "achieved_loo_far": 0.014705882352941176
+      },
+      "mic3_fold1": {
+        "reference": "results/knn_l3/noise_aug_mic3/fold1_reference.npz",
+        "reference_sha256": "beb58738ac0eb271237e674c241cd61bbb994a5248b7dfd3b1dd5f8db8e5d1b6",
+        "thr_noleak": 0.09948151558637619,
+        "thr_allval": 0.11957132071256638,
+        "participation_ratio": 1.5480621070222482,
+        "val_noleak_far": 0.020833333333333332,
+        "nominal_leak_flag_rate": 0.020833333333333332
+      },
+      "mic3_fold2": {
+        "reference": "results/knn_l3/noise_aug_mic3/fold2_reference.npz",
+        "reference_sha256": "1651cba060db1f9c3efd32e954d78b165a8a20b4b56010f4914e00190b6addc4",
+        "thr_noleak": 0.10543746501207352,
+        "thr_allval": 0.2969202697277069,
+        "participation_ratio": 1.6056775501552771,
+        "val_noleak_far": 0.020833333333333332,
+        "nominal_leak_flag_rate": 0.07446808510638298
+      },
+      "mic3_fold3": {
+        "reference": "results/knn_l3/noise_aug_mic3/fold3_reference_allnominal.npz",
+        "reference_sha256": "77fd50d4b4baa713ab68d7d67b7e2e807e024619ce5ae8a781c5d5ba865b5b4c",
+        "thr_noleak": 0.055167876556515706,
+        "thr_allval": 0.3525151014328003,
+        "participation_ratio": 1.5569995749598662,
+        "val_noleak_far": 0.025,
+        "nominal_leak_flag_rate": 0.0375,
+        "reference_size": 47660,
+        "thr_loo_point_ablation": 0.05209683366119862,
+        "thr_val_only_superseded": 0.13112105429172516,
+        "calibration_method": "leave-one-FILE-out k-NN scores of nominal no-leak files, p99; point-LOO variant reported for comparison (same-file patch leakage)",
+        "calibration_points": 136,
+        "achieved_loo_far": 0.014705882352941176
+      },
+      "mic4_fold1": {
+        "reference": "results/knn_l3/noise_aug_mic4/fold1_reference.npz",
+        "reference_sha256": "4d5666ba8a7cdd6c70ff8a546ae83ea7c29c3a454d58ed53fbc1f4fdbdde031b",
+        "thr_noleak": 0.23500727117061615,
+        "thr_allval": 0.3114674687385559,
+        "participation_ratio": 2.4446987229807524,
+        "val_noleak_far": 0.020833333333333332,
+        "nominal_leak_flag_rate": 0.03125
+      },
+      "mic4_fold2": {
+        "reference": "results/knn_l3/noise_aug_mic4/fold2_reference.npz",
+        "reference_sha256": "fc7ce7e53aa4cc48d4f99adf058ff548e4d8241db0867a950fba8573506a0d69",
+        "thr_noleak": 0.12443239986896515,
+        "thr_allval": 0.2959969639778137,
+        "participation_ratio": 2.287555216285625,
+        "val_noleak_far": 0.020833333333333332,
+        "nominal_leak_flag_rate": 0.13829787234042554
+      },
+      "mic4_fold3": {
+        "reference": "results/knn_l3/noise_aug_mic4/fold3_reference_allnominal.npz",
+        "reference_sha256": "6d10a5f7c2a479f48446ea9afae7d55a4ec16046b97b169ba2032ec9a3a5fc38",
+        "thr_noleak": 0.126044849306345,
+        "thr_allval": 0.281745970249176,
+        "participation_ratio": 2.7811130381308624,
+        "val_noleak_far": 0.025,
+        "nominal_leak_flag_rate": 0.075,
+        "reference_size": 47660,
+        "thr_loo_point_ablation": 0.11961452402174474,
+        "thr_val_only_superseded": 0.15689682960510254,
+        "calibration_method": "leave-one-FILE-out k-NN scores of nominal no-leak files, p99; point-LOO variant reported for comparison (same-file patch leakage)",
+        "calibration_points": 136,
+        "achieved_loo_far": 0.014705882352941176
+      }
+    },
+    "feature_layer": "dense (penultimate, 64-d, post-GELU)",
+    "calibration_rule": "p99 of leave-one-file-out k-NN file scores over ALL nominal no-leak files (train+val); reference = all nominal patches, both classes",
+    "encoder_choice": {
+      "mic1": "ce",
+      "mic2": "ce",
+      "mic3": "ce",
+      "mic4": "ce"
+    }
+  },
+  "l2_physics": {
+    "score": "1 - cosine_similarity(shares(max(E_obs - E_bg, 0)), template[mic,gain])",
+    "template_fit": "median residual band shares of vent knob 6-9, lab background only (noisy-bg residuals carry no leak signal; guardrail fired on the median-across-backgrounds variant), sessions [1, 2]",
+    "background_model": "median band energies of no-leak files per (mic,gain,background), sessions 1-3, leave-one-out",
+    "abstention_gate": "template-weighted excess < p99 of nominal no-leak weighted-excess statistic, per (mic,gain)",
+    "band_edges_hz": "8 log-spaced bands, 100 Hz-20 kHz (STFT 1024/512 hann)",
+    "templates": {
+      "mic1_gainl": [
+        3.8533542122142444e-05,
+        2.1868432165102754e-05,
+        1.2990861683343205e-05,
+        7.968364588825303e-05,
+        0.0072000274523037755,
+        0.2194234304991813,
+        0.6507909854522322,
+        0.12243248011442386
+      ],
+      "mic1_gainm": [
+        5.3286684214129626e-05,
+        3.2787572152307516e-05,
+        1.8085919611722035e-05,
+        0.0001450479215328395,
+        0.009398344419479286,
+        0.29327227038764275,
+        0.5815071576082281,
+        0.1155730194871389
+      ],
+      "mic2_gainl": [
+        0.0,
+        0.00015602872810351566,
+        0.00018399627658088002,
+        0.00014706215787807758,
+        0.012865193712792595,
+        0.200816285097856,
+        0.6143229484174024,
+        0.1715084856093866
+      ],
+      "mic2_gainm": [
+        0.0,
+        0.0002906690746320678,
+        8.223818856803649e-05,
+        0.0002019478221267645,
+        0.012927387766511207,
+        0.2433768222563092,
+        0.5876582188049975,
+        0.15546271608685527
+      ],
+      "mic3_gainl": [
+        4.808413432841409e-06,
+        1.2855158852133758e-05,
+        7.610004546799866e-06,
+        6.342721704532938e-05,
+        0.007294153191969692,
+        0.17288117559018565,
+        0.3198812477851694,
+        0.49985472263879804
+      ],
+      "mic3_gainm": [
+        5.984947091159059e-06,
+        1.3689780843472798e-05,
+        1.756816250355562e-05,
+        6.118091522863324e-05,
+        0.005257475290523244,
+        0.12022739690090677,
+        0.4224463614617376,
+        0.45197034254116564
+      ],
+      "mic4_gainl": [
+        0.00030225545691064633,
+        3.061654390143615e-05,
+        1.1585806257110368e-05,
+        0.0002327854667299167,
+        0.009896607172064798,
+        0.17430455271050457,
+        0.6855454843386453,
+        0.12967611250498623
+      ],
+      "mic4_gainm": [
+        0.00020214116953788577,
+        1.9470196396601634e-05,
+        8.22148801032713e-06,
+        0.00035954207352618766,
+        0.009794988443755252,
+        0.178717405431817,
+        0.679753907167539,
+        0.13114432402941784
+      ]
+    },
+    "gate_margins_db": {
+      "mic1_gainl": 3.367161733345537,
+      "mic1_gainm": 1.6313400832532097,
+      "mic2_gainl": 8.71610707141161,
+      "mic2_gainm": 2.1527839197223817,
+      "mic3_gainl": 2.7964863490470657,
+      "mic3_gainm": 4.305825755104568,
+      "mic4_gainl": 4.784656994720889,
+      "mic4_gainm": 2.540915344029239
+    },
+    "tau_absent": 0.1907085719454054,
+    "tau_present": 0.9768547444345677,
+    "guardrail_eroded": false,
+    "val_noleak_far_per_mic": {
+      "mic1": {
+        "n_scored": 1,
+        "far_below_tau_absent": 0.0
+      },
+      "mic2": {
+        "n_scored": 1,
+        "far_below_tau_absent": 0.0
+      },
+      "mic3": {
+        "n_scored": 2,
+        "far_below_tau_absent": 0.5
+      },
+      "mic4": {
+        "n_scored": 0,
+        "far_below_tau_absent": null
+      }
+    },
+    "abstain_rates_val": {
+      "val_noleak": 0.975,
+      "val_leak": 0.465625
+    },
+    "abstain_rates_val_per_background": {
+      "val_noleak": {
+        "lab": 0.953125,
+        "work": 0.984375,
+        "work_low": 1.0
+      },
+      "val_leak": {
+        "lab": 0.0859375,
+        "work": 0.7421875,
+        "work_low": 0.671875
+      }
+    },
+    "v_checks": {
+      "note": "lab subset, ungated residual similarities (gate truncates the knob axis; noisy-bg residuals are background-dominated)",
+      "V1_severity": {
+        "mic1_gainl": {
+          "verdict": "PARTIAL",
+          "rho": 0.6394541933125188,
+          "p": 2.687697765413414e-05,
+          "monotone": false,
+          "n": 36
+        },
+        "mic1_gainm": {
+          "verdict": "PARTIAL",
+          "rho": 0.5184033070198586,
+          "p": 0.0019978410018564917,
+          "monotone": false,
+          "n": 33
+        },
+        "mic2_gainl": {
+          "verdict": "PARTIAL",
+          "rho": 0.8567594788349604,
+          "p": 2.6172349822025226e-11,
+          "monotone": false,
+          "n": 36
+        },
+        "mic2_gainm": {
+          "verdict": "PARTIAL",
+          "rho": 0.8148761034801941,
+          "p": 1.4563394921696048e-09,
+          "monotone": false,
+          "n": 36
+        },
+        "mic3_gainl": {
+          "verdict": "PARTIAL",
+          "rho": 0.8540577121472056,
+          "p": 2.613534980928818e-10,
+          "monotone": false,
+          "n": 33
+        },
+        "mic3_gainm": {
+          "verdict": "PARTIAL",
+          "rho": 0.8774086628239653,
+          "p": 2.1907010750969346e-12,
+          "monotone": false,
+          "n": 36
+        },
+        "mic4_gainl": {
+          "verdict": "PARTIAL",
+          "rho": 0.8495817045637442,
+          "p": 7.781739736902463e-10,
+          "monotone": false,
+          "n": 32
+        },
+        "mic4_gainm": {
+          "verdict": "PARTIAL",
+          "rho": 0.8945601424649001,
+          "p": 4.397485973718092e-13,
+          "monotone": false,
+          "n": 35
+        }
+      },
+      "V2_cross_pressure": {
+        "mic1_gainl": {
+          "verdict": "PASS",
+          "cosine": 0.9990734559318686
+        },
+        "mic1_gainm": {
+          "verdict": "PASS",
+          "cosine": 0.9996658935358301
+        },
+        "mic2_gainl": {
+          "verdict": "PASS",
+          "cosine": 0.9992736066211548
+        },
+        "mic2_gainm": {
+          "verdict": "PASS",
+          "cosine": 0.9994438812863071
+        },
+        "mic3_gainl": {
+          "verdict": "PASS",
+          "cosine": 0.999548401635973
+        },
+        "mic3_gainm": {
+          "verdict": "PASS",
+          "cosine": 0.9909531282527412
+        },
+        "mic4_gainl": {
+          "verdict": "PASS",
+          "cosine": 0.9987087865722083
+        },
+        "mic4_gainm": {
+          "verdict": "PASS",
+          "cosine": 0.9995244291529836
+        }
+      },
+      "V3_separation": {
+        "mic1_gainl": {
+          "verdict": "PASS",
+          "leak_median_sim": 0.9919466543023361,
+          "noleak_max_sim": 0.314597508688939,
+          "n_leak": 48,
+          "n_noleak": 23
+        },
+        "mic1_gainm": {
+          "verdict": "PASS",
+          "leak_median_sim": 0.9858130860422916,
+          "noleak_max_sim": 0.44333296391733257,
+          "n_leak": 48,
+          "n_noleak": 21
+        },
+        "mic2_gainl": {
+          "verdict": "PASS",
+          "leak_median_sim": 0.9968755755065322,
+          "noleak_max_sim": 0.6720236829727881,
+          "n_leak": 48,
+          "n_noleak": 20
+        },
+        "mic2_gainm": {
+          "verdict": "PASS",
+          "leak_median_sim": 0.9972823919551617,
+          "noleak_max_sim": 0.8973080079355268,
+          "n_leak": 48,
+          "n_noleak": 24
+        },
+        "mic3_gainl": {
+          "verdict": "PARTIAL",
+          "leak_median_sim": 0.9894829113610499,
+          "noleak_max_sim": 0.9362504610227043,
+          "n_leak": 48,
+          "n_noleak": 16
+        },
+        "mic3_gainm": {
+          "verdict": "PASS",
+          "leak_median_sim": 0.9849255919571149,
+          "noleak_max_sim": 0.7578165843000313,
+          "n_leak": 48,
+          "n_noleak": 22
+        },
+        "mic4_gainl": {
+          "verdict": "PASS",
+          "leak_median_sim": 0.9958762747452303,
+          "noleak_max_sim": 0.5529811629065017,
+          "n_leak": 47,
+          "n_noleak": 17
+        },
+        "mic4_gainm": {
+          "verdict": "PASS",
+          "leak_median_sim": 0.998293784263746,
+          "noleak_max_sim": 0.5934941056050277,
+          "n_leak": 48,
+          "n_noleak": 23
+        }
+      }
+    }
+  },
+  "l1_rules": [
+    {
+      "name": "missing_data",
+      "state": "untuned"
+    },
+    {
+      "name": "clipping",
+      "state": "untuned"
+    },
+    {
+      "name": "flatline",
+      "state": "untuned"
+    },
+    {
+      "name": "dc_offset",
+      "state": "untuned"
+    },
+    {
+      "name": "level_gain_anomaly",
+      "state": "untuned"
+    }
+  ],
+  "phase_a_extension": {
+    "supcon_acceptance": {
+      "mic1": "ce",
+      "mic2": "ce",
+      "mic3": "ce",
+      "mic4": "ce"
+    },
+    "acceptance_rule": "PR>=8.0 & FAR<=max(0.02, 1/n_noleak) & CNN leak recall>=0.9 & acc drop<0.01",
+    "note": "folds 1-2 of each mic remain the CE noise_aug reference runs; the deployed fold 3 uses the accepted encoder"
+  },
+  "frozen": true,
+  "phase_a_plus": {
+    "description": "L3 complements evaluated on nominal data; thresholds/references of the frozen k-NN unchanged",
+    "windowed_alarm": {
+      "window": 20,
+      "alarm_fraction": 0.25,
+      "adopted": {
+        "mic1": false,
+        "mic2": false,
+        "mic3": false,
+        "mic4": false
+      },
+      "far_per_mic": {
+        "mic1": 0.08823529411764706,
+        "mic2": 0.19117647058823528,
+        "mic3": 0.09558823529411764,
+        "mic4": 0.04411764705882353
+      }
+    },
+    "profile_distance": {
+      "layers": [
+        "conv1",
+        "conv2",
+        "conv3",
+        "dense"
+      ],
+      "adopted": {
+        "mic1": true,
+        "mic2": true,
+        "mic3": true,
+        "mic4": true
+      },
+      "far_per_mic": {
+        "mic1": 0.014705882352941176,
+        "mic2": 0.014705882352941176,
+        "mic3": 0.014705882352941176,
+        "mic4": 0.014705882352941176
+      }
+    },
+    "conformal": {
+      "note": "reporting layer; p = share of LOO no-leak calibration scores >= query; no threshold tuned"
+    }
+  },
+  "sensitivity_variants": {
+    "note": "SENSITIVITY ANALYSIS ONLY \u2014 not part of the confirmatory main spec. Calibrated on nominal data (deployed fold 3 per mic); thresholds = p99 of nominal no-leak file scores.",
+    "calibration_date": "2026-09-10T09:29:08.282881+00:00",
+    "per_mic": {
+      "mic1": {
+        "fold": 3,
+        "knn_variants": {
+          "k10": {
+            "threshold_p99": 0.0759182956069708,
+            "achieved_far": 0.014705882352941176,
+            "n_cal": 136
+          },
+          "k100": {
+            "threshold_p99": 0.10712958090007306,
+            "achieved_far": 0.014705882352941176,
+            "n_cal": 136
+          }
+        },
+        "knn_k50_consistency": {
+          "recomputed": 0.0945091400295496,
+          "frozen": 0.0945091400295496,
+          "drift": 0.0
+        },
+        "mahalanobis": {
+          "threshold_p99": 11.718813610076907,
+          "achieved_far": 0.014705882352941176,
+          "n_cal": 136,
+          "features": "penultimate dense 64-d, L2-normalized",
+          "fit": "class means + shared shrunk covariance, nominal train; params: fold3_mahalanobis.npz",
+          "calibration": "train no-leak file-LOO + val no-leak direct"
+        },
+        "msp": {
+          "threshold_p99": 0.11853313654661178,
+          "achieved_far": 0.025,
+          "n_cal": 40,
+          "calibration": "val no-leak only (train in-sample)"
+        },
+        "entropy": {
+          "threshold_p99": 0.3410359877347946,
+          "achieved_far": 0.025,
+          "n_cal": 40,
+          "calibration": "val no-leak only (train in-sample)"
+        }
+      },
+      "mic2": {
+        "fold": 3,
+        "knn_variants": {
+          "k10": {
+            "threshold_p99": 0.09490595124661923,
+            "achieved_far": 0.014705882352941176,
+            "n_cal": 136
+          },
+          "k100": {
+            "threshold_p99": 0.13842754140496258,
+            "achieved_far": 0.014705882352941176,
+            "n_cal": 136
+          }
+        },
+        "knn_k50_consistency": {
+          "recomputed": 0.1190963290631771,
+          "frozen": 0.11909633912146092,
+          "drift": 1.0058283816949398e-08
+        },
+        "mahalanobis": {
+          "threshold_p99": 11.61015067100525,
+          "achieved_far": 0.014705882352941176,
+          "n_cal": 136,
+          "features": "penultimate dense 64-d, L2-normalized",
+          "fit": "class means + shared shrunk covariance, nominal train; params: fold3_mahalanobis.npz",
+          "calibration": "train no-leak file-LOO + val no-leak direct"
+        },
+        "msp": {
+          "threshold_p99": 0.25578596025705336,
+          "achieved_far": 0.025,
+          "n_cal": 40,
+          "calibration": "val no-leak only (train in-sample)"
+        },
+        "entropy": {
+          "threshold_p99": 0.5414498376846313,
+          "achieved_far": 0.025,
+          "n_cal": 40,
+          "calibration": "val no-leak only (train in-sample)"
+        }
+      },
+      "mic3": {
+        "fold": 3,
+        "knn_variants": {
+          "k10": {
+            "threshold_p99": 0.04087413121014834,
+            "achieved_far": 0.014705882352941176,
+            "n_cal": 136
+          },
+          "k100": {
+            "threshold_p99": 0.06421163119375707,
+            "achieved_far": 0.014705882352941176,
+            "n_cal": 136
+          }
+        },
+        "knn_k50_consistency": {
+          "recomputed": 0.055167875438928614,
+          "frozen": 0.055167876556515706,
+          "drift": 1.1175870923141318e-09
+        },
+        "mahalanobis": {
+          "threshold_p99": 9.867639350891116,
+          "achieved_far": 0.014705882352941176,
+          "n_cal": 136,
+          "features": "penultimate dense 64-d, L2-normalized",
+          "fit": "class means + shared shrunk covariance, nominal train; params: fold3_mahalanobis.npz",
+          "calibration": "train no-leak file-LOO + val no-leak direct"
+        },
+        "msp": {
+          "threshold_p99": 0.09484288051724434,
+          "achieved_far": 0.025,
+          "n_cal": 40,
+          "calibration": "val no-leak only (train in-sample)"
+        },
+        "entropy": {
+          "threshold_p99": 0.30558474898338317,
+          "achieved_far": 0.025,
+          "n_cal": 40,
+          "calibration": "val no-leak only (train in-sample)"
+        }
+      },
+      "mic4": {
+        "fold": 3,
+        "knn_variants": {
+          "k10": {
+            "threshold_p99": 0.08634448833763601,
+            "achieved_far": 0.014705882352941176,
+            "n_cal": 136
+          },
+          "k100": {
+            "threshold_p99": 0.15249215364456178,
+            "achieved_far": 0.014705882352941176,
+            "n_cal": 136
+          }
+        },
+        "knn_k50_consistency": {
+          "recomputed": 0.12604484409093858,
+          "frozen": 0.126044849306345,
+          "drift": 5.2154064122955646e-09
+        },
+        "mahalanobis": {
+          "threshold_p99": 11.56989374160767,
+          "achieved_far": 0.014705882352941176,
+          "n_cal": 136,
+          "features": "penultimate dense 64-d, L2-normalized",
+          "fit": "class means + shared shrunk covariance, nominal train; params: fold3_mahalanobis.npz",
+          "calibration": "train no-leak file-LOO + val no-leak direct"
+        },
+        "msp": {
+          "threshold_p99": 0.19086573556065559,
+          "achieved_far": 0.025,
+          "n_cal": 40,
+          "calibration": "val no-leak only (train in-sample)"
+        },
+        "entropy": {
+          "threshold_p99": 0.4823464745283127,
+          "achieved_far": 0.025,
+          "n_cal": 40,
+          "calibration": "val no-leak only (train in-sample)"
+        }
+      }
+    },
+    "phase_b_storage": "per-patch sorted neighbor distances (top 100) stored at scoring time -> all k variants score offline (monitoring/runtime_scoring.py)",
+    "l3b_perturbation": {
+      "status": "pre-registered variant - Phase B reports it regardless of outcome",
+      "description": "perturbation-response monitor: M=8 noise probes per window (training augmentation recipe, SNR U(0,20) dB, white/pink), 6-d behavioral vector (per-tap cosine dispersion conv1..dense, leak-posterior std, flip rate), class-conditional z-norm distance to nominal-train class reference, class = clean CNN prediction",
+      "M": 8,
+      "probe": "power-domain additive white/pink Gaussian noise, SNR ~ U(0,20) dB, p=1.0 per copy (training augmentation recipe; only trained invariances)",
+      "seed_base": 20260910,
+      "seed_schedule": "default_rng(SeedSequence([seed_base, mic, window_index])), M copies in order; window_index = patch position in nominal sessions-1-3 enumeration",
+      "taps": [
+        "conv1",
+        "conv2",
+        "conv3",
+        "dense"
+      ],
+      "pooling": "GAP on post-pool conv maps; L2-normalized vectors (cosine)",
+      "components": [
+        "disp_conv1",
+        "disp_conv2",
+        "disp_conv3",
+        "disp_dense",
+        "std_pleak",
+        "flip_rate"
+      ],
+      "scoring": "z-norm distance to class-conditional nominal-train reference; sigma floored at 1e-3",
+      "calibration": "p99 of nominal no-leak window scores (train windows exact-LOO on class stats, val direct)",
+      "conformal": "p = share of other no-leak calibration window scores >= query",
+      "per_mic": {
+        "mic1": {
+          "fold": 3,
+          "threshold_p99": 5.087899532318116,
+          "n_cal_windows": 15900,
+          "window_far_noleak": 0.01,
+          "file_far_noleak": 0.0,
+          "params": "results/l3b/noise_aug_mic1/l3b_params_fold3.npz",
+          "params_sha256": "d3d9096fbf9426f3f5b2e286a608dc6439af4d24f7a2e3bfadb29d1c2d0ea6c9"
+        },
+        "mic2": {
+          "fold": 3,
+          "threshold_p99": 4.17580810546875,
+          "n_cal_windows": 15900,
+          "window_far_noleak": 0.01,
+          "file_far_noleak": 0.0,
+          "params": "results/l3b/noise_aug_mic2/l3b_params_fold3.npz",
+          "params_sha256": "42c355edd3c7627b74242e9080793e183405e049a167cecb0c7f8f22f3fb0444"
+        },
+        "mic3": {
+          "fold": 3,
+          "threshold_p99": 4.864582085609437,
+          "n_cal_windows": 15900,
+          "window_far_noleak": 0.01,
+          "file_far_noleak": 0.0,
+          "params": "results/l3b/noise_aug_mic3/l3b_params_fold3.npz",
+          "params_sha256": "647e7debd08b73d3e18a893d9ee3a5ec3db2eea674249c7a1698fa19fff32a71"
+        },
+        "mic4": {
+          "fold": 3,
+          "threshold_p99": 6.044939150810242,
+          "n_cal_windows": 15900,
+          "window_far_noleak": 0.01,
+          "file_far_noleak": 0.0,
+          "params": "results/l3b/noise_aug_mic4/l3b_params_fold3.npz",
+          "params_sha256": "eb03aa6d3d94d7fb4c8844e34ed9b2fdc54c1d2267bedea953878dfe8bc3033e"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3203 @@
+{
+  "per_mic": {
+    "mic1": {
+      "conditions": {
+        "nominal_val_noleak": {
+          "n_files": 40,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.15,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.15,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.025,
+            "unsupported": 0.0,
+            "abstain": 0.825,
+            "blocked": 0.15
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.025,
+            "unsupported": 0.0,
+            "abstain": 0.975
+          },
+          "l3_knn_flag_rate": 0.0,
+          "knn_k10_flag_rate": 0.0,
+          "knn_k100_flag_rate": 0.0,
+          "mahalanobis_flag_rate": 0.025,
+          "msp_flag_rate": 0.025,
+          "entropy_flag_rate": 0.025,
+          "profile_flag_rate_1sided": 0.0,
+          "profile_flag_rate_2sided": 0.0,
+          "mean_z_profile": {
+            "conv1": 0.015014804317400803,
+            "conv2": 0.220121646518902,
+            "conv3": 0.14362362362476752,
+            "dense": -0.19426920740378145
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.85,
+            "L1_override": 0.15,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.85,
+            "yellow": 0.15,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 1.0,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.0,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "nominal_val_leak": {
+          "n_files": 80,
+          "cnn_plus_rate": 0.9625,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.1125,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.1125,
+          "l2_verdict_distribution": {
+            "consistent": 0.575,
+            "quiet": 0.05,
+            "unsupported": 0.0,
+            "abstain": 0.2625,
+            "blocked": 0.1125
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.575,
+            "quiet": 0.0875,
+            "unsupported": 0.0,
+            "abstain": 0.3375
+          },
+          "l3_knn_flag_rate": 0.0625,
+          "knn_k10_flag_rate": 0.0375,
+          "knn_k100_flag_rate": 0.075,
+          "mahalanobis_flag_rate": 0.05,
+          "msp_flag_rate": 0.0125,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 0.025,
+          "profile_flag_rate_2sided": 0.2625,
+          "mean_z_profile": {
+            "conv1": -0.22225743685048752,
+            "conv2": -0.23575786531107357,
+            "conv3": -0.18946426166639554,
+            "dense": -0.07238791568497879
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.55,
+            "T1-unconfirmed": 0.2,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0625,
+            "all-clear": 0.025,
+            "L1_override": 0.1125,
+            "unassigned": 0.05
+          },
+          "traffic_light": {
+            "green": 0.575,
+            "yellow": 0.3125,
+            "orange": 0.0625,
+            "red": 0.0,
+            "unassigned": 0.05
+          },
+          "cnn_recall": 0.9625,
+          "l3b_flag_rate": 0.0125,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.9375,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.05,
+            "l3_fires__l3b_fires": 0.0125
+          }
+        },
+        "hydrlow_noleak": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.5,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.5,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5,
+            "blocked": 0.5
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.5,
+          "knn_k10_flag_rate": 0.5,
+          "knn_k100_flag_rate": 0.5,
+          "mahalanobis_flag_rate": 0.5,
+          "msp_flag_rate": 0.3194444444444444,
+          "entropy_flag_rate": 0.1111111111111111,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 2.6586112515444627,
+            "conv2": 3.405758780911983,
+            "conv3": 1.858330503331695,
+            "dense": 1.3247803885446836
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.5,
+            "L1_override": 0.5,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.5,
+            "yellow": 0.5,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.5,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.5,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrlow_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.9305555555555556,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.5,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.5,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5,
+            "blocked": 0.5
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.6597222222222222,
+          "knn_k10_flag_rate": 0.7222222222222222,
+          "knn_k100_flag_rate": 0.6111111111111112,
+          "mahalanobis_flag_rate": 0.3819444444444444,
+          "msp_flag_rate": 0.22916666666666666,
+          "entropy_flag_rate": 0.19444444444444445,
+          "profile_flag_rate_1sided": 0.5069444444444444,
+          "profile_flag_rate_2sided": 0.5069444444444444,
+          "mean_z_profile": {
+            "conv1": 1.2707818637348518,
+            "conv2": 1.5167663998643903,
+            "conv3": 0.8900006273804958,
+            "dense": 2.8896078952724347
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.25,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.22916666666666666,
+            "all-clear": 0.020833333333333332,
+            "L1_override": 0.5,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.020833333333333332,
+            "yellow": 0.75,
+            "orange": 0.22916666666666666,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.9305555555555556,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.3402777777777778,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.6597222222222222,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrhigh_noleak": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.5,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.5,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.5
+          },
+          "l1_any_rate": 0.5,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5,
+            "blocked": 0.5
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.5,
+          "knn_k10_flag_rate": 0.5138888888888888,
+          "knn_k100_flag_rate": 0.5,
+          "mahalanobis_flag_rate": 0.5,
+          "msp_flag_rate": 0.5,
+          "entropy_flag_rate": 0.5,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 2.941930855771424,
+            "conv2": 3.303309147482943,
+            "conv3": 1.9228698934953838,
+            "dense": 2.9331091431473797
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.5,
+            "L1_override": 0.5,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.5,
+            "yellow": 0.5,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.5,
+          "cnn_specificity": 0.5,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.5,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.5,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrhigh_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.9583333333333334,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.5,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.5
+          },
+          "l1_any_rate": 0.5,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5,
+            "blocked": 0.5
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.8888888888888888,
+          "knn_k10_flag_rate": 0.9166666666666666,
+          "knn_k100_flag_rate": 0.8680555555555556,
+          "mahalanobis_flag_rate": 0.7083333333333334,
+          "msp_flag_rate": 0.2361111111111111,
+          "entropy_flag_rate": 0.1597222222222222,
+          "profile_flag_rate_1sided": 0.7430555555555556,
+          "profile_flag_rate_2sided": 0.7430555555555556,
+          "mean_z_profile": {
+            "conv1": 1.5007987885723366,
+            "conv2": 1.4720464531111044,
+            "conv3": 0.8061119782166617,
+            "dense": 3.8423978734764166
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.09722222222222222,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.3888888888888889,
+            "all-clear": 0.013888888888888888,
+            "L1_override": 0.5,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.013888888888888888,
+            "yellow": 0.5972222222222222,
+            "orange": 0.3888888888888889,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.9583333333333334,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.1111111111111111,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.8888888888888888,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "tube_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8819444444444444,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.1388888888888889,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.1388888888888889,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.3541666666666667,
+            "unsupported": 0.0,
+            "abstain": 0.5069444444444444,
+            "blocked": 0.1388888888888889
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.375,
+            "unsupported": 0.0,
+            "abstain": 0.625
+          },
+          "l3_knn_flag_rate": 0.9861111111111112,
+          "knn_k10_flag_rate": 0.9861111111111112,
+          "knn_k100_flag_rate": 0.9861111111111112,
+          "mahalanobis_flag_rate": 0.9791666666666666,
+          "msp_flag_rate": 0.1388888888888889,
+          "entropy_flag_rate": 0.1111111111111111,
+          "profile_flag_rate_1sided": 0.9930555555555556,
+          "profile_flag_rate_2sided": 0.9930555555555556,
+          "mean_z_profile": {
+            "conv1": 1.738636474205191,
+            "conv2": 1.7275315772070186,
+            "conv3": 1.2576648869183167,
+            "dense": 8.444788965244312
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.8472222222222222,
+            "all-clear": 0.013888888888888888,
+            "L1_override": 0.1388888888888889,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.013888888888888888,
+            "yellow": 0.1388888888888889,
+            "orange": 0.8472222222222222,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.8819444444444444,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.013888888888888888,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.9861111111111112,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "s6_dropout": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.5833333333333334,
+          "l1_rule_rates": {
+            "missing_data": 1.0,
+            "clipping": 0.041666666666666664,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.30833333333333335,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.6916666666666667
+          },
+          "l3_knn_flag_rate": 1.0,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 1.0,
+          "mahalanobis_flag_rate": 1.0,
+          "msp_flag_rate": 0.0,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 1.9887065870517062,
+            "conv2": 1.8188300950296326,
+            "conv3": 0.19187448663012222,
+            "dense": 1.7538935205696273
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 1.0,
+            "cnn_plus_rate": 0.5833333333333334,
+            "l2_verdict_distribution": {
+              "consistent": 0.30833333333333335,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 0.6916666666666667
+            }
+          }
+        },
+        "s6_clipping": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6333333333333333,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.2,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.2,
+          "l2_verdict_distribution": {
+            "consistent": 0.36666666666666664,
+            "quiet": 0.041666666666666664,
+            "unsupported": 0.0,
+            "abstain": 0.39166666666666666,
+            "blocked": 0.2
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.4083333333333333,
+            "quiet": 0.041666666666666664,
+            "unsupported": 0.0,
+            "abstain": 0.55
+          },
+          "l3_knn_flag_rate": 0.09166666666666666,
+          "knn_k10_flag_rate": 0.08333333333333333,
+          "knn_k100_flag_rate": 0.1,
+          "mahalanobis_flag_rate": 0.06666666666666667,
+          "msp_flag_rate": 0.06666666666666667,
+          "entropy_flag_rate": 0.06666666666666667,
+          "profile_flag_rate_1sided": 0.041666666666666664,
+          "profile_flag_rate_2sided": 0.20833333333333334,
+          "mean_z_profile": {
+            "conv1": -0.10015741805656489,
+            "conv2": -0.05047720805621099,
+            "conv3": -0.07024216173131081,
+            "dense": -0.034767362993698314
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.35,
+            "T1-unconfirmed": 0.10833333333333334,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.025,
+            "all-clear": 0.2833333333333333,
+            "L1_override": 0.2,
+            "unassigned": 0.03333333333333333
+          },
+          "traffic_light": {
+            "green": 0.6333333333333333,
+            "yellow": 0.30833333333333335,
+            "orange": 0.025,
+            "red": 0.0,
+            "unassigned": 0.03333333333333333
+          },
+          "l1_detection_rate": 0.2,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.3333333333333333,
+            "cnn_plus_rate": 0.625,
+            "l2_verdict_distribution": {
+              "consistent": 0.20833333333333334,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 0.7916666666666666
+            }
+          }
+        },
+        "s6_flatline": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 1.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.49166666666666664
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 1.0,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 1.0,
+          "mahalanobis_flag_rate": 1.0,
+          "msp_flag_rate": 0.0,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 3.787898331343995,
+            "conv2": 3.4619979824162437,
+            "conv3": 0.17534945269814267,
+            "dense": 2.9317372167525955
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 1.0,
+            "cnn_plus_rate": 0.0,
+            "l2_verdict_distribution": {
+              "consistent": 0.0,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 1.0
+            }
+          }
+        },
+        "s6_offset": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6333333333333333,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.09166666666666666,
+            "flatline": 0.0,
+            "dc_offset": 1.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.35833333333333334,
+            "quiet": 0.15,
+            "unsupported": 0.0,
+            "abstain": 0.49166666666666664
+          },
+          "l3_knn_flag_rate": 0.9,
+          "knn_k10_flag_rate": 0.8833333333333333,
+          "knn_k100_flag_rate": 0.8833333333333333,
+          "mahalanobis_flag_rate": 0.7583333333333333,
+          "msp_flag_rate": 0.0,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 0.8083333333333333,
+          "profile_flag_rate_2sided": 0.8333333333333334,
+          "mean_z_profile": {
+            "conv1": 0.6548790461817025,
+            "conv2": 2.332041273004389,
+            "conv3": 4.846493546812103,
+            "dense": 4.773840545957426
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.9,
+            "cnn_plus_rate": 0.6333333333333333,
+            "l2_verdict_distribution": {
+              "consistent": 0.35833333333333334,
+              "quiet": 0.15,
+              "unsupported": 0.0,
+              "abstain": 0.49166666666666664
+            }
+          }
+        }
+      },
+      "profile_calibration": {
+        "p99_abs_diff": 1.5497207606074426e-07,
+        "proto_max_abs_diff": 3.1780385967294933e-07,
+        "p99_frozen": 3.0609162569046036,
+        "p99_recomputed": 3.0609161019325275,
+        "p01_recomputed": 0.7137068986892701
+      }
+    },
+    "mic2": {
+      "conditions": {
+        "nominal_val_noleak": {
+          "n_files": 40,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.025,
+            "unsupported": 0.0,
+            "abstain": 0.975,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.025,
+            "unsupported": 0.0,
+            "abstain": 0.975
+          },
+          "l3_knn_flag_rate": 0.0,
+          "knn_k10_flag_rate": 0.0,
+          "knn_k100_flag_rate": 0.0,
+          "mahalanobis_flag_rate": 0.025,
+          "msp_flag_rate": 0.025,
+          "entropy_flag_rate": 0.025,
+          "profile_flag_rate_1sided": 0.0,
+          "profile_flag_rate_2sided": 0.0,
+          "mean_z_profile": {
+            "conv1": 0.10514730991886197,
+            "conv2": 0.053818273113218185,
+            "conv3": 0.01810068850517236,
+            "dense": -0.0446220805479357
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 1.0,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 1.0,
+            "yellow": 0.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 1.0,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.0,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "nominal_val_leak": {
+          "n_files": 80,
+          "cnn_plus_rate": 0.9125,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.3375,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.6625,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.3375,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.6625
+          },
+          "l3_knn_flag_rate": 0.05,
+          "knn_k10_flag_rate": 0.0375,
+          "knn_k100_flag_rate": 0.05,
+          "mahalanobis_flag_rate": 0.0375,
+          "msp_flag_rate": 0.0125,
+          "entropy_flag_rate": 0.0125,
+          "profile_flag_rate_1sided": 0.0125,
+          "profile_flag_rate_2sided": 0.2875,
+          "mean_z_profile": {
+            "conv1": -0.17766699914032139,
+            "conv2": -0.10758947813134222,
+            "conv3": -0.09138842235162441,
+            "dense": -0.17819978356366142
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.3375,
+            "T1-unconfirmed": 0.5625,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.05,
+            "all-clear": 0.05,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.3875,
+            "yellow": 0.5625,
+            "orange": 0.05,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.9125,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.95,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.05,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrlow_noleak": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.5,
+          "knn_k10_flag_rate": 0.5,
+          "knn_k100_flag_rate": 0.4583333333333333,
+          "mahalanobis_flag_rate": 0.1388888888888889,
+          "msp_flag_rate": 0.013888888888888888,
+          "entropy_flag_rate": 0.08333333333333333,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 2.3600346072622056,
+            "conv2": 3.385563780510207,
+            "conv3": 1.8311779761174747,
+            "dense": 0.8423796209557396
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.5,
+            "all-clear": 0.5,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.5,
+            "yellow": 0.0,
+            "orange": 0.5,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.5,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.5,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrlow_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.7569444444444444,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.3541666666666667,
+          "knn_k10_flag_rate": 0.3611111111111111,
+          "knn_k100_flag_rate": 0.3402777777777778,
+          "mahalanobis_flag_rate": 0.22916666666666666,
+          "msp_flag_rate": 0.10416666666666667,
+          "entropy_flag_rate": 0.1111111111111111,
+          "profile_flag_rate_1sided": 0.6597222222222222,
+          "profile_flag_rate_2sided": 0.6597222222222222,
+          "mean_z_profile": {
+            "conv1": 1.429450778191438,
+            "conv2": 2.772272202641936,
+            "conv3": 2.0987501082182103,
+            "dense": 1.4333622493474165
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.5833333333333334,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.3541666666666667,
+            "all-clear": 0.0625,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0625,
+            "yellow": 0.5833333333333334,
+            "orange": 0.3541666666666667,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.7569444444444444,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.6458333333333334,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.3541666666666667,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrhigh_noleak": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.5,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.5,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.18055555555555555
+          },
+          "l1_any_rate": 0.5,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5,
+            "blocked": 0.5
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.5555555555555556,
+          "knn_k10_flag_rate": 0.5555555555555556,
+          "knn_k100_flag_rate": 0.5555555555555556,
+          "mahalanobis_flag_rate": 0.5555555555555556,
+          "msp_flag_rate": 0.05555555555555555,
+          "entropy_flag_rate": 0.05555555555555555,
+          "profile_flag_rate_1sided": 0.9444444444444444,
+          "profile_flag_rate_2sided": 0.9444444444444444,
+          "mean_z_profile": {
+            "conv1": 3.1663866146027693,
+            "conv2": 3.5179133056523586,
+            "conv3": 2.141531698048854,
+            "dense": 1.9378321299889048
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.05555555555555555,
+            "all-clear": 0.4444444444444444,
+            "L1_override": 0.5,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.4444444444444444,
+            "yellow": 0.5,
+            "orange": 0.05555555555555555,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.5,
+          "cnn_specificity": 0.5,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.4444444444444444,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.5555555555555556,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrhigh_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8333333333333334,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.5,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.10416666666666667
+          },
+          "l1_any_rate": 0.5,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5,
+            "blocked": 0.5
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.5763888888888888,
+          "knn_k10_flag_rate": 0.6805555555555556,
+          "knn_k100_flag_rate": 0.5,
+          "mahalanobis_flag_rate": 0.22916666666666666,
+          "msp_flag_rate": 0.1111111111111111,
+          "entropy_flag_rate": 0.11805555555555555,
+          "profile_flag_rate_1sided": 0.5486111111111112,
+          "profile_flag_rate_2sided": 0.5486111111111112,
+          "mean_z_profile": {
+            "conv1": 1.597708762966963,
+            "conv2": 2.1657075135999606,
+            "conv3": 1.9906027046036656,
+            "dense": 1.6817236118820518
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.24305555555555555,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.2152777777777778,
+            "all-clear": 0.041666666666666664,
+            "L1_override": 0.5,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.041666666666666664,
+            "yellow": 0.7430555555555556,
+            "orange": 0.2152777777777778,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.8333333333333334,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.4236111111111111,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.5763888888888888,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "tube_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.5694444444444444,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.006944444444444444,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.006944444444444444,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.2847222222222222,
+            "unsupported": 0.0,
+            "abstain": 0.7083333333333334,
+            "blocked": 0.006944444444444444
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.2847222222222222,
+            "unsupported": 0.0,
+            "abstain": 0.7152777777777778
+          },
+          "l3_knn_flag_rate": 0.8263888888888888,
+          "knn_k10_flag_rate": 0.8263888888888888,
+          "knn_k100_flag_rate": 0.7083333333333334,
+          "mahalanobis_flag_rate": 0.4166666666666667,
+          "msp_flag_rate": 0.041666666666666664,
+          "entropy_flag_rate": 0.041666666666666664,
+          "profile_flag_rate_1sided": 0.5625,
+          "profile_flag_rate_2sided": 0.5694444444444444,
+          "mean_z_profile": {
+            "conv1": 1.2026615243875725,
+            "conv2": 1.4176581882459818,
+            "conv3": 1.682307630659704,
+            "dense": 3.5459528714887494
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.05555555555555555,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.8194444444444444,
+            "all-clear": 0.11805555555555555,
+            "L1_override": 0.006944444444444444,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.11805555555555555,
+            "yellow": 0.0625,
+            "orange": 0.8194444444444444,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.5694444444444444,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.1736111111111111,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.8263888888888888,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "s6_dropout": {
+          "n_files": 120,
+          "cnn_plus_rate": 1.0,
+          "l1_rule_rates": {
+            "missing_data": 1.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.225,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.775
+          },
+          "l3_knn_flag_rate": 0.925,
+          "knn_k10_flag_rate": 0.44166666666666665,
+          "knn_k100_flag_rate": 0.7666666666666667,
+          "mahalanobis_flag_rate": 0.21666666666666667,
+          "msp_flag_rate": 0.0,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 0.0,
+          "profile_flag_rate_2sided": 0.0,
+          "mean_z_profile": {
+            "conv1": -0.00018304417547602406,
+            "conv2": -0.32510082126839757,
+            "conv3": -0.07741465690429628,
+            "dense": 1.1577532178969179
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.925,
+            "cnn_plus_rate": 1.0,
+            "l2_verdict_distribution": {
+              "consistent": 0.225,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 0.775
+            }
+          }
+        },
+        "s6_clipping": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6083333333333333,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.06666666666666667,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.06666666666666667,
+          "l2_verdict_distribution": {
+            "consistent": 0.225,
+            "quiet": 0.008333333333333333,
+            "unsupported": 0.0,
+            "abstain": 0.7,
+            "blocked": 0.06666666666666667
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.225,
+            "quiet": 0.008333333333333333,
+            "unsupported": 0.0,
+            "abstain": 0.7666666666666667
+          },
+          "l3_knn_flag_rate": 0.06666666666666667,
+          "knn_k10_flag_rate": 0.041666666666666664,
+          "knn_k100_flag_rate": 0.05,
+          "mahalanobis_flag_rate": 0.03333333333333333,
+          "msp_flag_rate": 0.016666666666666666,
+          "entropy_flag_rate": 0.016666666666666666,
+          "profile_flag_rate_1sided": 0.008333333333333333,
+          "profile_flag_rate_2sided": 0.19166666666666668,
+          "mean_z_profile": {
+            "conv1": -0.08278947284453873,
+            "conv2": -0.052005490729430344,
+            "conv3": -0.05147086531760195,
+            "dense": -0.10630064012955062
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.225,
+            "T1-unconfirmed": 0.3416666666666667,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.03333333333333333,
+            "all-clear": 0.3333333333333333,
+            "L1_override": 0.06666666666666667,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.5583333333333333,
+            "yellow": 0.4083333333333333,
+            "orange": 0.03333333333333333,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 0.06666666666666667,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.5,
+            "cnn_plus_rate": 0.5,
+            "l2_verdict_distribution": {
+              "consistent": 0.0,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 1.0
+            }
+          }
+        },
+        "s6_flatline": {
+          "n_files": 120,
+          "cnn_plus_rate": 1.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 1.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.7666666666666667
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 1.0,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 1.0,
+          "mahalanobis_flag_rate": 1.0,
+          "msp_flag_rate": 0.0,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 0.0,
+          "profile_flag_rate_2sided": 0.0,
+          "mean_z_profile": {
+            "conv1": -0.2563026968584829,
+            "conv2": -0.7916939764019462,
+            "conv3": -0.18222769482802195,
+            "dense": 2.4892958646980126
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 1.0,
+            "cnn_plus_rate": 1.0,
+            "l2_verdict_distribution": {
+              "consistent": 0.0,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 1.0
+            }
+          }
+        },
+        "s6_offset": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6166666666666667,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.1,
+            "flatline": 0.0,
+            "dc_offset": 1.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.15833333333333333,
+            "quiet": 0.15833333333333333,
+            "unsupported": 0.0,
+            "abstain": 0.6833333333333333
+          },
+          "l3_knn_flag_rate": 0.9,
+          "knn_k10_flag_rate": 0.9333333333333333,
+          "knn_k100_flag_rate": 0.825,
+          "mahalanobis_flag_rate": 0.575,
+          "msp_flag_rate": 0.0,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 0.9,
+          "profile_flag_rate_2sided": 0.9,
+          "mean_z_profile": {
+            "conv1": 0.7786747253442777,
+            "conv2": 3.5720287338175245,
+            "conv3": 4.907094604033222,
+            "dense": 2.9989355978543095
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.9,
+            "cnn_plus_rate": 0.6166666666666667,
+            "l2_verdict_distribution": {
+              "consistent": 0.15833333333333333,
+              "quiet": 0.15833333333333333,
+              "unsupported": 0.0,
+              "abstain": 0.6833333333333333
+            }
+          }
+        }
+      },
+      "profile_calibration": {
+        "p99_abs_diff": 0.0,
+        "proto_max_abs_diff": 1.804682447925643e-07,
+        "p99_frozen": 2.7873884081840514,
+        "p99_recomputed": 2.7873884081840514,
+        "p01_recomputed": 0.7303095608949661
+      }
+    },
+    "mic3": {
+      "conditions": {
+        "nominal_val_noleak": {
+          "n_files": 40,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.025,
+            "quiet": 0.025,
+            "unsupported": 0.0,
+            "abstain": 0.95,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.025,
+            "quiet": 0.025,
+            "unsupported": 0.0,
+            "abstain": 0.95
+          },
+          "l3_knn_flag_rate": 0.0,
+          "knn_k10_flag_rate": 0.0,
+          "knn_k100_flag_rate": 0.0,
+          "mahalanobis_flag_rate": 0.05,
+          "msp_flag_rate": 0.025,
+          "entropy_flag_rate": 0.025,
+          "profile_flag_rate_1sided": 0.0,
+          "profile_flag_rate_2sided": 0.0,
+          "mean_z_profile": {
+            "conv1": -0.0527366518939364,
+            "conv2": 0.2157861143831784,
+            "conv3": 0.3143355509401333,
+            "dense": -0.11513041362515188
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.025,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.975,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.975,
+            "yellow": 0.0,
+            "orange": 0.025,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 1.0,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.0,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "nominal_val_leak": {
+          "n_files": 80,
+          "cnn_plus_rate": 0.9375,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.625,
+            "quiet": 0.1625,
+            "unsupported": 0.0,
+            "abstain": 0.2125,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.625,
+            "quiet": 0.1625,
+            "unsupported": 0.0,
+            "abstain": 0.2125
+          },
+          "l3_knn_flag_rate": 0.0625,
+          "knn_k10_flag_rate": 0.0625,
+          "knn_k100_flag_rate": 0.075,
+          "mahalanobis_flag_rate": 0.05,
+          "msp_flag_rate": 0.0625,
+          "entropy_flag_rate": 0.0625,
+          "profile_flag_rate_1sided": 0.0375,
+          "profile_flag_rate_2sided": 0.475,
+          "mean_z_profile": {
+            "conv1": -0.15799716298829153,
+            "conv2": -0.2875527177902161,
+            "conv3": -0.25496634488245856,
+            "dense": -0.01899200059474886
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.625,
+            "T1-unconfirmed": 0.1125,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0625,
+            "all-clear": 0.0375,
+            "L1_override": 0.0,
+            "unassigned": 0.1625
+          },
+          "traffic_light": {
+            "green": 0.6625,
+            "yellow": 0.1125,
+            "orange": 0.0625,
+            "red": 0.0,
+            "unassigned": 0.1625
+          },
+          "cnn_recall": 0.9375,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.9375,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.0625,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrlow_noleak": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.20833333333333334,
+          "knn_k10_flag_rate": 0.2222222222222222,
+          "knn_k100_flag_rate": 0.20833333333333334,
+          "mahalanobis_flag_rate": 0.06944444444444445,
+          "msp_flag_rate": 0.1527777777777778,
+          "entropy_flag_rate": 0.1527777777777778,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 2.9714893108979332,
+            "conv2": 3.553631291098086,
+            "conv3": 0.8021576721369299,
+            "dense": 0.273852053249512
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.20833333333333334,
+            "all-clear": 0.7916666666666666,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.7916666666666666,
+            "yellow": 0.0,
+            "orange": 0.20833333333333334,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.7916666666666666,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.20833333333333334,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrlow_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8958333333333334,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.09027777777777778,
+            "quiet": 0.09722222222222222,
+            "unsupported": 0.0,
+            "abstain": 0.8125,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.09027777777777778,
+            "quiet": 0.09722222222222222,
+            "unsupported": 0.0,
+            "abstain": 0.8125
+          },
+          "l3_knn_flag_rate": 0.3125,
+          "knn_k10_flag_rate": 0.3194444444444444,
+          "knn_k100_flag_rate": 0.3125,
+          "mahalanobis_flag_rate": 0.24305555555555555,
+          "msp_flag_rate": 0.09027777777777778,
+          "entropy_flag_rate": 0.08333333333333333,
+          "profile_flag_rate_1sided": 0.4791666666666667,
+          "profile_flag_rate_2sided": 0.6875,
+          "mean_z_profile": {
+            "conv1": 1.6018264146373202,
+            "conv2": 1.481859845686768,
+            "conv3": 0.15213956737067377,
+            "dense": 0.9170461227858846
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.09027777777777778,
+            "T1-unconfirmed": 0.4583333333333333,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.3125,
+            "all-clear": 0.041666666666666664,
+            "L1_override": 0.0,
+            "unassigned": 0.09722222222222222
+          },
+          "traffic_light": {
+            "green": 0.13194444444444445,
+            "yellow": 0.4583333333333333,
+            "orange": 0.3125,
+            "red": 0.0,
+            "unassigned": 0.09722222222222222
+          },
+          "cnn_recall": 0.8958333333333334,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.6875,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.3125,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrhigh_noleak": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.3611111111111111,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.3611111111111111,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.6388888888888888,
+            "blocked": 0.3611111111111111
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.5,
+          "knn_k10_flag_rate": 0.5555555555555556,
+          "knn_k100_flag_rate": 0.5,
+          "mahalanobis_flag_rate": 0.4861111111111111,
+          "msp_flag_rate": 0.041666666666666664,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 4.706621363536539,
+            "conv2": 4.272705597394425,
+            "conv3": 1.126770956003381,
+            "dense": 1.0804048541061935
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.1388888888888889,
+            "all-clear": 0.5,
+            "L1_override": 0.3611111111111111,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.5,
+            "yellow": 0.3611111111111111,
+            "orange": 0.1388888888888889,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.4861111111111111,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.5,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.013888888888888888,
+            "l3_fires__l3b_fires": 0.4861111111111111
+          }
+        },
+        "hydrhigh_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8958333333333334,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.4583333333333333,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.4583333333333333,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5416666666666666,
+            "blocked": 0.4583333333333333
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.3194444444444444,
+          "knn_k10_flag_rate": 0.3472222222222222,
+          "knn_k100_flag_rate": 0.3194444444444444,
+          "mahalanobis_flag_rate": 0.16666666666666666,
+          "msp_flag_rate": 0.0763888888888889,
+          "entropy_flag_rate": 0.0763888888888889,
+          "profile_flag_rate_1sided": 0.5347222222222222,
+          "profile_flag_rate_2sided": 0.5416666666666666,
+          "mean_z_profile": {
+            "conv1": 2.522410653854221,
+            "conv2": 2.052738992346072,
+            "conv3": -0.025837487913724665,
+            "dense": 0.8018450534941771
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.2986111111111111,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.20833333333333334,
+            "all-clear": 0.034722222222222224,
+            "L1_override": 0.4583333333333333,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.034722222222222224,
+            "yellow": 0.7569444444444444,
+            "orange": 0.20833333333333334,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.8958333333333334,
+          "l3b_flag_rate": 0.041666666666666664,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.6805555555555556,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.2777777777777778,
+            "l3_fires__l3b_fires": 0.041666666666666664
+          }
+        },
+        "tube_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8402777777777778,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.2986111111111111,
+            "quiet": 0.006944444444444444,
+            "unsupported": 0.05555555555555555,
+            "abstain": 0.6388888888888888,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.2986111111111111,
+            "quiet": 0.006944444444444444,
+            "unsupported": 0.05555555555555555,
+            "abstain": 0.6388888888888888
+          },
+          "l3_knn_flag_rate": 0.6527777777777778,
+          "knn_k10_flag_rate": 0.7361111111111112,
+          "knn_k100_flag_rate": 0.625,
+          "mahalanobis_flag_rate": 0.4861111111111111,
+          "msp_flag_rate": 0.14583333333333334,
+          "entropy_flag_rate": 0.1388888888888889,
+          "profile_flag_rate_1sided": 0.4930555555555556,
+          "profile_flag_rate_2sided": 0.6319444444444444,
+          "mean_z_profile": {
+            "conv1": 0.8505606414269956,
+            "conv2": 1.056597100358492,
+            "conv3": 1.092411290420145,
+            "dense": 3.464108028180252
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.09027777777777778,
+            "T1-unconfirmed": 0.2222222222222222,
+            "T2": 0.027777777777777776,
+            "T3": 0.0,
+            "T3-unexplained": 0.006944444444444444,
+            "T4": 0.625,
+            "all-clear": 0.027777777777777776,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.11805555555555555,
+            "yellow": 0.2222222222222222,
+            "orange": 0.6319444444444444,
+            "red": 0.027777777777777776,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.8402777777777778,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.3472222222222222,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.6527777777777778,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "s6_dropout": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.55,
+          "l1_rule_rates": {
+            "missing_data": 1.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.4,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.6
+          },
+          "l3_knn_flag_rate": 1.0,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 1.0,
+          "mahalanobis_flag_rate": 0.11666666666666667,
+          "msp_flag_rate": 0.008333333333333333,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 0.7583333333333333,
+          "profile_flag_rate_2sided": 0.7583333333333333,
+          "mean_z_profile": {
+            "conv1": 0.48577624150692744,
+            "conv2": 1.9362784971800655,
+            "conv3": -0.2534394510055119,
+            "dense": 1.1827063455990503
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 1.0,
+            "cnn_plus_rate": 0.55,
+            "l2_verdict_distribution": {
+              "consistent": 0.4,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 0.6
+            }
+          }
+        },
+        "s6_clipping": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.625,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.025,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.025,
+          "l2_verdict_distribution": {
+            "consistent": 0.45,
+            "quiet": 0.08333333333333333,
+            "unsupported": 0.0,
+            "abstain": 0.44166666666666665,
+            "blocked": 0.025
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.45,
+            "quiet": 0.08333333333333333,
+            "unsupported": 0.0,
+            "abstain": 0.4666666666666667
+          },
+          "l3_knn_flag_rate": 0.058333333333333334,
+          "knn_k10_flag_rate": 0.041666666666666664,
+          "knn_k100_flag_rate": 0.058333333333333334,
+          "mahalanobis_flag_rate": 0.05,
+          "msp_flag_rate": 0.05,
+          "entropy_flag_rate": 0.05,
+          "profile_flag_rate_1sided": 0.025,
+          "profile_flag_rate_2sided": 0.31666666666666665,
+          "mean_z_profile": {
+            "conv1": -0.12230876962547974,
+            "conv2": -0.11967266552835379,
+            "conv3": -0.06506022177991201,
+            "dense": -0.04086968737206146
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.44166666666666665,
+            "T1-unconfirmed": 0.08333333333333333,
+            "T2": 0.008333333333333333,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.041666666666666664,
+            "all-clear": 0.325,
+            "L1_override": 0.025,
+            "unassigned": 0.075
+          },
+          "traffic_light": {
+            "green": 0.7666666666666667,
+            "yellow": 0.10833333333333334,
+            "orange": 0.05,
+            "red": 0.0,
+            "unassigned": 0.075
+          },
+          "l1_detection_rate": 0.025,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.6666666666666666,
+            "cnn_plus_rate": 0.0,
+            "l2_verdict_distribution": {
+              "consistent": 0.0,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 1.0
+            }
+          }
+        },
+        "s6_flatline": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 1.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.6833333333333333
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 1.0,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 1.0,
+          "mahalanobis_flag_rate": 1.0,
+          "msp_flag_rate": 0.0,
+          "entropy_flag_rate": 0.0,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 0.7566692148379903,
+            "conv2": 3.619397908354275,
+            "conv3": -0.5851377996908408,
+            "dense": 2.235222455963136
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 1.0,
+            "cnn_plus_rate": 0.0,
+            "l2_verdict_distribution": {
+              "consistent": 0.0,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 1.0
+            }
+          }
+        },
+        "s6_offset": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.625,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.08333333333333333,
+            "flatline": 0.0,
+            "dc_offset": 1.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.4,
+            "quiet": 0.20833333333333334,
+            "unsupported": 0.0,
+            "abstain": 0.39166666666666666
+          },
+          "l3_knn_flag_rate": 0.075,
+          "knn_k10_flag_rate": 0.10833333333333334,
+          "knn_k100_flag_rate": 0.075,
+          "mahalanobis_flag_rate": 0.06666666666666667,
+          "msp_flag_rate": 0.05,
+          "entropy_flag_rate": 0.05,
+          "profile_flag_rate_1sided": 0.4583333333333333,
+          "profile_flag_rate_2sided": 0.65,
+          "mean_z_profile": {
+            "conv1": 1.30654158111636,
+            "conv2": 1.6971630690747785,
+            "conv3": 0.7424424754933987,
+            "dense": 0.1120169978551476
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.075,
+            "cnn_plus_rate": 0.625,
+            "l2_verdict_distribution": {
+              "consistent": 0.4,
+              "quiet": 0.20833333333333334,
+              "unsupported": 0.0,
+              "abstain": 0.39166666666666666
+            }
+          }
+        }
+      },
+      "profile_calibration": {
+        "p99_abs_diff": 3.0994415300966693e-07,
+        "proto_max_abs_diff": 1.6108784706148072e-07,
+        "p99_frozen": 2.9570601940155035,
+        "p99_recomputed": 2.9570598840713505,
+        "p01_recomputed": 0.8892817109823227
+      }
+    },
+    "mic4": {
+      "conditions": {
+        "nominal_val_noleak": {
+          "n_files": 40,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.0,
+          "knn_k10_flag_rate": 0.0,
+          "knn_k100_flag_rate": 0.0,
+          "mahalanobis_flag_rate": 0.05,
+          "msp_flag_rate": 0.025,
+          "entropy_flag_rate": 0.025,
+          "profile_flag_rate_1sided": 0.05,
+          "profile_flag_rate_2sided": 0.075,
+          "mean_z_profile": {
+            "conv1": -0.15255817434726907,
+            "conv2": -0.3135818225693665,
+            "conv3": -0.21056038053829298,
+            "dense": -0.3187546608119768
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 1.0,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 1.0,
+            "yellow": 0.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 1.0,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.0,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "nominal_val_leak": {
+          "n_files": 80,
+          "cnn_plus_rate": 0.9125,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.35,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.65,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.35,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.65
+          },
+          "l3_knn_flag_rate": 0.05,
+          "knn_k10_flag_rate": 0.05,
+          "knn_k100_flag_rate": 0.0625,
+          "mahalanobis_flag_rate": 0.0625,
+          "msp_flag_rate": 0.025,
+          "entropy_flag_rate": 0.025,
+          "profile_flag_rate_1sided": 0.0125,
+          "profile_flag_rate_2sided": 0.35,
+          "mean_z_profile": {
+            "conv1": -0.30819567835889555,
+            "conv2": -0.2056923535260518,
+            "conv3": -0.10716184083537253,
+            "dense": 0.013406629086601413
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.35,
+            "T1-unconfirmed": 0.525,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.05,
+            "all-clear": 0.075,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.425,
+            "yellow": 0.525,
+            "orange": 0.05,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.9125,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.95,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.05,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrlow_noleak": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.08333333333333333,
+          "knn_k10_flag_rate": 0.3888888888888889,
+          "knn_k100_flag_rate": 0.0,
+          "mahalanobis_flag_rate": 0.0,
+          "msp_flag_rate": 0.5,
+          "entropy_flag_rate": 0.5,
+          "profile_flag_rate_1sided": 0.5694444444444444,
+          "profile_flag_rate_2sided": 0.5694444444444444,
+          "mean_z_profile": {
+            "conv1": 1.8489294363635937,
+            "conv2": 2.5549112210216465,
+            "conv3": 0.7078133571307146,
+            "dense": 0.5881718136935611
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.08333333333333333,
+            "all-clear": 0.9166666666666666,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.9166666666666666,
+            "yellow": 0.0,
+            "orange": 0.08333333333333333,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.0,
+          "cnn_specificity": 1.0,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.9166666666666666,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.08333333333333333,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrlow_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.7847222222222222,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0,
+            "blocked": 0.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.20833333333333334,
+          "knn_k10_flag_rate": 0.3055555555555556,
+          "knn_k100_flag_rate": 0.1875,
+          "mahalanobis_flag_rate": 0.14583333333333334,
+          "msp_flag_rate": 0.20833333333333334,
+          "entropy_flag_rate": 0.20833333333333334,
+          "profile_flag_rate_1sided": 0.3472222222222222,
+          "profile_flag_rate_2sided": 0.3888888888888889,
+          "mean_z_profile": {
+            "conv1": 1.2234435263813832,
+            "conv2": 2.2641901361565693,
+            "conv3": 1.0136017380524773,
+            "dense": 1.4528725202954356
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.7152777777777778,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.20833333333333334,
+            "all-clear": 0.0763888888888889,
+            "L1_override": 0.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0763888888888889,
+            "yellow": 0.7152777777777778,
+            "orange": 0.20833333333333334,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.7847222222222222,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.7916666666666666,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.20833333333333334,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrhigh_noleak": {
+          "n_files": 72,
+          "cnn_plus_rate": 0.5,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.5,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.041666666666666664
+          },
+          "l1_any_rate": 0.5,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5,
+            "blocked": 0.5
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.5972222222222222,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 0.4861111111111111,
+          "mahalanobis_flag_rate": 0.1111111111111111,
+          "msp_flag_rate": 0.5,
+          "entropy_flag_rate": 0.5,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 3.079747614007879,
+            "conv2": 3.4718401867852453,
+            "conv3": 0.5920876731814648,
+            "dense": 1.3844510617906456
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.5,
+            "all-clear": 0.0,
+            "L1_override": 0.5,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 0.5,
+            "orange": 0.5,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_far": 0.5,
+          "cnn_specificity": 0.5,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.4027777777777778,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.5972222222222222,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "hydrhigh_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.8888888888888888,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.5,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.08333333333333333
+          },
+          "l1_any_rate": 0.5,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.5,
+            "blocked": 0.5
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 0.2569444444444444,
+          "knn_k10_flag_rate": 0.3333333333333333,
+          "knn_k100_flag_rate": 0.24305555555555555,
+          "mahalanobis_flag_rate": 0.1875,
+          "msp_flag_rate": 0.1875,
+          "entropy_flag_rate": 0.1875,
+          "profile_flag_rate_1sided": 0.5,
+          "profile_flag_rate_2sided": 0.5,
+          "mean_z_profile": {
+            "conv1": 1.8863089570368272,
+            "conv2": 2.6899014076319765,
+            "conv3": 1.1863850151671333,
+            "dense": 1.8323923374852515
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.25,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.25,
+            "all-clear": 0.0,
+            "L1_override": 0.5,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 0.75,
+            "orange": 0.25,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "cnn_recall": 0.8888888888888888,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.7430555555555556,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.2569444444444444,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "tube_leak": {
+          "n_files": 144,
+          "cnn_plus_rate": 0.5,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.006944444444444444,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.006944444444444444,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.2569444444444444,
+            "unsupported": 0.0,
+            "abstain": 0.7361111111111112,
+            "blocked": 0.006944444444444444
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.2569444444444444,
+            "unsupported": 0.0,
+            "abstain": 0.7430555555555556
+          },
+          "l3_knn_flag_rate": 0.5138888888888888,
+          "knn_k10_flag_rate": 0.625,
+          "knn_k100_flag_rate": 0.4652777777777778,
+          "mahalanobis_flag_rate": 0.3472222222222222,
+          "msp_flag_rate": 0.2986111111111111,
+          "entropy_flag_rate": 0.2986111111111111,
+          "profile_flag_rate_1sided": 0.4652777777777778,
+          "profile_flag_rate_2sided": 0.5763888888888888,
+          "mean_z_profile": {
+            "conv1": 1.275101654520859,
+            "conv2": 1.3280753565182695,
+            "conv3": 1.237502023386582,
+            "dense": 3.0906290329191015
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.2361111111111111,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.5138888888888888,
+            "all-clear": 0.1736111111111111,
+            "L1_override": 0.006944444444444444,
+            "unassigned": 0.06944444444444445
+          },
+          "traffic_light": {
+            "green": 0.1736111111111111,
+            "yellow": 0.24305555555555555,
+            "orange": 0.5138888888888888,
+            "red": 0.0,
+            "unassigned": 0.06944444444444445
+          },
+          "cnn_recall": 0.5,
+          "l3b_flag_rate": 0.0,
+          "l3_knn_x_l3b_2x2": {
+            "l3_calm__l3b_stable": 0.4861111111111111,
+            "l3_calm__l3b_fires": 0.0,
+            "l3_fires__l3b_stable": 0.5138888888888888,
+            "l3_fires__l3b_fires": 0.0
+          }
+        },
+        "s6_dropout": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6083333333333333,
+          "l1_rule_rates": {
+            "missing_data": 1.0,
+            "clipping": 0.0,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.225,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.775
+          },
+          "l3_knn_flag_rate": 1.0,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 1.0,
+          "mahalanobis_flag_rate": 1.0,
+          "msp_flag_rate": 1.0,
+          "entropy_flag_rate": 0.25833333333333336,
+          "profile_flag_rate_1sided": 0.9,
+          "profile_flag_rate_2sided": 0.9,
+          "mean_z_profile": {
+            "conv1": 0.25283954986464674,
+            "conv2": 0.10253719280049635,
+            "conv3": -0.4086559581122108,
+            "dense": 2.490530769629458
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 1.0,
+            "cnn_plus_rate": 0.6083333333333333,
+            "l2_verdict_distribution": {
+              "consistent": 0.225,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 0.775
+            }
+          }
+        },
+        "s6_clipping": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6083333333333333,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.09166666666666666,
+            "flatline": 0.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 0.09166666666666666,
+          "l2_verdict_distribution": {
+            "consistent": 0.23333333333333334,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.675,
+            "blocked": 0.09166666666666666
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.23333333333333334,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.7666666666666667
+          },
+          "l3_knn_flag_rate": 0.03333333333333333,
+          "knn_k10_flag_rate": 0.03333333333333333,
+          "knn_k100_flag_rate": 0.041666666666666664,
+          "mahalanobis_flag_rate": 0.058333333333333334,
+          "msp_flag_rate": 0.025,
+          "entropy_flag_rate": 0.025,
+          "profile_flag_rate_1sided": 0.025,
+          "profile_flag_rate_2sided": 0.25833333333333336,
+          "mean_z_profile": {
+            "conv1": -0.2536837983556333,
+            "conv2": -0.2356935951631892,
+            "conv3": -0.13838238821700066,
+            "dense": -0.07269842483374298
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.23333333333333334,
+            "T1-unconfirmed": 0.2916666666666667,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.03333333333333333,
+            "all-clear": 0.35,
+            "L1_override": 0.09166666666666666,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.5833333333333334,
+            "yellow": 0.38333333333333336,
+            "orange": 0.03333333333333333,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 0.09166666666666666,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.0,
+            "cnn_plus_rate": 0.6363636363636364,
+            "l2_verdict_distribution": {
+              "consistent": 0.0,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 1.0
+            }
+          }
+        },
+        "s6_flatline": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.0,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.0,
+            "flatline": 1.0,
+            "dc_offset": 0.0,
+            "level_gain_anomaly": 0.75
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 1.0
+          },
+          "l3_knn_flag_rate": 1.0,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 1.0,
+          "mahalanobis_flag_rate": 1.0,
+          "msp_flag_rate": 1.0,
+          "entropy_flag_rate": 1.0,
+          "profile_flag_rate_1sided": 1.0,
+          "profile_flag_rate_2sided": 1.0,
+          "mean_z_profile": {
+            "conv1": 0.39126019851874333,
+            "conv2": 0.11863695779348454,
+            "conv3": -0.7526818497672504,
+            "dense": 4.356743037884117
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 1.0,
+            "cnn_plus_rate": 0.0,
+            "l2_verdict_distribution": {
+              "consistent": 0.0,
+              "quiet": 0.0,
+              "unsupported": 0.0,
+              "abstain": 1.0
+            }
+          }
+        },
+        "s6_offset": {
+          "n_files": 120,
+          "cnn_plus_rate": 0.6083333333333333,
+          "l1_rule_rates": {
+            "missing_data": 0.0,
+            "clipping": 0.13333333333333333,
+            "flatline": 0.0,
+            "dc_offset": 1.0,
+            "level_gain_anomaly": 0.0
+          },
+          "l1_any_rate": 1.0,
+          "l2_verdict_distribution": {
+            "consistent": 0.0,
+            "quiet": 0.0,
+            "unsupported": 0.0,
+            "abstain": 0.0,
+            "blocked": 1.0
+          },
+          "l2_raw_verdict_distribution": {
+            "consistent": 0.125,
+            "quiet": 0.19166666666666668,
+            "unsupported": 0.0,
+            "abstain": 0.6833333333333333
+          },
+          "l3_knn_flag_rate": 0.9416666666666667,
+          "knn_k10_flag_rate": 1.0,
+          "knn_k100_flag_rate": 0.9083333333333333,
+          "mahalanobis_flag_rate": 0.8166666666666667,
+          "msp_flag_rate": 0.008333333333333333,
+          "entropy_flag_rate": 0.008333333333333333,
+          "profile_flag_rate_1sided": 0.8166666666666667,
+          "profile_flag_rate_2sided": 0.8166666666666667,
+          "mean_z_profile": {
+            "conv1": 0.9027353965634636,
+            "conv2": 2.5173440665488145,
+            "conv3": 4.757385262651607,
+            "dense": 4.68401192233677
+          },
+          "taxonomy": {
+            "T1-confirmed": 0.0,
+            "T1-unconfirmed": 0.0,
+            "T2": 0.0,
+            "T3": 0.0,
+            "T3-unexplained": 0.0,
+            "T4": 0.0,
+            "all-clear": 0.0,
+            "L1_override": 1.0,
+            "unassigned": 0.0
+          },
+          "traffic_light": {
+            "green": 0.0,
+            "yellow": 1.0,
+            "orange": 0.0,
+            "red": 0.0,
+            "unassigned": 0.0
+          },
+          "l1_detection_rate": 1.0,
+          "l2_blocked_share_on_l1_positive": 1.0,
+          "suppressed_raw_on_l1_positive": {
+            "l3_flag_rate": 0.9416666666666667,
+            "cnn_plus_rate": 0.6083333333333333,
+            "l2_verdict_distribution": {
+              "consistent": 0.125,
+              "quiet": 0.19166666666666668,
+              "unsupported": 0.0,
+              "abstain": 0.6833333333333333
+            }
+          }
+        }
+      },
+      "profile_calibration": {
+        "p99_abs_diff": 6.318092347079585e-07,
+        "proto_max_abs_diff": 1.6199842889363936e-07,
+        "p99_frozen": 3.198127472400665,
+        "p99_recomputed": 3.1981281042099,
+        "p01_recomputed": 0.8408300668001175
+      }
+    }
+  },
+  "bug_reports": [
+    "mic1 nominal_val_noleak L1 rules on clean nominal audio: 0.150 > 1e-09 (calibrated FAR anchor violated)"
+  ],
+  "fusion": {
+    "r1_l3_coflag": {
+      "nominal_val_noleak": {
+        "n_keys": 40,
+        "exactly_1_of_4": 0.0,
+        "exactly_2_of_4": 0.0,
+        "exactly_3_of_4": 0.0,
+        "exactly_4_of_4": 0.0
+      },
+      "nominal_val_leak": {
+        "n_keys": 80,
+        "exactly_1_of_4": 0.0375,
+        "exactly_2_of_4": 0.025,
+        "exactly_3_of_4": 0.0125,
+        "exactly_4_of_4": 0.025
+      },
+      "hydrlow_noleak": {
+        "n_keys": 72,
+        "exactly_1_of_4": 0.041666666666666664,
+        "exactly_2_of_4": 0.25,
+        "exactly_3_of_4": 0.25,
+        "exactly_4_of_4": 0.0
+      },
+      "hydrlow_leak": {
+        "n_keys": 144,
+        "exactly_1_of_4": 0.25,
+        "exactly_2_of_4": 0.14583333333333334,
+        "exactly_3_of_4": 0.0625,
+        "exactly_4_of_4": 0.2013888888888889
+      },
+      "hydrhigh_noleak": {
+        "n_keys": 72,
+        "exactly_1_of_4": 0.4444444444444444,
+        "exactly_2_of_4": 0.05555555555555555,
+        "exactly_3_of_4": 0.4027777777777778,
+        "exactly_4_of_4": 0.09722222222222222
+      },
+      "hydrhigh_leak": {
+        "n_keys": 144,
+        "exactly_1_of_4": 0.3125,
+        "exactly_2_of_4": 0.2569444444444444,
+        "exactly_3_of_4": 0.14583333333333334,
+        "exactly_4_of_4": 0.19444444444444445
+      },
+      "tube_leak": {
+        "n_keys": 144,
+        "exactly_1_of_4": 0.020833333333333332,
+        "exactly_2_of_4": 0.3819444444444444,
+        "exactly_3_of_4": 0.1388888888888889,
+        "exactly_4_of_4": 0.4444444444444444
+      }
+    },
+    "r2_system_far": {
+      "nominal_val_noleak": {
+        "n_keys": 40,
+        "any_mic": 0.0,
+        "ge2_of_4": 0.0,
+        "ge3_of_4": 0.0
+      },
+      "hydrlow_noleak": {
+        "n_keys": 72,
+        "any_mic": 0.5416666666666666,
+        "ge2_of_4": 0.5,
+        "ge3_of_4": 0.25
+      },
+      "hydrhigh_noleak": {
+        "n_keys": 72,
+        "any_mic": 1.0,
+        "ge2_of_4": 0.5555555555555556,
+        "ge3_of_4": 0.5
+      }
+    },
+    "r3": {
+      "nominal_val_noleak": {
+        "cnn_ge2_of_4": 0.0,
+        "cnn_exactly_1_of_4": 0.0,
+        "l2_excess_db_spread_mean": Infinity,
+        "l2_excess_db_spread_median": 17.3818863674108,
+        "l2_verdict_4way_agreement": 0.925,
+        "isolated_single_mic_t1_confirmed": 0
+      },
+      "nominal_val_leak": {
+        "cnn_ge2_of_4": 0.9375,
+        "cnn_exactly_1_of_4": 0.025,
+        "l2_excess_db_spread_mean": Infinity,
+        "l2_excess_db_spread_median": 14.455901547569082,
+        "l2_verdict_4way_agreement": 0.525,
+        "isolated_single_mic_t1_confirmed": 7
+      },
+      "hydrlow_noleak": {
+        "cnn_ge2_of_4": 0.0,
+        "cnn_exactly_1_of_4": 0.0,
+        "l2_excess_db_spread_mean": Infinity,
+        "l2_excess_db_spread_median": 9.325157769148221,
+        "l2_verdict_4way_agreement": 1.0,
+        "isolated_single_mic_t1_confirmed": 0
+      },
+      "hydrlow_leak": {
+        "cnn_ge2_of_4": 0.9027777777777778,
+        "cnn_exactly_1_of_4": 0.027777777777777776,
+        "l2_excess_db_spread_mean": Infinity,
+        "l2_excess_db_spread_median": 10.872091979943747,
+        "l2_verdict_4way_agreement": 0.8125,
+        "isolated_single_mic_t1_confirmed": 6
+      },
+      "hydrhigh_noleak": {
+        "cnn_ge2_of_4": 0.5,
+        "cnn_exactly_1_of_4": 0.0,
+        "l2_excess_db_spread_mean": Infinity,
+        "l2_excess_db_spread_median": 12.746368067105482,
+        "l2_verdict_4way_agreement": 1.0,
+        "isolated_single_mic_t1_confirmed": 0
+      },
+      "hydrhigh_leak": {
+        "cnn_ge2_of_4": 0.9375,
+        "cnn_exactly_1_of_4": 0.020833333333333332,
+        "l2_excess_db_spread_mean": Infinity,
+        "l2_excess_db_spread_median": 8.257521155798763,
+        "l2_verdict_4way_agreement": 1.0,
+        "isolated_single_mic_t1_confirmed": 0
+      },
+      "tube_leak": {
+        "cnn_ge2_of_4": 0.8472222222222222,
+        "cnn_exactly_1_of_4": 0.041666666666666664,
+        "l2_excess_db_spread_mean": Infinity,
+        "l2_excess_db_spread_median": 13.264079335071177,
+        "l2_verdict_4way_agreement": 0.5833333333333334,
+        "isolated_single_mic_t1_confirmed": 0
+      }
+    }
+  },
+  "s6": {
+    "s6_dropout": {
+      "l1_detection_rate_pooled": 1.0,
+      "l1_detection_rate_per_mic": {
+        "mic1": 1.0,
+        "mic2": 1.0,
+        "mic3": 1.0,
+        "mic4": 1.0
+      },
+      "rule_rates_pooled": {
+        "missing_data": 1.0,
+        "clipping": 0.010416666666666666,
+        "flatline": 0.0,
+        "dc_offset": 0.0,
+        "level_gain_anomaly": 0.0
+      },
+      "l2_blocked_share_on_l1_positive": 1.0,
+      "suppressed_raw_l3_flag_rate": 0.98125,
+      "suppressed_raw_cnn_plus_rate": 0.6854166666666667
+    },
+    "s6_clipping": {
+      "l1_detection_rate_pooled": 0.09583333333333334,
+      "l1_detection_rate_per_mic": {
+        "mic1": 0.2,
+        "mic2": 0.06666666666666667,
+        "mic3": 0.025,
+        "mic4": 0.09166666666666666
+      },
+      "rule_rates_pooled": {
+        "missing_data": 0.0,
+        "clipping": 0.09583333333333334,
+        "flatline": 0.0,
+        "dc_offset": 0.0,
+        "level_gain_anomaly": 0.0
+      },
+      "l2_blocked_share_on_l1_positive": 1.0,
+      "suppressed_raw_l3_flag_rate": 0.30434782608695654,
+      "suppressed_raw_cnn_plus_rate": 0.5652173913043478
+    },
+    "s6_flatline": {
+      "l1_detection_rate_pooled": 1.0,
+      "l1_detection_rate_per_mic": {
+        "mic1": 1.0,
+        "mic2": 1.0,
+        "mic3": 1.0,
+        "mic4": 1.0
+      },
+      "rule_rates_pooled": {
+        "missing_data": 0.0,
+        "clipping": 0.0,
+        "flatline": 1.0,
+        "dc_offset": 0.0,
+        "level_gain_anomaly": 0.6729166666666667
+      },
+      "l2_blocked_share_on_l1_positive": 1.0,
+      "suppressed_raw_l3_flag_rate": 1.0,
+      "suppressed_raw_cnn_plus_rate": 0.25
+    },
+    "s6_offset": {
+      "l1_detection_rate_pooled": 1.0,
+      "l1_detection_rate_per_mic": {
+        "mic1": 1.0,
+        "mic2": 1.0,
+        "mic3": 1.0,
+        "mic4": 1.0
+      },
+      "rule_rates_pooled": {
+        "missing_data": 0.0,
+        "clipping": 0.10208333333333333,
+        "flatline": 0.0,
+        "dc_offset": 1.0,
+        "level_gain_anomaly": 0.0
+      },
+      "l2_blocked_share_on_l1_positive": 1.0,
+      "suppressed_raw_l3_flag_rate": 0.7041666666666667,
+      "suppressed_raw_cnn_plus_rate": 0.6208333333333333
+    }
+  },
+  "conclusion": [
+    "Control anchor: nominal val no-leak L3 flag 0.0% (calibrated FAR ~1.5%, in-reference files), L3b 0.0%, CNN FAR 0.0% \u2014 BUG REPORT entries, see above.",
+    "Hydr covariate shift: L3 flag 43% no-leak / 45% leak (low 38% / high 51%), CNN+ 84%/89%, L2 abstain 98%, L3b fires 1%.",
+    "Tube semantic shift: L3 flag 74%, CNN recall 70%, L2 abstain 68% / unsupported 1%, L3b fires 0% (L3 fires+L3b stable 74%, fires+broken 0%).",
+    "S6 sensor faults: L1 detection dropout 100%, clipping 10%, flatline 100%, offset 100%; L1-positive files 100% L1_override (downstream blocked, yellow).",
+    "Fusion: mean no-leak system FAR any-mic 51.4% -> >=2-of-4 35.2%; taxonomy dominant states: nominal_val_leak=T1-confirmed, hydrhigh_leak=L1_override, tube_leak=T4, s6_dropout=L1_override."
+  ]
+}

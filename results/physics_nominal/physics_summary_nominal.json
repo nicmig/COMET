@@ -1,0 +1,381 @@
+{
+  "firewall": "nominal data only (lab/work/work_low, vent/vent_low); hydr/tube untouched, reserved for the single post-freeze Phase B run",
+  "score": "1 - cosine_similarity(shares(max(E_obs - E_bg, 0)), template[mic,gain])",
+  "template_fit": "median residual band shares of vent knob 6-9, lab background only (noisy-bg residuals carry no leak signal; guardrail fired on the median-across-backgrounds variant), sessions [1, 2]",
+  "background_model": "median band energies of no-leak files per (mic,gain,background), sessions 1-3, leave-one-out",
+  "abstention_gate": "template-weighted excess < p99 of nominal no-leak weighted-excess statistic, per (mic,gain)",
+  "templates": {
+    "mic1_gainl": [
+      3.8533542122142444e-05,
+      2.1868432165102754e-05,
+      1.2990861683343205e-05,
+      7.968364588825303e-05,
+      0.0072000274523037755,
+      0.2194234304991813,
+      0.6507909854522322,
+      0.12243248011442386
+    ],
+    "mic1_gainm": [
+      5.3286684214129626e-05,
+      3.2787572152307516e-05,
+      1.8085919611722035e-05,
+      0.0001450479215328395,
+      0.009398344419479286,
+      0.29327227038764275,
+      0.5815071576082281,
+      0.1155730194871389
+    ],
+    "mic2_gainl": [
+      0.0,
+      0.00015602872810351566,
+      0.00018399627658088002,
+      0.00014706215787807758,
+      0.012865193712792595,
+      0.200816285097856,
+      0.6143229484174024,
+      0.1715084856093866
+    ],
+    "mic2_gainm": [
+      0.0,
+      0.0002906690746320678,
+      8.223818856803649e-05,
+      0.0002019478221267645,
+      0.012927387766511207,
+      0.2433768222563092,
+      0.5876582188049975,
+      0.15546271608685527
+    ],
+    "mic3_gainl": [
+      4.808413432841409e-06,
+      1.2855158852133758e-05,
+      7.610004546799866e-06,
+      6.342721704532938e-05,
+      0.007294153191969692,
+      0.17288117559018565,
+      0.3198812477851694,
+      0.49985472263879804
+    ],
+    "mic3_gainm": [
+      5.984947091159059e-06,
+      1.3689780843472798e-05,
+      1.756816250355562e-05,
+      6.118091522863324e-05,
+      0.005257475290523244,
+      0.12022739690090677,
+      0.4224463614617376,
+      0.45197034254116564
+    ],
+    "mic4_gainl": [
+      0.00030225545691064633,
+      3.061654390143615e-05,
+      1.1585806257110368e-05,
+      0.0002327854667299167,
+      0.009896607172064798,
+      0.17430455271050457,
+      0.6855454843386453,
+      0.12967611250498623
+    ],
+    "mic4_gainm": [
+      0.00020214116953788577,
+      1.9470196396601634e-05,
+      8.22148801032713e-06,
+      0.00035954207352618766,
+      0.009794988443755252,
+      0.178717405431817,
+      0.679753907167539,
+      0.13114432402941784
+    ]
+  },
+  "guardrail_vs_old_templates": {
+    "mic1_gainl": {
+      "cosine_vs_old": 0.9971489831743512,
+      "cosine_vs_old_per_bg": {
+        "lab": 0.9971489831743512
+      },
+      "top2_share_new": 0.7732234655666561,
+      "top2_share_old": 0.774319779019299,
+      "eroded": false
+    },
+    "mic1_gainm": {
+      "cosine_vs_old": 0.9972097584868354,
+      "cosine_vs_old_per_bg": {
+        "lab": 0.9972097584868354
+      },
+      "top2_share_new": 0.6970801770953671,
+      "top2_share_old": 0.7051112958438616,
+      "eroded": false
+    },
+    "mic2_gainl": {
+      "cosine_vs_old": 0.9997309180540275,
+      "cosine_vs_old_per_bg": {
+        "lab": 0.9997309180540275
+      },
+      "top2_share_new": 0.785831434026789,
+      "top2_share_old": 0.7614048243300285,
+      "eroded": false
+    },
+    "mic2_gainm": {
+      "cosine_vs_old": 0.9997528454871647,
+      "cosine_vs_old_per_bg": {
+        "lab": 0.9997528454871647
+      },
+      "top2_share_new": 0.7431209348918527,
+      "top2_share_old": 0.7303238621791373,
+      "eroded": false
+    },
+    "mic3_gainl": {
+      "cosine_vs_old": 0.9999930567048559,
+      "cosine_vs_old_per_bg": {
+        "lab": 0.9999930567048559
+      },
+      "top2_share_new": 0.8197359704239675,
+      "top2_share_old": 0.8178628221189506,
+      "eroded": false
+    },
+    "mic3_gainm": {
+      "cosine_vs_old": 0.9994135851241689,
+      "cosine_vs_old_per_bg": {
+        "lab": 0.9994135851241689
+      },
+      "top2_share_new": 0.8744167040029032,
+      "top2_share_old": 0.8669741569056025,
+      "eroded": false
+    },
+    "mic4_gainl": {
+      "cosine_vs_old": 0.9995951762100914,
+      "cosine_vs_old_per_bg": {
+        "lab": 0.999595176210091
+      },
+      "top2_share_new": 0.8152215968436315,
+      "top2_share_old": 0.7856838211474275,
+      "eroded": false
+    },
+    "mic4_gainm": {
+      "cosine_vs_old": 0.9996735260669761,
+      "cosine_vs_old_per_bg": {
+        "lab": 0.9996735260669761
+      },
+      "top2_share_new": 0.8108982311969568,
+      "top2_share_old": 0.7828586261286601,
+      "eroded": false
+    }
+  },
+  "guardrail_eroded": false,
+  "gate_margins_db": {
+    "mic1_gainl": 3.367161733345537,
+    "mic1_gainm": 1.6313400832532097,
+    "mic2_gainl": 8.71610707141161,
+    "mic2_gainm": 2.1527839197223817,
+    "mic3_gainl": 2.7964863490470657,
+    "mic3_gainm": 4.305825755104568,
+    "mic4_gainl": 4.784656994720889,
+    "mic4_gainm": 2.540915344029239
+  },
+  "thresholds": {
+    "tau_absent": 0.1907085719454054,
+    "tau_present": 0.9768547444345677,
+    "n_scored_val_noleak": 8,
+    "n_scored_val_leak": 653
+  },
+  "val_noleak_far_per_mic": {
+    "mic1": {
+      "n_scored": 1,
+      "far_below_tau_absent": 0.0
+    },
+    "mic2": {
+      "n_scored": 1,
+      "far_below_tau_absent": 0.0
+    },
+    "mic3": {
+      "n_scored": 2,
+      "far_below_tau_absent": 0.5
+    },
+    "mic4": {
+      "n_scored": 0,
+      "far_below_tau_absent": null
+    }
+  },
+  "abstain_rates": {
+    "val_noleak": 0.975,
+    "val_leak": 0.465625
+  },
+  "abstain_rates_per_background": {
+    "val_noleak": {
+      "lab": 0.953125,
+      "work": 0.984375,
+      "work_low": 1.0
+    },
+    "val_leak": {
+      "lab": 0.0859375,
+      "work": 0.7421875,
+      "work_low": 0.671875
+    }
+  },
+  "abstain_rates_per_mic": {
+    "val_noleak": {
+      "mic1": 0.975,
+      "mic2": 0.975,
+      "mic3": 0.95,
+      "mic4": 1.0
+    },
+    "val_leak": {
+      "mic1": 0.3375,
+      "mic2": 0.6625,
+      "mic3": 0.2125,
+      "mic4": 0.65
+    }
+  },
+  "v_checks": {
+    "note": "lab subset, ungated residual similarities (gate truncates the knob axis; noisy-bg residuals are background-dominated)",
+    "V1_severity": {
+      "mic1_gainl": {
+        "verdict": "PARTIAL",
+        "rho": 0.6394541933125188,
+        "p": 2.687697765413414e-05,
+        "monotone": false,
+        "n": 36
+      },
+      "mic1_gainm": {
+        "verdict": "PARTIAL",
+        "rho": 0.5184033070198586,
+        "p": 0.0019978410018564917,
+        "monotone": false,
+        "n": 33
+      },
+      "mic2_gainl": {
+        "verdict": "PARTIAL",
+        "rho": 0.8567594788349604,
+        "p": 2.6172349822025226e-11,
+        "monotone": false,
+        "n": 36
+      },
+      "mic2_gainm": {
+        "verdict": "PARTIAL",
+        "rho": 0.8148761034801941,
+        "p": 1.4563394921696048e-09,
+        "monotone": false,
+        "n": 36
+      },
+      "mic3_gainl": {
+        "verdict": "PARTIAL",
+        "rho": 0.8540577121472056,
+        "p": 2.613534980928818e-10,
+        "monotone": false,
+        "n": 33
+      },
+      "mic3_gainm": {
+        "verdict": "PARTIAL",
+        "rho": 0.8774086628239653,
+        "p": 2.1907010750969346e-12,
+        "monotone": false,
+        "n": 36
+      },
+      "mic4_gainl": {
+        "verdict": "PARTIAL",
+        "rho": 0.8495817045637442,
+        "p": 7.781739736902463e-10,
+        "monotone": false,
+        "n": 32
+      },
+      "mic4_gainm": {
+        "verdict": "PARTIAL",
+        "rho": 0.8945601424649001,
+        "p": 4.397485973718092e-13,
+        "monotone": false,
+        "n": 35
+      }
+    },
+    "V2_cross_pressure": {
+      "mic1_gainl": {
+        "verdict": "PASS",
+        "cosine": 0.9990734559318686
+      },
+      "mic1_gainm": {
+        "verdict": "PASS",
+        "cosine": 0.9996658935358301
+      },
+      "mic2_gainl": {
+        "verdict": "PASS",
+        "cosine": 0.9992736066211548
+      },
+      "mic2_gainm": {
+        "verdict": "PASS",
+        "cosine": 0.9994438812863071
+      },
+      "mic3_gainl": {
+        "verdict": "PASS",
+        "cosine": 0.999548401635973
+      },
+      "mic3_gainm": {
+        "verdict": "PASS",
+        "cosine": 0.9909531282527412
+      },
+      "mic4_gainl": {
+        "verdict": "PASS",
+        "cosine": 0.9987087865722083
+      },
+      "mic4_gainm": {
+        "verdict": "PASS",
+        "cosine": 0.9995244291529836
+      }
+    },
+    "V3_separation": {
+      "mic1_gainl": {
+        "verdict": "PASS",
+        "leak_median_sim": 0.9919466543023361,
+        "noleak_max_sim": 0.314597508688939,
+        "n_leak": 48,
+        "n_noleak": 23
+      },
+      "mic1_gainm": {
+        "verdict": "PASS",
+        "leak_median_sim": 0.9858130860422916,
+        "noleak_max_sim": 0.44333296391733257,
+        "n_leak": 48,
+        "n_noleak": 21
+      },
+      "mic2_gainl": {
+        "verdict": "PASS",
+        "leak_median_sim": 0.9968755755065322,
+        "noleak_max_sim": 0.6720236829727881,
+        "n_leak": 48,
+        "n_noleak": 20
+      },
+      "mic2_gainm": {
+        "verdict": "PASS",
+        "leak_median_sim": 0.9972823919551617,
+        "noleak_max_sim": 0.8973080079355268,
+        "n_leak": 48,
+        "n_noleak": 24
+      },
+      "mic3_gainl": {
+        "verdict": "PARTIAL",
+        "leak_median_sim": 0.9894829113610499,
+        "noleak_max_sim": 0.9362504610227043,
+        "n_leak": 48,
+        "n_noleak": 16
+      },
+      "mic3_gainm": {
+        "verdict": "PASS",
+        "leak_median_sim": 0.9849255919571149,
+        "noleak_max_sim": 0.7578165843000313,
+        "n_leak": 48,
+        "n_noleak": 22
+      },
+      "mic4_gainl": {
+        "verdict": "PASS",
+        "leak_median_sim": 0.9958762747452303,
+        "noleak_max_sim": 0.5529811629065017,
+        "n_leak": 47,
+        "n_noleak": 17
+      },
+      "mic4_gainm": {
+        "verdict": "PASS",
+        "leak_median_sim": 0.998293784263746,
+        "noleak_max_sim": 0.5934941056050277,
+        "n_leak": 48,
+        "n_noleak": 23
+      }
+    }
+  }
+}

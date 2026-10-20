@@ -1,0 +1,300 @@
+{
+  "firewall": "nominal data only",
+  "per_mic": {
+    "mic1": {
+      "task1_windowed": {
+        "window": 20,
+        "alarm_fraction": 0.25,
+        "threshold_frozen": 0.0945091400295496,
+        "n_noleak_files": 136,
+        "window_alarm_far": 0.08823529411764706,
+        "per_window_flag_rate_noleak": 0.03194190047152882,
+        "flicker_transitions_per_file_raw": 0.25,
+        "flicker_transitions_per_file_smoothed": 0.08088235294117647,
+        "leak_alarm_rate": 0.12222222222222222,
+        "alarm_lag_s_median": 5.12,
+        "alarm_lag_s_iqr": [
+          5.12,
+          5.12
+        ],
+        "adopted": false
+      },
+      "task2_profiles": {
+        "layers": [
+          "conv1",
+          "conv2",
+          "conv3",
+          "dense"
+        ],
+        "z_stats_from": "nominal train (both classes), file-LOO",
+        "prototype": [
+          -3.9900321269215056e-08,
+          6.537695895758588e-08,
+          -1.1267727195729549e-08,
+          2.5132285585982572e-08
+        ],
+        "threshold_p99_noleak_files": 3.0609162569046036,
+        "file_far_noleak": 0.014705882352941176,
+        "window_far_noleak": 0.02628416942024632,
+        "median_file_score_noleak": 1.4336092472076416,
+        "median_file_score_leak": 0.9543955326080322,
+        "separation_sanity": -0.4792137145996094,
+        "adopted": true
+      },
+      "task3_conformal": {
+        "n_val_noleak": 40,
+        "histogram": [
+          4,
+          6,
+          2,
+          3,
+          2,
+          5,
+          6,
+          5,
+          3,
+          4
+        ],
+        "bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "mean_p": 0.51
+      }
+    },
+    "mic2": {
+      "task1_windowed": {
+        "window": 20,
+        "alarm_fraction": 0.25,
+        "threshold_frozen": 0.11909633912146092,
+        "n_noleak_files": 136,
+        "window_alarm_far": 0.19117647058823528,
+        "per_window_flag_rate_noleak": 0.06301669113274239,
+        "flicker_transitions_per_file_raw": 1.1764705882352942,
+        "flicker_transitions_per_file_smoothed": 0.3014705882352941,
+        "leak_alarm_rate": 0.1037037037037037,
+        "alarm_lag_s_median": 5.12,
+        "alarm_lag_s_iqr": [
+          5.12,
+          5.12
+        ],
+        "adopted": false
+      },
+      "task2_profiles": {
+        "layers": [
+          "conv1",
+          "conv2",
+          "conv3",
+          "dense"
+        ],
+        "z_stats_from": "nominal train (both classes), file-LOO",
+        "prototype": [
+          8.114121641256133e-08,
+          -1.2747904065690818e-07,
+          1.3151938560440612e-07,
+          -2.0317587612339594e-08
+        ],
+        "threshold_p99_noleak_files": 2.7873884081840514,
+        "file_far_noleak": 0.014705882352941176,
+        "window_far_noleak": 0.03537098227696005,
+        "median_file_score_noleak": 1.6045952439308167,
+        "median_file_score_leak": 0.9373428821563721,
+        "separation_sanity": -0.6672523617744446,
+        "adopted": true
+      },
+      "task3_conformal": {
+        "n_val_noleak": 40,
+        "histogram": [
+          2,
+          4,
+          3,
+          7,
+          6,
+          8,
+          2,
+          5,
+          3,
+          0
+        ],
+        "bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "mean_p": 0.4612962962962962
+      }
+    },
+    "mic3": {
+      "task1_windowed": {
+        "window": 20,
+        "alarm_fraction": 0.25,
+        "threshold_frozen": 0.055167876556515706,
+        "n_noleak_files": 136,
+        "window_alarm_far": 0.09558823529411764,
+        "per_window_flag_rate_noleak": 0.025000464103167037,
+        "flicker_transitions_per_file_raw": 0.33088235294117646,
+        "flicker_transitions_per_file_smoothed": 0.13970588235294118,
+        "leak_alarm_rate": 0.1259259259259259,
+        "alarm_lag_s_median": 5.12,
+        "alarm_lag_s_iqr": [
+          5.12,
+          5.12
+        ],
+        "adopted": false
+      },
+      "task2_profiles": {
+        "layers": [
+          "conv1",
+          "conv2",
+          "conv3",
+          "dense"
+        ],
+        "z_stats_from": "nominal train (both classes), file-LOO",
+        "prototype": [
+          8.803512230315391e-08,
+          -3.2314396491983644e-08,
+          -9.231531095110768e-08,
+          -3.936904136025987e-08
+        ],
+        "threshold_p99_noleak_files": 2.9570601940155035,
+        "file_far_noleak": 0.014705882352941176,
+        "window_far_noleak": 0.03169119855812556,
+        "median_file_score_noleak": 1.551680862903595,
+        "median_file_score_leak": 0.9158424735069275,
+        "separation_sanity": -0.6358383893966675,
+        "adopted": true
+      },
+      "task3_conformal": {
+        "n_val_noleak": 40,
+        "histogram": [
+          3,
+          6,
+          3,
+          5,
+          7,
+          5,
+          0,
+          1,
+          6,
+          4
+        ],
+        "bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "mean_p": 0.4731481481481482
+      }
+    },
+    "mic4": {
+      "task1_windowed": {
+        "window": 20,
+        "alarm_fraction": 0.25,
+        "threshold_frozen": 0.126044849306345,
+        "n_noleak_files": 136,
+        "window_alarm_far": 0.04411764705882353,
+        "per_window_flag_rate_noleak": 0.01467938784385982,
+        "flicker_transitions_per_file_raw": 0.16911764705882354,
+        "flicker_transitions_per_file_smoothed": 0.04411764705882353,
+        "leak_alarm_rate": 0.10740740740740741,
+        "alarm_lag_s_median": 5.12,
+        "alarm_lag_s_iqr": [
+          5.12,
+          5.632
+        ],
+        "adopted": false
+      },
+      "task2_profiles": {
+        "layers": [
+          "conv1",
+          "conv2",
+          "conv3",
+          "dense"
+        ],
+        "z_stats_from": "nominal train (both classes), file-LOO",
+        "prototype": [
+          9.224164898569143e-08,
+          -3.5921648988690436e-10,
+          -1.2276107952402526e-07,
+          -6.452052048189216e-08
+        ],
+        "threshold_p99_noleak_files": 3.198127472400665,
+        "file_far_noleak": 0.014705882352941176,
+        "window_far_noleak": 0.02778612195854611,
+        "median_file_score_noleak": 1.4051657319068909,
+        "median_file_score_leak": 0.8271165192127228,
+        "separation_sanity": -0.5780492126941681,
+        "adopted": true
+      },
+      "task3_conformal": {
+        "n_val_noleak": 40,
+        "histogram": [
+          5,
+          0,
+          3,
+          3,
+          6,
+          6,
+          7,
+          3,
+          6,
+          1
+        ],
+        "bin_edges": [
+          0.0,
+          0.1,
+          0.2,
+          0.3,
+          0.4,
+          0.5,
+          0.6,
+          0.7,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "mean_p": 0.5238888888888888
+      }
+    }
+  },
+  "adopted": {
+    "windowed_alarm": {
+      "mic1": false,
+      "mic2": false,
+      "mic3": false,
+      "mic4": false
+    },
+    "profile_distance": {
+      "mic1": true,
+      "mic2": true,
+      "mic3": true,
+      "mic4": true
+    }
+  },
+  "acceptance_rule": "windowed: FAR<=0.02 and fewer transitions than raw per-window; profiles: file FAR<=0.025"
+}

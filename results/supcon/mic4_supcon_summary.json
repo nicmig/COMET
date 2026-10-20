@@ -1,0 +1,40 @@
+{
+  "mic": 4,
+  "fold": 3,
+  "firewall": "nominal validation only",
+  "ce": {
+    "run": "noise_aug_mic4",
+    "participation_ratio": 2.7811130381308624,
+    "thr_noleak": 0.15689682960510254,
+    "thr_allval": 0.281745970249176,
+    "val_noleak_far": 0.025,
+    "val_noleak_n": 40,
+    "l3_nominal_leak_flag_rate": 0.075,
+    "reference_sha256": "0ef59d7158f5af93f0ae26b25fc93113c95ce6004801cd6d4d24ca9ad0e4f50a",
+    "val_acc": 0.9418323863636363,
+    "val_f1_macro": 0.9369313546171525,
+    "cnn_leak_recall": 0.9139544777706871
+  },
+  "supcon": {
+    "run": "supcon_mic4",
+    "participation_ratio": 2.168731632404755,
+    "thr_noleak": 0.09674873948097229,
+    "thr_allval": 0.20114094018936157,
+    "val_noleak_far": 0.025,
+    "val_noleak_n": 40,
+    "l3_nominal_leak_flag_rate": 0.125,
+    "reference_sha256": "6f8326a22cb484f12ea8c5b8b900b854471bae5fd19dac26852a49f7ecbe8c59",
+    "val_acc": 0.9431107954545455,
+    "val_f1_macro": 0.9382215555952839,
+    "cnn_leak_recall": 0.9168262071899596
+  },
+  "acceptance": {
+    "pr_ok": false,
+    "far_ok": true,
+    "far_floor_note": "n=40 no-leak files -> minimum nonzero FAR at p99 is 1/40 = 0.0250",
+    "leak_recall_ok": true,
+    "acc_drop": -0.0012784090909091494,
+    "acc_ok": true,
+    "accepted_encoder": "ce"
+  }
+}

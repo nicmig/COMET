@@ -1,0 +1,85 @@
+# Base configuration for the IICA leak-detection baseline.
+# Experiment configs copy this file and override what they need; any key can
+# also be overridden on the CLI with --set a.b.c=value.
+seed: 42
+run_name: baseline_mic1
+
+logging:
+  level: INFO
+
+data:
+  root: data
+  index_csv: data/index.csv
+  mic: 1                      # 1-4; one model per microphone
+  # Binary task: no_leak / leak (vent 6 bar + vent_low 5 bar merged).
+  leak_types: [vent, vent_low]    # tube held out entirely as a novel fault
+  backgrounds: [lab, work, work_low]  # hydraulic held out as an unseen environment
+  no_leak_max_knob: 3.0           # no_leak = io files with knob <= 3.0
+  leak_min_knob: 5.5              # leak = nio files with knob >= 5.5 (3.5-5.0 excluded: undetectable)
+  split:
+    strategy: session           # whole sessions only; the trainer generates
+                                # 3 folds (val on session k, train on the rest)
+
+validation:
+  min_duration_s: 29.0
+  max_duration_s: 31.0
+
+preprocessing:
+  sample_rate: 48000
+  n_fft: 1024                 # 513 one-sided frequency bins
+  win_length: 1024
+  hop_length: 512             # 50% overlap
+  window: hann
+  patch_frames: 24            # ~267 ms per patch
+  patch_stride: 24            # non-overlapping patches for training
+  eps: 1.0e-10
+  cache_dir: results/cache
+  norm_stats_dir: results/norm_stats
+
+model:
+  in_freq_bins: 513
+  patch_frames: 24
+  channels: [16, 32, 64]
+  kernel_size: 3
+  pool: [[4, 2], [4, 2], [4, 2]]
+  dense_units: 64
+  dropout: 0.25
+  gaussian_noise_std: 0.1
+  num_classes: 2
+
+training:
+  batch_size: 128
+  epochs: 25
+  lr: 0.001
+  weight_decay: 0.0001
+  class_weights: false          # true = inverse-frequency CE weights from train split
+  early_stopping_patience: 5
+  num_workers: 0              # dataset is fully in-memory; workers would only duplicate RAM
+  device: cuda
+  out_dir: results/runs
+
+knn:
+  fold: 3                   # deployed fold (train sessions 1+2, val 3)
+  k: 50                     # neighbours for the deep k-NN distance
+  max_reference: 100000     # cap on reference patches per layer (subsampled if larger)
+  out_dir: results/knn
+  eval_n_files: 30          # files sampled per shift type for the sanity check
+  far: 0.01                 # target false-alarm rate on the validation session;
+                            # alert threshold = (1 - far) quantile of val scores
+
+physics:
+  # L2 physics-consistency monitor: V3 band-share template (8 log-spaced bands,
+  # 100 Hz-20 kHz; STFT as in preprocessing), score = 1 - cosine similarity of
+  # the file's band shares to the per-(mic x gain) vent-leak template.
+  out_dir: results/physics_eval
+  template_leak_type: vent    # V3 recipe: 6-bar vent template ...
+  template_background: lab    # ... fitted on lab ...
+  template_knobs: [6, 6.5, 7, 7.5, 8, 8.5, 9]  # ... knob 6-9 leak files ...
+  template_sessions: [1, 2]   # ... from the deployed fold's training sessions
+  tau_absent_pct: 1           # lower tail of val no-leak scores -> "physics says leak"
+  tau_present_pct: 99         # upper tail of val leak scores -> "unsupported detection"
+  fold: 3                     # deployed fold for the CNN decisions in the taxonomy
+  # v2: background-referenced (residual) scoring, E_obs = E_bg + E_leak model
+  out_dir_v2: results/physics_eval_v2
+  excess_margin_db: 0.5       # v2.1 abstain gate: template-weighted excess < 0.5 dB
+                              # rel. to weighted E_bg (v2.0 broadband gate muted loud bgs)
