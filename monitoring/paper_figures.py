@@ -30,7 +30,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import soundfile as sf
-from matplotlib.patches import FancyBboxPatch
+from matplotlib.patches import Circle, FancyBboxPatch, Rectangle
 from scipy import signal
 
 matplotlib.use("Agg")
@@ -105,60 +105,143 @@ def load(path: Path) -> np.ndarray:
 
 
 # ---------------------------------------------------------------------------
-def fig1() -> None:
-    fig, ax = plt.subplots(figsize=(22, 12))
-    ax.set_xlim(0, 14)
-    ax.set_ylim(0, 8)
+def fig1(index: pd.DataFrame) -> None:
+    """COMET architecture: CNN pipeline (ML-paper style) with the monitor
+    observation taps, feeding coordination -> communication -> supervisor."""
+    x = load(pick(index, leak_type="vent", background="lab",
+                  annotation="nio", knob=6.0))
+
+    fig, ax = plt.subplots(figsize=(22, 13))
+    ax.set_xlim(0, 18)
+    ax.set_ylim(0, 12)
     ax.axis("off")
 
-    def box(x, y, w, h, text, fc="#f0f0f0", ec="#333333", fs=18):
-        ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.08",
-                                    fc=fc, ec=ec, lw=1.0))
-        ax.text(x + w / 2, y + h / 2, text, ha="center", va="center", fontsize=fs)
+    C_CNN, E_CNN = "#dbe7f5", "#4a6fa5"
+    C_L1, E_L1 = "#fff3cd", "#c8a415"
+    C_L2, E_L2 = "#d9ead3", "#5a9e4b"
+    C_L3, E_L3 = "#ead9f0", "#9665b0"
 
-    def arrow(x1, y1, x2, y2, style="-", color="#333333", lw=1.2, rad=0.0):
+    def box(x0, y0, w, h, text, fc="#f0f0f0", ec="#333333", fs=18, lw=1.2):
+        ax.add_patch(FancyBboxPatch((x0, y0), w, h, boxstyle="round,pad=0.08",
+                                    fc=fc, ec=ec, lw=lw, zorder=3))
+        ax.text(x0 + w / 2, y0 + h / 2, text, ha="center", va="center",
+                fontsize=fs, zorder=4)
+
+    def fmap(xc, yc, w, h, n=3, off=0.09):
+        for i in range(n - 1, -1, -1):
+            ax.add_patch(Rectangle((xc - w / 2 + i * off, yc - h / 2 + i * off),
+                                   w, h, fc=C_CNN, ec=E_CNN, lw=1.2,
+                                   zorder=2 + i))
+
+    def arrow(x1, y1, x2, y2, style="-", color="#333333", lw=1.4):
         ax.annotate("", xy=(x2, y2), xytext=(x1, y1),
                     arrowprops=dict(arrowstyle="-|>", lw=lw, color=color,
-                                    linestyle=style,
-                                    connectionstyle=f"arc3,rad={rad}"))
+                                    linestyle=style), zorder=5)
 
-    # left column: input + preprocessing
-    box(0.3, 3.1, 2.0, 1.0, "48 kHz audio\n4 mics", "#e8e8e8")
-    box(2.9, 3.1, 2.3, 1.0, "STFT patches\n24 frames = 256 ms", "#e8e8e8")
-    # monitor row (top)
-    box(2.9, 5.3, 3.2, 1.2, "L1  signal-integrity rules\nmissing / clipping / flatline\nDC offset / level", "#fff3cd", fs=18)
-    box(6.6, 5.3, 3.2, 1.2, "L2  physics consistency\nresidual band-shares vs.\nleak template (mic × gain)", "#d9ead3", fs=18)
-    box(10.3, 5.3, 3.2, 1.2, "L3  k-NN novelty\npenultimate dense, k=50\n+ per-layer z-profile", "#ead9f0", fs=18)
-    # classifier row (bottom)
-    box(2.9, 0.9, 2.3, 1.0, "CNN (frozen)\nbinary leak / no-leak", "#dbe7f5")
-    box(6.6, 0.9, 3.2, 1.0, "CNN decision\np_leak ≥ 0.5", "#dbe7f5")
-    # fusion + output (right)
-    box(11.0, 2.7, 2.8, 1.4, "Cascade fusion\nprecedence:\nL1 > T2 > T4 > CNN×L2", "#f5f5f5")
-    box(11.0, 0.5, 2.8, 1.4, "Traffic light\ngreen · yellow\norange · red", "#ffffff")
+    # ---- CNN pipeline (bottom) --------------------------------------------
+    # raw audio with waveform thumbnail
+    box(0.4, 1.5, 2.2, 1.6, "", "#ffffff", E_CNN)
+    wv = x[:3000]
+    ax.plot(np.linspace(0.6, 2.4, len(wv)),
+            2.3 + 0.6 * wv / np.abs(wv).max(),
+            lw=0.6, color=E_CNN, zorder=4)
+    ax.text(1.5, 1.32, "48 kHz audio", ha="center", va="top", fontsize=18)
 
-    arrow(2.3, 3.85, 2.9, 5.7)                   # audio -> L1
-    arrow(2.3, 3.6, 2.9, 3.6)                    # audio -> STFT
-    arrow(5.2, 3.9, 6.6, 5.7)                    # STFT -> L2 (band energies)
-    arrow(4.05, 3.1, 4.05, 1.9)                  # STFT -> CNN
-    arrow(5.2, 1.4, 6.6, 1.4)                    # CNN -> decision
-    arrow(5.2, 1.75, 11.9, 5.3)                  # CNN activations -> L3
-    ax.text(8.2, 3.0, "activations", fontsize=18, color="#666666",
-            rotation=15, ha="center")
-    arrow(9.8, 1.5, 11.4, 2.7)                   # decision -> fusion
-    arrow(9.8, 5.9, 12.0, 4.1)                   # L2 -> fusion
-    arrow(12.9, 5.3, 12.6, 4.1)                  # L3 -> fusion
-    arrow(6.1, 6.1, 12.4, 4.1, style="--", color="#b58900", lw=1.3, rad=-0.18)
-    ax.text(9.2, 7.0, "L1 override: downstream blocked", fontsize=18,
-            color="#b58900", ha="center")
-    arrow(12.4, 2.7, 12.4, 1.9)                  # fusion -> traffic
+    # STFT patch thumbnail (513 x 24)
+    box(3.4, 1.5, 2.2, 1.6, "", "#ffffff", E_CNN)
+    S = logspec(x[:6 * FS])[:, :24]
+    ax.imshow(S, origin="lower", aspect="auto", cmap="magma",
+              extent=(3.55, 5.45, 1.65, 2.95), zorder=4)
+    ax.text(4.5, 1.32, "STFT patch\n513 × 24", ha="center", va="top",
+            fontsize=18)
 
-    ax.text(0.3, 7.9, "taxonomy states:\n"
-                      "T1-confirmed · T1-unconfirmed · all-clear\n"
-                      "T2 hidden fault · T3 unverified\n"
-                      "T4 shift deferred",
-            fontsize=18, ha="left", va="top", style="italic")
+    # conv blocks as feature-map stacks
+    fmap(7.0, 2.3, 1.15, 2.3)
+    ax.text(7.1, 1.32, "conv1 + pool\n16 × 128 × 12", ha="center", va="top",
+            fontsize=18)
+    fmap(9.0, 2.3, 1.0, 1.7)
+    ax.text(9.1, 1.32, "conv2 + pool\n32 × 32 × 6", ha="center", va="top",
+            fontsize=18)
+    fmap(11.0, 2.3, 0.85, 1.15)
+    ax.text(11.1, 1.32, "conv3 + pool\n64 × 8 × 3", ha="center", va="top",
+            fontsize=18)
+
+    # dense bar + output
+    ax.add_patch(Rectangle((12.6, 1.15), 0.6, 2.3, fc=C_CNN, ec=E_CNN,
+                           lw=1.2, zorder=3))
+    ax.text(12.9, 1.32, "dense\n64", ha="center", va="top", fontsize=18)
+    box(13.9, 1.8, 1.3, 1.0, "p_leak\n≥ 0.5", C_CNN, E_CNN)
+
+    for x1, x2 in ((2.6, 3.4), (5.6, 6.35), (7.85, 8.4), (9.75, 10.45),
+                   (11.7, 12.6), (13.2, 13.9)):
+        arrow(x1, 2.3, x2, 2.3, color=E_CNN)
+
+    # ---- monitors (middle) -------------------------------------------------
+    box(0.4, 4.4, 3.8, 1.5, "L1 — signal-integrity rules\n"
+                            "missing · clipping · flatline\n"
+                            "DC offset · level", C_L1, E_L1)
+    box(4.8, 4.4, 3.8, 1.5, "L2 — physics consistency\n"
+                            "residual band-shares vs.\n"
+                            "leak template (mic × gain)", C_L2, E_L2)
+    box(9.2, 4.4, 3.8, 1.5, "L3 — k-NN feature novelty\n"
+                            "penultimate dense, k = 50\n"
+                            "+ per-layer z-profile", C_L3, E_L3)
+
+    # observation taps (dashed, read-only)
+    arrow(1.5, 3.1, 1.5, 4.4, style="--", color=E_L1)      # waveform -> L1
+    arrow(4.5, 3.1, 5.2, 4.4, style="--", color=E_L2)      # band energies -> L2
+    arrow(7.15, 3.55, 9.6, 4.4, style="--", color=E_L3)    # conv1 -> L3
+    arrow(9.15, 3.25, 10.4, 4.4, style="--", color=E_L3)   # conv2 -> L3
+    arrow(11.15, 2.98, 11.2, 4.4, style="--", color=E_L3)  # conv3 -> L3
+    arrow(12.9, 3.55, 12.0, 4.4, style="--", color=E_L3)   # dense -> L3
+    ax.text(17.6, 0.35, "dashed: read-only observation taps",
+            ha="right", fontsize=18, color="#666666", style="italic")
+    ax.text(0.4, 0.35, "conv blocks: k = 3, GELU, max-pool · "
+                       "one CNN + monitor stack per microphone (× 4)",
+            ha="left", fontsize=18, color="#666666", style="italic")
+
+    # ---- coordination layer ------------------------------------------------
+    box(1.5, 6.9, 14.0, 1.5, "", "#f5f5f5", "#333333")
+    ax.text(8.5, 7.95, "Coordination layer — taxonomy fusion", ha="center",
+            fontsize=20, weight="bold")
+    ax.text(8.5, 7.35, "T1-confirmed · T1-unconfirmed · all-clear · "
+                       "T2 (hidden fault) · T3 (unverified) · "
+                       "T3 (unexplained) · T4 (shift deferred)\n"
+                       "precedence: L1 override > T2 > T4 > CNN × L2",
+            ha="center", va="center", fontsize=18)
+    arrow(2.3, 5.9, 3.6, 6.9)                              # L1 -> coordination
+    arrow(6.7, 5.9, 6.4, 6.9)                              # L2 -> coordination
+    arrow(11.1, 5.9, 9.8, 6.9)                             # L3 -> coordination
+    arrow(14.55, 2.8, 14.55, 6.9, color=E_CNN)             # CNN decision -> coordination
+    ax.text(14.95, 4.6, "CNN decision", rotation=90, va="center",
+            fontsize=18, color=E_CNN)
+
+    # ---- communication layer -----------------------------------------------
+    box(4.0, 9.1, 8.0, 1.1, "", "#ffffff", "#333333")
+    ax.text(8.0, 9.9, "Communication layer — traffic light", ha="center",
+            fontsize=20, weight="bold")
+    for xc, col, lab in ((4.7, "#1a9850", "green"), (6.6, "#fee08b", "yellow"),
+                         (8.6, "#f46d43", "orange"), (10.5, "#d73027", "red")):
+        ax.add_patch(Circle((xc, 9.42), 0.13, fc=col, ec="#333333",
+                            lw=1.0, zorder=4))
+        ax.text(xc + 0.3, 9.42, lab, va="center", fontsize=18, zorder=4)
+    arrow(8.0, 8.4, 8.0, 9.1)
+
+    # ---- human supervisor ---------------------------------------------------
+    box(5.8, 10.6, 5.0, 1.2, "", "#eef3fa", "#333333")
+    ax.add_patch(Circle((6.6, 11.5), 0.15, fc="none", ec="#333333",
+                        lw=1.6, zorder=4))
+    ax.plot([6.6, 6.6], [11.35, 11.1], color="#333333", lw=1.6, zorder=4)
+    ax.plot([6.3, 6.9], [11.3, 11.3], color="#333333", lw=1.6, zorder=4)
+    ax.plot([6.6, 6.32], [11.1, 10.78], color="#333333", lw=1.6, zorder=4)
+    ax.plot([6.6, 6.88], [11.1, 10.78], color="#333333", lw=1.6, zorder=4)
+    ax.text(7.3, 11.2, "Human supervisor", ha="left", va="center",
+            fontsize=20, weight="bold")
+    arrow(8.0, 10.2, 8.0, 10.6)
+
     fig.savefig(OUT / "fig1_architecture.png")
     plt.close(fig)
+
 
 
 def fig2(index: pd.DataFrame) -> None:
@@ -398,7 +481,7 @@ def main() -> None:
     edge = json.loads(Path("results/edge_profile.json").read_text())
     index = pd.read_csv("data/index.csv")
 
-    fig1()
+    fig1(index)
     fig2(index)
     fig3()
     fig4(abl)
