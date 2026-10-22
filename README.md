@@ -69,6 +69,14 @@ touched once (Phase B):
 
 ![Dataset composition](results/paper_figures/dataset_distribution.png)
 
+Example log-power spectrograms of each condition make the shifts visible: the
+hydraulic backgrounds flood the low frequencies with unstructured energy
+(covariate), the tube leak has a markedly different spectral signature from
+the training vent leaks (semantic), and the injected faults corrupt the
+waveform itself.
+
+![Spectrograms per condition](results/paper_figures/fig2_shift_spectrograms.png)
+
 ## Headline results
 
 Evaluation metric: the **trusted-wrong-answer (TWA) rate** — the share of
