@@ -106,8 +106,6 @@ in the dense layer.
 
 ![Layer profiles](results/paper_figures/fig5_layer_profiles.png)
 
-![Injected sensor faults](results/paper_figures/fig6_s6_detection.png)
-
 Full numbers: `results/phase_b/phase_b_summary.json`,
 `results/phase_b/ablation_ladder.json`,
 `results/phase_b/tables/`.
