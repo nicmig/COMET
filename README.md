@@ -159,8 +159,21 @@ python -m monitoring.paper_dataset_figure
 
 ## Citation
 
-If you use this code, please cite the accompanying journal publication
-(citation details will be added upon publication) and the dataset:
+If you use this code, please cite the accompanying publication:
+
+```bibtex
+@misc{flehmig2026cometcoordinatedmultilayerruntime,
+      title={COMET: A coordinated multi-layer runtime monitoring framework for human-supervised AI-enabled safety systems},
+      author={Niclas Flehmig and Mary Ann Lundteigen and Shen Yin},
+      year={2026},
+      eprint={2610.29816},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2610.29816},
+}
+```
+
+and the dataset:
 
 > IDMT-ISA-Compressed-Air, Fraunhofer IDMT, https://doi.org/10.5281/zenodo.7551606
 
